@@ -1,5 +1,7 @@
 # 1. Install R 2.15!, RStudio, and Gephi
-### OS 
+If the Setup directory is missing, you have to download it separately.
+You can find information about how to download in the file Setup_MISSING.md
+### OS X 
     open Setup/R/R-2.15.1-signed.pkg
     open Setup/RStudio/RStudio-0.96.331.dmg 
     open Setup/Gephi/gephi-0.8.1-beta.dmg 
