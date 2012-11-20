@@ -18,7 +18,7 @@ SEE THE INSTRUCTIONS AT THE BOTTOM OF THIS README FILE
 ### OS X, Linux, etc.:
 Start R.
 
-    install.packages(c('SPARQL','sp','ggmap','mapproj','igraph','network','ergm','zoo','gsubfn','rjson'),dependencies=TRUE)
+    install.packages(c('SPARQL','sp','spacetime','ggmap','mapproj','igraph','network','ergm','zoo','gsubfn','rjson'),dependencies=TRUE)
 
 ### Windows:
 Start RStudio.
