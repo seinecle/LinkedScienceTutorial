@@ -1,0 +1,35 @@
+@prefix fuseki:  <http://jena.apache.org/fuseki#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix :        <#> .
+
+## ---------------------------------------------------------------
+## Updatable in-memory dataset.
+
+<#service1> rdf:type fuseki:Service ;
+        fuseki:name                       "ds" ;       # http://host:port/ds
+        fuseki:serviceQuery               "query" ;    # SPARQL query service
+        fuseki:serviceQuery               "sparql" ;   # SPARQL query service
+        fuseki:serviceUpdate              "update" ;   # SPARQL query service
+        fuseki:serviceUpload              "upload" ;   # Non-SPARQL upload service
+        fuseki:serviceReadWriteGraphStore "data" ;     # SPARQL Graph store protocol (read and write)
+        fuseki:serviceReadGraphStore      "get" ;      # SPARQL Graph store protocol (read only)
+        fuseki:dataset                   <#movie> ;
+        .
+
+<#movie> rdfs:label "DBpedia American Movies" ;
+        rdf:type ja:RDFDataset ;
+        ja:defaultGraph <#movieRDFS> .
+
+<#movieRDFS> rdfs:label "movie-rdfs" ;
+        a ja:InfModel ;
+        ja:baseModel <#movieRDF> ; 
+        ja:reasoner 
+            [ ja:reasonerURL <http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner> ] .
+
+<#movieRDF> rdfs:label "movie-rdf" ;
+        a ja:MemoryModel ;
+        ja:content [ ja:externalContent <file:Movie_data/dbpedia_american_movies.rdf> ] .
+

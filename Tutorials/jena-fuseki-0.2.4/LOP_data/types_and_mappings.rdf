@@ -1,0 +1,765 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY cyc 'http://sw.opencyc.org/concept/'>
+    <!ENTITY fb 'http://rdf.freebase.com/ns/'>
+    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+    <!ENTITY poseidon 'http://semanticweb.cs.vu.nl/poseidon/ns/instances/'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+    <!ENTITY sem 'http://semanticweb.cs.vu.nl/2009/11/sem/'>
+    <!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+    <!ENTITY wn 'http://www.w3.org/2006/03/wn/wn20/instances/'>
+    <!ENTITY wn30 'http://purl.org/vocabularies/princeton/wn30/'>
+]>
+
+<rdf:RDF
+    xmlns:cyc="&cyc;"
+    xmlns:fb="&fb;"
+    xmlns:owl="&owl;"
+    xmlns:poseidon="&poseidon;"
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+    xmlns:sem="&sem;"
+    xmlns:skos="&skos;"
+    xmlns:wn="&wn;"
+    xmlns:wn30="&wn30;"
+>
+<sem:EventType rdf:about="&poseidon;etype_piracy"
+    rdfs:label="piracy">
+  <skos:closeMatch rdf:resource="&wn30;synset-piracy-noun-1"/>
+  <sem:hasSubType rdf:resource="&poseidon;etype_not_specified"/>
+  <sem:hasSubType rdf:resource="&poseidon;etype_attempted"/>
+  <sem:hasSubType rdf:resource="&poseidon;etype_boarded"/>
+  <sem:hasSubType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:hasSubType rdf:resource="&poseidon;etype_hijacked"/>
+  <sem:hasSubType rdf:resource="&poseidon;etype_suspicious"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_not_specified"
+    rdfs:label="not specified">
+  <sem:subTypeOf rdf:resource="&poseidon;etype_piracy"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_fired_upon"
+    rdfs:label="firing upon victim">
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rvVjrp5wpEbGdrcN5Y29ycA"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-fire-noun-3"/>
+  <skos:closeMatch rdf:resource="&wn30;synset-fire-noun-2"/>
+  <sem:subTypeOf rdf:resource="&poseidon;etype_piracy"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_kidnapped"
+    rdfs:label="kidnapping">
+  <sem:subTypeOf rdf:resource="&poseidon;etype_boarded"/>
+  <skos:closeMatch rdf:resource="&wn30;synset-boarding-noun-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_robbed"
+    rdfs:label="robbery">
+  <sem:subTypeOf rdf:resource="&poseidon;etype_boarded"/>
+  <skos:closeMatch rdf:resource="&wn30;synset-robbery-noun-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_hijacked"
+    rdfs:label="hijacking">
+  <skos:closeMatch rdf:resource="&cyc;Mx4rvjbFEZwpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&wn;synset-highjacking-noun-1"/>
+  <skos:closeMatch rdf:resource="&wn30;synset-highjacking-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;etype_piracy"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_attempted"
+    rdfs:label="attempted hijacking">
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rwFH745wpEbGdrcN5Y29ycA"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-attempt-noun-1"/>
+  <skos:relatedMatch rdf:resource="&wn30;synset-attempt-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;etype_piracy"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_boarded"
+    rdfs:label="boarding">
+  <sem:hasSubType rdf:resource="&poseidon;etype_kidnapped"/>
+  <sem:hasSubType rdf:resource="&poseidon;etype_robbed"/>
+  <skos:closeMatch rdf:resource="&cyc;board-verb-1"/>
+  <skos:closeMatch rdf:resource="&wn;synset-board-verb-1"/>
+  <skos:closeMatch rdf:resource="&wn30;synset-boarding-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;etype_piracy"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_suspicious"
+    rdfs:label="suspicious vessel spotted">
+  <skos:closeMatch rdf:resource="&wn30;synset-sighting-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;etype_piracy"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_slowing_down"
+    rdfs:label="slowing down">
+  <skos:closeMatch rdf:resource="&wn;synset-decelerate-verb-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_speeding_up"
+    rdfs:label="speeding up">
+  <skos:closeMatch rdf:resource="&wn;synset-accelerate-verb-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_stopped_in_anchorage"
+    rdfs:label="stopped at anchoring spot (offshore)">
+  <skos:broadMatch rdf:resource="&cyc;Mx8Ngh4r0saKNtO1EdmAAACQJw5drh4rvVkEAZwpEbGdrcN5Y29ycA"/>
+  <skos:broadMatch rdf:resource="&wn;synset-stop-verb-1"/>
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rEZN5ZSTPEdyJBQDggVUTGw"/>
+  <skos:relatedMatch rdf:resource="&fb;en.anchor"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-anchor-noun-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_stopped_in_water_lane"
+    rdfs:label="stopped in a water lane">
+  <skos:broadMatch rdf:resource="&cyc;Mx8Ngh4r0saKNtO1EdmAAACQJw5drh4rvVkEAZwpEbGdrcN5Y29ycA"/>
+  <skos:broadMatch rdf:resource="&wn;synset-stop-verb-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_encounter"
+    rdfs:label="encounter between two actors (individuals or groups)">
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_sail_through"
+    rdfs:label="sailing through an anchorage without stopping">
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_anchored"
+    rdfs:label="anchored">
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rEZN5ZSTPEdyJBQDggVUTGw"/>
+  <skos:relatedMatch rdf:resource="&fb;en.anchor"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-anchor-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;etype_stopped"/>
+  <skos:closeMatch rdf:resource="&wn;synset-anchor-verb-2"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_stopped_in_harbor"
+    rdfs:label="stopped in a harbor">
+  <skos:broadMatch rdf:resource="&cyc;Mx8Ngh4r0saKNtO1EdmAAACQJw5drh4rvVkEAZwpEbGdrcN5Y29ycA"/>
+  <skos:broadMatch rdf:resource="&wn;synset-stop-verb-1"/>
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rvVjNz5wpEbGdrcN5Y29ycA"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-seaport-noun-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_stopped_outside_harbor"
+    rdfs:label="stopped, not inside a harbor">
+  <skos:broadMatch rdf:resource="&cyc;Mx8Ngh4r0saKNtO1EdmAAACQJw5drh4rvVkEAZwpEbGdrcN5Y29ycA"/>
+  <skos:broadMatch rdf:resource="&wn;synset-stop-verb-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_constant_speed"
+    rdfs:label="constant speed">
+  <skos:closeMatch rdf:resource="&cyc;Mx4rSFyVWlrGEdqAAAACs6hRXg"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-stabilize-verb-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_moving"
+    rdfs:label="moving">
+  <sem:hasSubType rdf:resource="&poseidon;etype_underway"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rvVkEAZwpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&wn;synset-travel-verb-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_stopped"
+    rdfs:label="stopped">
+  <sem:hasSubType rdf:resource="&poseidon;etype_anchored"/>
+  <sem:hasSubType rdf:resource="&poseidon;etype_moored"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx8Ngh4r0saKNtO1EdmAAACQJw5drh4rvVkEAZwpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&wn;synset-stop-verb-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_underway"
+    rdfs:label="underway">
+  <sem:subTypeOf rdf:resource="&poseidon;etype_moving"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_moored"
+    rdfs:label="moored">
+  <sem:subTypeOf rdf:resource="&poseidon;etype_stopped"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_arriving"
+    rdfs:label="arriving at a certain location">
+  <skos:closeMatch rdf:resource="&cyc;Mx4rvyLZypwpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&wn;synset-arrive-verb-1"/>
+</sem:EventType>
+
+<sem:EventType rdf:about="&poseidon;etype_departing"
+    rdfs:label="departing from a certain location">
+  <skos:closeMatch rdf:resource="&cyc;Mx4rvWSHaJwpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&wn;synset-go-verb-3"/>
+</sem:EventType>
+
+<sem:RoleType rdf:about="&poseidon;rtype_PictureCompiler"
+    rdfs:label="Picture Compiler"/>
+
+<sem:RoleType rdf:about="&poseidon;rtype_Interrogator"
+    rdfs:label="Interrogator"/>
+
+<sem:RoleType rdf:about="&poseidon;rtype_Maintainer"
+    rdfs:label="Maintainer"/>
+
+<sem:RoleType rdf:about="&poseidon;rtype_Monitor"
+    rdfs:label="Monitor"/>
+
+<sem:RoleType rdf:about="&poseidon;rtype_Inspector"
+    rdfs:label="Inspector"/>
+
+<sem:ActorType rdf:about="&poseidon;atype_vessel"
+    rdfs:label="vessel">
+  <sem:hasSubType rdf:resource="&poseidon;atype_other_ship"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_anti_pollution_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_supply_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_barge"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_cable-layer"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_catamaran"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_combination_carrier_OBO"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_crane_ship"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_dhow"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_dredging_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_fishing_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_fpso"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_fso"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_landing_craft"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_law_enforcement_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_merchant_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_offshore_processing_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_offshore_service_ship"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_offshore_support_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_passenger_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_pilot_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_platform_rig"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_pleasure_craft"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_pollution_control_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_research_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_sailing_boat"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_semi-submersible_heavy_lift"/>
+   <sem:hasSubType rdf:resource="&poseidon;atype_special_purpose_ship"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_tug"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_warship"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_work_boat"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rvVi-55wpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&fb;en.ship"/>
+  <skos:closeMatch rdf:resource="&wn;synset-vessel-noun-2"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_merchant_vessel"
+    rdfs:label="merchant vessel">
+  <sem:hasSubType rdf:resource="&poseidon;atype_barge_container_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_bulk_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_container"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_gas_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_general_cargo"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_heavy_load_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_livestock_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_ro-ro"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_stone_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_vehicle_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_wood_chip_carrier"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rvm1tKJwpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&fb;en.merchant_vessel"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_barge_container_carrier"
+    rdfs:label="barge container carrier">
+  <skos:closeMatch rdf:resource="&fb;en.barge"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rv68PXpwpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&wn;synset-barge-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_anti_pollution_vessel"
+    rdfs:label="anti-pollution vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_other_ship"
+    rdfs:label="other ship">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+
+<sem:ActorType rdf:about="&poseidon;atype_bitumen_tanker"
+    rdfs:label="bitumen tanker">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+  <skos:relatedMatch rdf:resource="&fb;en.bitumen"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_cable-layer"
+    rdfs:label="cable-layer">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_combination_carrier_OBO"
+    rdfs:label="combination carrier (OBO)">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_pipe_layer_crane_vessel"
+    rdfs:label="pipe layer crane vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_crane_ship"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_crane_ship"
+    rdfs:label="crane ship">
+  <sem:hasSubType rdf:resource="&poseidon;atype_pipe_layer_crane_ship"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_crew_boat"
+    rdfs:label="crew boat">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_passenger_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_cement_carrier"
+    rdfs:label="cement carrier">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_bulk_carrier"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_bulk_carrier"
+    rdfs:label="bulk carrier">
+  <sem:hasSubType rdf:resource="&poseidon;atype_cement_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_obo_carrier"/>
+  <skos:closeMatch rdf:resource="&fb;en.bulk_carrier"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rviBZo5wpEbGdrcN5Y29ycA"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+  <skos:broadMatch rdf:resource="&cyc;Mx4rvm1tKJwpEbGdrcN5Y29ycA"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_bunkering_tanker"
+    rdfs:label="bunkering tanker">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_cruise"
+    rdfs:label="cruise ship">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_passenger_vessel"/>
+  <skos:closeMatch rdf:resource="&fb;en.cruise_ship"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_catamaran"
+    rdfs:label="catamaran">
+  <skos:closeMatch rdf:resource="&fb;en.catamaran"/>
+  <skos:closeMatch rdf:resource="&wn;synset-catamaran-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_chemical_tanker"
+    rdfs:label="chemical tanker">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+  <rdfs:seeAlso rdf:resource="&fb;en.chemical_tanker"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rvnc82JwpEbGdrcN5Y29ycA"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_container"
+    rdfs:label="container ship">
+  <sem:hasSubType rdf:resource="&poseidon;atype_reefer"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+  <skos:closeMatch rdf:resource="&wn;synset-container_ship-noun-1"/>
+  <skos:closeMatch rdf:resource="&fb;en.container_ship"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_crude_oil_tanker"
+    rdfs:label="crude oil tanker">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_dhow"
+    rdfs:label="dhow">
+  <skos:closeMatch rdf:resource="&fb;en.dhow"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4ri8JPoBqcEdyVMwDggVUTGw"/>
+  <skos:closeMatch rdf:resource="&wn;synset-dhow-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_dredging_vessel"
+    rdfs:label="dredging vessel">
+  <sem:hasSubType rdf:resource="&poseidon;atype_hopper_dredger"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:closeMatch rdf:resource="&wn;synset-dredger-noun-1"/>
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rk-FlYieAQdiL5qoPxSYGVg"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_hopper_dredger"
+    rdfs:label="hopper dredger">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_dredging_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_landing_craft"
+    rdfs:label="landing craft">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_high-speed_craft"
+    rdfs:label="high-speed craft">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_ferry"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_ferry"
+    rdfs:label="ferry boat">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_passenger_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_high-speed_craft"/>
+  <rdfs:seeAlso rdf:resource="&fb;en.ferry"/>
+  <owl:sameAs rdf:resource="&poseidon;atype_ro-ro"/>
+  <skos:closeMatch rdf:resource="&wn;synset-ferry-noun-1"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rwQCasJwpEbGdrcN5Y29ycA"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_fishing_vessel"
+    rdfs:label="fishing vessel">
+  <skos:closeMatch rdf:resource="&fb;en.fishing_boat"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rvgWe-5wpEbGdrcN5Y29ycA"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_fishing_trawler"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:closeMatch rdf:resource="&wn;synset-fishing_boat-noun-1"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_fpso"
+    rdfs:label="fpso">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <owl:sameAs rdf:resource="&poseidon;atype_fso"/>
+  <skos:closeMatch rdf:resource="&fb;en.floating_production_storage_and_offloading"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_fso"
+    rdfs:label="fso">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_gas_carrier"
+    rdfs:label="gas carreier">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_heavy_load_carrier"
+    rdfs:label="heavy load carrier">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_livestock_carrier"
+    rdfs:label="livestock carrier">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_general_cargo"
+    rdfs:label="general cargo vessel">
+  <skos:closeMatch rdf:resource="&fb;en.cargo_ship"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rwQCRkZwpEbGdrcN5Y29ycA"/>
+  <skos:closeMatch rdf:resource="&wn;synset-cargo_ship-noun-1"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_refrigerated_cargo_carrier"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_juice_tanker"
+    rdfs:label="juice tanker">
+  <skos:relatedMatch rdf:resource="&fb;en.juice"/>
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rvVjM2ZwpEbGdrcN5Y29ycA"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-juice-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_law_enforcement_vessel"
+    rdfs:label="law enforcement vessel">
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rvV399JwpEbGdrcN5Y29ycA"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-law_enforcement-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_search_and_rescue_vessel"
+    rdfs:label="search and rescue vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_law_enforcement_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_obo_carrier"
+    rdfs:label="ore-bulk-oil carrier (OBO) carrier">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_bulk_carrier"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_lng_tanker"
+    rdfs:label="liquified natural gas (LNG) carrier">
+  <sem:hasSubType rdf:resource="&poseidon;atype_lpg_tanker"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_lpg_tanker"
+    rdfs:label="liquified petroleum gas (LPG) carrier">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_lng_tanker"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4r1d1xNyH0SNaK9JR6yohCRg"/>
+  <skos:relatedMatch rdf:resource="&fb;en.liquified_petroleum_gas"/>
+</sem:ActorType>
+
+<sem:EventType rdf:about="&poseidon;etype_not_specified"
+    rdfs:label="no information provided"/>
+
+<sem:ActorType rdf:about="&poseidon;atype_null"
+    rdfs:label="no information provided"/>
+
+<sem:ActorType rdf:about="&poseidon;atype_oil_tanker"
+    rdfs:label="oil tanker">
+  <skos:closeMatch rdf:resource="&fb;en.oil_tanker"/>
+  <skos:closeMatch rdf:resource="&wn;synset-oil_tanker-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rwTD6JpwpEbGdrcN5Y29ycA"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_passenger_vessel"
+    rdfs:label="passenger vessel">
+  <sem:hasSubType rdf:resource="&poseidon;atype_crew_boat"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_cruise"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_ferry"/>
+  <skos:closeMatch rdf:resource="&fb;en.passenger_ship"/>
+  <skos:closeMatch rdf:resource="&wn;synset-passenger_ship-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rvViM4pwpEbGdrcN5Y29ycA"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_pilot_vessel"
+    rdfs:label="pilot vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:relatedMatch rdf:resource="&fb;en.harbour_pilot"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_platform_rig"
+    rdfs:label="platform rig">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:relatedMatch rdf:resource="&fb;en.drilling_rig"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_pleasure_craft"
+    rdfs:label="pleasure craft">
+  <sem:hasSubType rdf:resource="&poseidon;atype_yacht"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:closeMatch rdf:resource="&fb;en.pleasure_craft"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_pollution_control_vessel"
+    rdfs:label="pollution control vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:relatedMatch rdf:resource="&fb;en.pollution_control"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_product_tanker"
+    rdfs:label="product tanker">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_reefer"
+    rdfs:label="reefer">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_container"/>
+  <skos:closeMatch rdf:resource="&fb;en.reefer"/>
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rvVjQmJwpEbGdrcN5Y29ycA"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_refrigerated_cargo_carrier"
+  rdfs:label="refrigerated cargo carrier"/>
+
+<sem:ActorType rdf:about="&poseidon;atype_seismographic_research"
+    rdfs:label="seismographic research vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_research_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_research_vessel"
+    rdfs:label="research vessel">
+  <sem:hasSubType rdf:resource="&poseidon;atype_seismographic_research"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:closeMatch rdf:resource="&fb;en.research_vessel"/>
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rx-QD-i0gQdmYVa2cf5r76g"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_ro-ro"
+    rdfs:label="roll-on/roll-off">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+  <owl:sameAs rdf:resource="&poseidon;atype_ferry"/>
+  <skos:closeMatch rdf:resource="&fb;en.roro"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_sailing_boat"
+    rdfs:label="sailing boat">
+  <skos:closeMatch rdf:resource="&fb;en.sailboat"/>
+  <skos:closeMatch rdf:resource="&fb;en.sailing_ship"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rK9SXFirdEdqAAAACs71DGQ"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4ro4XKcC6gEdqAAAACs71DGQ"/>
+  <skos:closeMatch rdf:resource="&wn;synset-sailboat-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_shuttle_tanker"
+    rdfs:label="shuttle tanker">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tanker"/>
+  <skos:closeMatch rdf:resource="&fb;en.shuttle_tanker"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_semi-submersible_heavy_lift"
+    rdfs:label="semi-submersible heavy lift">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:broadMatch rdf:resource="&fb;en.semi-submersible"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_special_purpose_ship"
+    rdfs:label="special purpose ship">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_stone_carrier"
+    rdfs:label="stone carrier">
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rwPudOZwpEbGdrcN5Y29ycA"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-rock-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_tanker"
+    rdfs:label="tanker">
+  <sem:hasSubType rdf:resource="&poseidon;atype_bitumen_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_bunkering_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_chemical_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_crude_oil_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_juice_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_lng_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_lpg_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_obo_carrier"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_oil_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_product_tanker"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_shuttle_tanker"/>
+  <skos:closeMatch rdf:resource="&fb;en.tanker"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rwQCPwpwpEbGdrcN5Y29ycA"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_offshore_service_ship"
+    rdfs:label="offshore service ship">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_offshore_support_vessel"
+    rdfs:label="offshore support vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_fspo"
+    rdfs:label="floating production storage and offloading">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_offshore_processing_tanker"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_fishing_trawler"
+    rdfs:label="fishing trawler">
+  <skos:closeMatch rdf:resource="&fb;en.trawler"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rwQCNo5wpEbGdrcN5Y29ycA"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_fishing_vessel"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-trawl-noun-1"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_towing_vessel"
+    rdfs:label="towing vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tug"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_pusher_tug"
+    rdfs:label="pusher tug">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tug"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_offshore_tug"
+    rdfs:label="offshore tug">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tug"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_tug"
+    rdfs:label="tug">
+  <sem:hasSubType rdf:resource="&poseidon;atype_offshore_tug"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_pusher_tug"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_tug_and_barge"/>
+  <skos:closeMatch rdf:resource="&fb;en.tugboat"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4rwQCbHpwpEbGdrcN5Y29ycA"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <skos:closeMatch rdf:resource="&wn;synset-tugboat-noun-1"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_offshore_processing_tanker"
+    rdfs:label="offshore processing tanker">
+  <sem:hasSubType rdf:resource="&poseidon;atype_fspo"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_offshore_barge"
+    rdfs:label="offshore barge">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_barge"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_barge_lift"
+    rdfs:label="lift barge">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_barge"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_work_boat"
+    rdfs:label="work boat">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_barge"
+    rdfs:label="barge">
+  <sem:hasSubType rdf:resource="&poseidon;atype_barge_lift"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_offshore_barge"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_tug_and_barge"/>
+  <skos:related rdf:resource="&poseidon;atype_barge"/>
+  <skos:related rdf:resource="&poseidon;atype_tug"/>
+  <skos:related rdf:resource="&poseidon;atype_tug_and_barge"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_tug_and_barge"
+    rdfs:label="tug and barge">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_barge"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_tug"/>
+  <skos:related rdf:resource="&poseidon;atype_barge"/>
+  <skos:related rdf:resource="&poseidon;atype_tug"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_supply_vessel"
+    rdfs:label="supply vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+  <sem:hasSubType rdf:resource="&poseidon;atype_offshore_supply"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_offshore_supply"
+    rdfs:label="offshore supply vessel">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_supply_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_warship"
+    rdfs:label="warship">
+  <sem:hasSubType rdf:resource="&poseidon;atype_frigate"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_frigate"
+    rdfs:label="frigate">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_warship"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_wood_chip_carrier"
+    rdfs:label="wood chip carrier">
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_vehicle_carrier"
+    rdfs:label="vehicle carrier">
+  <skos:relatedMatch rdf:resource="&fb;en.vehicle"/>
+  <skos:relatedMatch rdf:resource="&cyc;Mx4rwLzhaZwpEbGdrcN5Y29ycA"/>
+  <skos:relatedMatch rdf:resource="&wn;synset-vehicle-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_merchant_vessel"/>
+</sem:ActorType>
+
+<sem:ActorType rdf:about="&poseidon;atype_yacht"
+    rdfs:label="yacht">
+  <skos:closeMatch rdf:resource="&fb;en.yacht"/>
+  <skos:closeMatch rdf:resource="&cyc;Mx4run14FjC7QdiKbp3T8_xoXA"/>
+  <skos:closeMatch rdf:resource="&wn;synset-sailboat-noun-1"/>
+  <sem:subTypeOf rdf:resource="&poseidon;atype_pleasure_craft"/>
+</sem:ActorType>
+
+</rdf:RDF>

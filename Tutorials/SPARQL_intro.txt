@@ -1,0 +1,38 @@
+# returns a table with two columns, instance and class,
+# which contain instances and their class
+SELECT * 
+WHERE { ?instance rdf:type ?class . }
+
+# defines what "rdfs" means before asking for 
+# at most 10 labels
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT l
+WHERE {
+  ?x rdfs:label ?l .
+}
+LIMIT 10
+
+# returns a table of labels that contain "banana",
+# regardless of capitalization
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT l 
+WHERE { 
+  ?x rdfs:label ?l .
+  FILTER regex(?l, "banana", "i")
+}
+
+# returns a table with classes of things that
+# have an english label, each class mentioned once
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT c
+WHERE {
+  ?i rdfs:label ?l .
+  FILTER (LANG(?l) == "en")
+  ?i rdf:type ?c .
+}
+
+# label query without defining a namespace prefix
+SELECT l
+WHERE {
+  ?x <http://www.w3.org/2000/01/rdf-schema#> ?l .
+}

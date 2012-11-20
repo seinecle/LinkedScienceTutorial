@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://linkedscience.org/tools/sparql-package-for-r/linked-open-piracy-tutorial/ -->
+<html dir="ltr" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>SPARQL Package for R – Linked Open Piracy Tutorial | LinkedScience.org</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="./lop_tutorial_files/style.css">
+<link rel="pingback" href="http://linkedscience.org/xmlrpc.php">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » Feed" href="http://linkedscience.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » Comments Feed" href="http://linkedscience.org/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » SPARQL Package for R – Linked Open Piracy Tutorial Comments Feed" href="http://linkedscience.org/tools/sparql-package-for-r/linked-open-piracy-tutorial/feed/">
+<link rel="stylesheet" id="admin-bar-css" href="./lop_tutorial_files/admin-bar.css" type="text/css" media="all">
+<script type="text/javascript" async="" src="./lop_tutorial_files/ga.js"></script><script type="text/javascript" src="./lop_tutorial_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://linkedscience.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://linkedscience.org/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="TOLSCI2012" href="http://linkedscience.org/events/tolsci2012/">
+<link rel="next" title="LODR4LS" href="http://linkedscience.org/events/lodr4ls/">
+<meta name="generator" content="WordPress 3.3">
+<link rel="canonical" href="./lop_tutorial_files/lop_tutorial.html">
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 28px !important; }
+	* html body { margin-top: 28px !important; }
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8367411-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link href="./lop_tutorial_files/widget.css" rel="stylesheet" type="text/css"><style type="text/css">#twtr-widget-1 .twtr-avatar { display: none; } #twtr-widget-1 .twtr-tweet-text { margin-left: 0; }</style><style type="text/css">#twtr-widget-1 .twtr-doc,                      #twtr-widget-1 .twtr-hd a,                      #twtr-widget-1 h3,                      #twtr-widget-1 h4 {            background-color: #1F0C0C !important;            color: #FFFFFF !important;          }          #twtr-widget-1 .twtr-tweet a {            color: #316329 !important;          }          #twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a,           #twtr-widget-1 .twtr-bd p {            color: #3B3B3B !important;          }          #twtr-widget-1 .twtr-new-results,           #twtr-widget-1 .twtr-results-inner,           #twtr-widget-1 .twtr-timeline {            background: #F7FFFB !important;          }</style></head>
+
+<body class="page page-id-731 page-child parent-pageid-149 page-template-default logged-in admin-bar">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://linkedscience.org/" title="LinkedScience.org" rel="home">LinkedScience.org</a>
+					</span>
+				</div>
+				<div id="site-description">interconnecting scientific assets!</div>
+
+										<img src="./lop_tutorial_files/linkedscience.png" width="940" height="198" alt="">
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="http://linkedscience.org/tools/sparql-package-for-r/linked-open-piracy-tutorial/#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li><a href="http://linkedscience.org/" title="Home">Home</a></li><li class="page_item page-item-87"><a href="http://linkedscience.org/events/">Events</a><ul class="children"><li class="page_item page-item-386"><a href="http://linkedscience.org/events/gibda2012/">GIBDA2012</a></li><li class="page_item page-item-69"><a href="http://linkedscience.org/events/lisc2011/">LISC2011</a></li><li class="page_item page-item-585"><a href="http://linkedscience.org/events/lisc2012/">LISC2012</a></li><li class="page_item page-item-802"><a href="http://linkedscience.org/events/lodr4ls/">LODR4LS</a></li><li class="page_item page-item-101"><a href="http://linkedscience.org/events/lssolo11/">LS@SOLO11</a></li><li class="page_item page-item-690"><a href="http://linkedscience.org/events/tolsci2012/">TOLSCI2012</a></li></ul></li><li class="page_item page-item-99"><a href="http://linkedscience.org/publications/">Publications</a></li><li class="page_item page-item-164 current_page_ancestor"><a href="http://linkedscience.org/tools/">Tools</a><ul class="children"><li class="page_item page-item-149 current_page_ancestor current_page_parent"><a href="http://linkedscience.org/tools/sparql-package-for-r/">SPARQL Package for R</a><ul class="children"><li class="page_item page-item-854"><a href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/">SPARQL Package for R / Gephi – Movie star graph visualization Tutorial</a></li><li class="page_item page-item-731 current_page_item"><a href="./lop_tutorial_files/lop_tutorial.html">SPARQL Package for R – Linked Open Piracy Tutorial</a></li><li class="page_item page-item-278"><a href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-part-i-using-the-sparql-package-in-r-to-handle-spatial-data/">Tutorial part I – Using the SPARQL Package in R to handle Spatial Linked Data</a></li><li class="page_item page-item-151"><a href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-on-sparql-package-for-r/">Tutorial part I – Using the SPARQL Package in R to handle Spatial Linked Data</a></li><li class="page_item page-item-220"><a href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-part-ii-calculating-deforestation-per-state/">Tutorial part II – Calculating Deforestation per State</a></li></ul></li></ul></li><li class="page_item page-item-109"><a href="http://linkedscience.org/vocabularies/">Vocabularies</a></li><li class="page_item page-item-263"><a href="http://linkedscience.org/data/">Data</a><ul class="children"><li class="page_item page-item-265"><a href="http://linkedscience.org/data/linked-brazilian-amazon-rainforest/">Linked Brazilian Amazon Rainforest</a></li><li class="page_item page-item-347"><a href="http://linkedscience.org/data/linked-haiti/">Linked Haiti</a></li><li class="page_item page-item-476"><a href="http://linkedscience.org/data/spatiallinkedscience/">spatial@linkedscience</a></li></ul></li><li class="page_item page-item-574"><a href="http://linkedscience.org/projects/">Projects</a><ul class="children"><li class="page_item page-item-576"><a href="http://linkedscience.org/projects/triangle-of-sustainability/">Triangle of Sustainability</a></li></ul></li><li class="page_item page-item-682"><a href="http://linkedscience.org/tutorials/">Tutorials</a></li><li class="page_item page-item-44"><a href="http://linkedscience.org/spatial/">Spatial</a></li><li class="page_item page-item-211"><a href="http://linkedscience.org/about/">About</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="post-731" class="post-731 page type-page status-publish hentry">
+											<h1 class="entry-title">SPARQL Package for R – Linked Open Piracy Tutorial</h1>
+					
+					<div class="entry-content">
+						<p>By <a href="http://www.few.vu.nl/~wrvhage">Willem Robert van Hage</a>.<br>
+Acknowledgments to Jesper Hoeksema and Marieke van Erp.</p>
+<p>This tutorial shows how to do a visual analysis and basic statistical analysis of the data in the Linked Open Piracy data set. It makes use of the SPARQL Package for R and the ggmap package. For another tutorial of how to use the SPARQL Package, in combination with the sp package for spatial processing, check out the <a href="http://linkedscience.org/2011/12/20/tutorial-on-sparql-package-for-r/" title="deforestation tutorial">deforestation tutorial</a>.</p>
+<p>The SPARQL Package&nbsp;allows you to directly import results of SPARQL SELECT queries into the statistical environment of R as a data frame. That means you can directly perform statistical analysis on data sets on the web. For example, you can use the following R code to get data from the&nbsp;<a href="http://semanticweb.cs.vu.nl/poseidon/ns/home/">Linked Open Piracy</a>&nbsp;SPARQL end point described below.<br>
+The complete script is available for download: <a href="http://linkedscience.org/wp-content/uploads/2012/10/lop_tutorial.R.zip">lop_tutorial.R.zip</a>.</p>
+<h3>Accessing the data</h3>
+<p>At first, make sure that you have recent versions of the two R packages&nbsp;<a title="SPARQL package on CRAN" href="http://cran.r-project.org/web/packages/SPARQL/index.html">SPARQL</a>, <a title="ggmap package on CRAN" href="http://cran.r-project.org/web/packages/ggmap/index.html">ggmap</a>, and <a title="mapproj package on CRAN" href="http://cran.r-project.org/web/packages/mapproj/index.html">mapproj</a>&nbsp;installed. Load the packages by calling:</p>
+<pre>library(SPARQL)
+library(ggmap)</pre>
+<p>Define the endpoint that will provide you with the triples by</p>
+<pre>endpoint &lt;- "http://semanticweb.cs.vu.nl/lop/sparql/"</pre>
+<p>State that there are no further options to send to the SPARQL server. These options are sent as HTTP parameters and differ per end point. For example, Jena Fuseki can take the option “output=xml” to dictate that it should return XML, SWI-Prolog Cliopatria can take “entailment=rdfs” or “entailment=none” to state which kind of reasoning to apply.</p>
+<pre>options &lt;- NULL</pre>
+<p>For a local Jena Fuseki installation hosting the same data in the LOP graph you can use the following options (uncommented, i.e., without the leading #):</p>
+<pre># endpoint &lt;- "http://localhost:3030/LOP/query"
+# options &lt;- "output=xml"</pre>
+<p>To shorten the URIs of the data that we get back, use some namespace declarations like this</p>
+<pre>prefix &lt;- c("lop","http://semanticweb.cs.vu.nl/poseidon/ns/instances/",
+            "eez","http://semanticweb.cs.vu.nl/poseidon/ns/eez/")</pre>
+<pre>sparql_prefix &lt;- "PREFIX sem: &lt;http://semanticweb.cs.vu.nl/2009/11/sem/&gt;
+                  PREFIX poseidon: &lt;http://semanticweb.cs.vu.nl/poseidon/ns/instances/&gt;
+                  PREFIX eez: &lt;http://semanticweb.cs.vu.nl/poseidon/ns/eez/&gt;
+                  PREFIX wgs84: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+                  PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+"</pre>
+<p>Let’s write a query that gets all piracy events and the geographical region where these events took place.<br>
+The events are described in the <a href="http://www.cs.vu.nl/~guus/papers/Hage11b.pdf">Simple Event Model</a>, where events are linked to the places where they happen. In the case of the <a href="http://semanticweb.cs.vu.nl/lop/">Linked Open Piracy data set</a>, these places are categorized in regions with the <tt>eez:inPiracyRegion</tt> property. To gather all the events and their associated regions, you can use the following query and fire it by calling the SPARQL function. Every variable in the SPARQL query will correspond to a column in a result table data frame.</p>
+<pre>q &lt;- paste(sparql_prefix,
+  "SELECT *
+   WHERE {
+     ?event sem:hasPlace ?place .
+     ?place eez:inPiracyRegion ?region .
+   }")
+
+res &lt;- SPARQL(endpoint,q,ns=prefix,extra=options)$results
+
+res</pre>
+<pre># output:
+#                 event                    place                     region
+# 1  lop:event_2005_001 lop:place_event_2005_001     eez:Region_Middle_East
+# 2  lop:event_2005_002 lop:place_event_2005_002    eez:Region_India_Bengal
+# 3  lop:event_2005_003 lop:place_event_2005_003    eez:Region_India_Bengal
+# 4  lop:event_2005_004 lop:place_event_2005_004       eez:Region_Indonesia
+# 5  lop:event_2005_005 lop:place_event_2005_005       eez:Region_Indonesia
+# 6  lop:event_2005_006 lop:place_event_2005_006       eez:Region_Caribbean
+# 7  lop:event_2005_007 lop:place_event_2005_007    eez:Region_India_Bengal
+# 8  lop:event_2005_008 lop:place_event_2005_008       eez:Region_Indonesia
+# 9  lop:event_2005_009 lop:place_event_2005_009 eez:Region_South-East_Asia
+# 10 lop:event_2005_010 lop:place_event_2005_010   eez:Region_South_America
+# ...</pre>
+<h3>Visualizing counts with a table and pie chart</h3>
+<p>Now that we have some data we can count the number of events per region. This is accomplished with the <tt>table</tt> function applied to the region column. We can sort the table, and draw a pie chart in rainbow colors like this:</p>
+<pre>count_per_region &lt;- table(res$region)
+sorted_counts &lt;- sort(count_per_region)
+
+sorted_counts</pre>
+<pre># output:
+#   eez:Region_North_America          eez:Region_Europe       eez:Region_East_Asia
+#                          1                          4                         11
+#     eez:Region_Middle_East       eez:Region_Caribbean eez:Region_South-East_Asia
+#                         39                         86                         95
+#   eez:Region_South_America     eez:Region_West_Africa     eez:Region_East_Africa
+#                        103                        309                        354
+#    eez:Region_Gulf_of_Aden    eez:Region_India_Bengal       eez:Region_Indonesia
+#                        402                        455                        530</pre>
+<pre>pie(sorted_counts, col=rainbow(12))</pre>
+<p>This yields the following pie chart:</p>
+<p><a href="./lop_tutorial_files/piracy_pie.png"><img src="./lop_tutorial_files/piracy_pie.png" alt="" title="Event count per region pie chart" width="700" class="alignnone size-full wp-image-734"></a></p>
+<h3></h3>
+<h3>Visualizing two variables with a two-way table and a stacked barchart</h3>
+<p>With a little more effort you can plot a which types of events happen per region. To accomplish this we will have to adapt the query to also retrieve the type of event. The updated query looks like this:</p>
+<pre>q &lt;- paste(sparql_prefix,
+  "SELECT *
+   WHERE {
+     ?event sem:eventType ?event_type .
+     ?event sem:hasPlace ?place .
+     ?place eez:inPiracyRegion ?region .
+   }")
+res &lt;- SPARQL(endpoint,q,ns=prefix,extra=options)$results</pre>
+<p>You can do a conditional count table, in this case event type count per region like this:</p>
+<pre>event_region_table &lt;- table(res$event_type,res$region)</pre>
+<p>To plot this table with the appropriate margin and legend you can use the following three lines of code:</p>
+<pre>par(mar=c(4,10,1,1))
+barplot(event_region_table, col=rainbow(10), horiz=TRUE, las=1, cex.names=0.8)
+legend("topright", rownames(event_region_table),
+       cex=0.8, bty="n", fill=rainbow(10))</pre>
+<p>This yields the following stacked barchart:</p>
+<p><a href="./lop_tutorial_files/piracy_bar.png"><img src="./lop_tutorial_files/piracy_bar.png" alt="" title="Piracy event types per region stacked barchart" width="700" class="alignnone size-full wp-image-733"></a></p>
+<p>&nbsp;</p>
+<h3>Putting observations on a map</h3>
+<p>Now, if we want to see where these typed events actually happen in the world, we similarly extend the query to fetch the latitude and longitude of each event and use the <tt>ggmap</tt> package to plot them on the map with the same colors as before.</p>
+<pre>q &lt;- paste(sparql_prefix,
+  "SELECT *
+   WHERE {
+     ?event sem:eventType ?event_type .
+     ?event sem:hasPlace ?place .
+     ?place wgs84:lat ?lat .
+     ?place wgs84:long ?long .
+   }")
+res &lt;- SPARQL(endpoint,q,ns=prefix,extra=options)$results</pre>
+<p>We use the <tt>gmap</tt> function to fetch a Google map centered on the Gulf of Aden at zoom level 2. We tell the <tt>ggmap</tt> package to use the <tt>event_type</tt> column in the result data frame to determine the color and to the the <tt>lat</tt> and <tt>long</tt> columns to set the <i>x</i> and <i>y</i> coordinate on the map. with the <tt>geom_point</tt> function. The colors are set with the <tt>scale_color_manual</tt> function.</p>
+<pre>qmap('Gulf of Aden', zoom=2, legend='bottomright') +
+  geom_point(aes(x=long, y=lat, colour=event_type), data=res) +
+  scale_color_manual(values = rainbow(10))</pre>
+<p>With new versions of ggplot2 the legend does not work in the same way. For the sake of simplicity you can leave it away for the moment as follows:</p>
+<pre>qmap('Gulf of Aden', zoom=2) +
+  geom_point(aes(x=long, y=lat, colour=event_type), data=res) +
+  scale_color_manual(values = rainbow(10))</pre>
+<p>This yields the following map:<br>
+<a href="./lop_tutorial_files/piracy_map1.png"><img src="./lop_tutorial_files/piracy_map1.png" alt="" title="Piracy event plotted on a map, colored by event type" width="700" height="572" class="alignnone size-full wp-image-738"></a></p>
+<p>&nbsp;</p>
+<h3>Filtering literal values</h3>
+<p>The weaponry used by the pirates is not yet explicitly modeled in RDF in the Linked Open Piracy data set. However, the information IS contained in the textual descriptions of the events which are represented as RDFS comment fields. If we want to show where all the rocket propelled grenade launchers are used (called RPGs in navy lingo, and bazookas by the rest of us) you can narrow down the visualization with a regular expression on the textual description of the event. This can be done as follows:</p>
+<pre>q &lt;- paste(sparql_prefix,
+  "SELECT *
+   WHERE {
+     ?event rdfs:comment ?description .
+     FILTER regex(?description,'RPG','i')
+     ?event sem:eventType ?event_type .
+     ?event sem:hasPlace ?place .
+     ?place wgs84:lat ?lat .
+     ?place wgs84:long ?long .
+   }")
+res &lt;- SPARQL(endpoint,q,ns=prefix,extra=options)$results
+
+qmap('Gulf of Aden', zoom=2, legend='bottomright') +  # or "qmap('Gulf of Aden', zoom=2)" for new ggplot2 versions
+  geom_point(aes(x=long, y=lat, colour=event_type), data=res) +
+  scale_color_manual(values = rainbow(10))</pre>
+<p>This yields the following map:<br>
+<a href="./lop_tutorial_files/piracy_rpgs.png"><img src="./lop_tutorial_files/piracy_rpgs.png" alt="" title="Piracy events involving rocket propelled grenade launchers on a map, colored by event type" width="700" height="572" class="alignnone size-full wp-image-737"></a></p>
+<p>This makes it immediately clear that RPGs are involved mostly in (attempted) hijackings near Somalia. Most of the piracy occurs in Indonesia, but is clearly of an entirely different sort.</p>
+<p>&nbsp;</p>
+<h3>Computing correlations</h3>
+<p>Another thing you can do with the two-way tables you can create with the <tt>table</tt> function is compute correlations. For example, we could correlate regions in the world with respect to which kind of ships are attacked or what kind of piracy events happen there. The example below shows exactly these two kinds of correlation. First we collect the co-occurences of event types and regions and actor types and regions</p>
+<pre>q &lt;- paste(sparql_prefix,
+"SELECT ?event_type ?actor_type ?region
+   WHERE {
+     ?event sem:eventType ?event_type .
+     ?event sem:hasPlace ?place .
+     ?place eez:inPiracyRegion ?region .
+     ?event sem:hasActor ?actor .
+     ?actor sem:actorType ?actor_type .
+   }")
+res &lt;- SPARQL(endpoint,q,ns=prefix,extra=options)$results
+et_region &lt;- table(res$event_type,res$region)
+at_region &lt;- table(res$actor_type,res$region)</pre>
+<p>Now we will correlate regions with respect to which event types occur in these regions and show the Pearson correlation of all the regions with the region Gulf of Aden, sorted in decreasing order.</p>
+<pre>et_cor &lt;- cor(et_region, method='pearson')
+sort(et_cor['eez:Region_Gulf_of_Aden',], decreasing=TRUE)</pre>
+<pre># output:
+#    eez:Region_Gulf_of_Aden     eez:Region_East_Africa   eez:Region_North_America
+#                1.000000000                0.767785217                0.549721825
+#    eez:Region_India_Bengal     eez:Region_Middle_East          eez:Region_Europe
+#                0.434693409                0.191477407                0.069687244
+#       eez:Region_Indonesia       eez:Region_Caribbean     eez:Region_West_Africa
+#                0.028176481                0.004955375               -0.001138778
+# eez:Region_South-East_Asia   eez:Region_South_America       eez:Region_East_Asia
+#               -0.069604873               -0.098527227               -0.098686326</pre>
+<p>You can see that there is only one strongly correlated region, which is East Africa (out of the coast of Somalia). The rest is weakly correlated.<br>
+If we look at the correlation of the regions with respect to the types of ships that are attacked, we see a different picture.</p>
+<pre>at_cor &lt;- cor(at_region, method='pearson')
+sort(at_cor['eez:Region_Gulf_of_Aden',], decreasing=TRUE)</pre>
+<pre># output:
+#    eez:Region_Gulf_of_Aden    eez:Region_India_Bengal       eez:Region_Indonesia
+#                 1.00000000                 0.92107990                 0.91819311
+#       eez:Region_East_Asia     eez:Region_West_Africa     eez:Region_Middle_East
+#                 0.87295516                 0.84970719                 0.81460659
+#   eez:Region_South_America       eez:Region_Caribbean     eez:Region_East_Africa
+#                 0.69429767                 0.68776759                 0.68691583
+# eez:Region_South-East_Asia          eez:Region_Europe   eez:Region_North_America
+#                 0.68554899                 0.57979269                 0.01544673</pre>
+<p>Regions are much more similar with respect to the victim ship types. A region that stands out is Indonesia. Quite similar kinds of ships are attached as in the Gulf of Aden (big ships, although they are not underway but anchored, usually), but what happens to them is completely different (boarding and then theft, not hijacking).</p>
+<p>&nbsp;</p>
+<h3>Generalization using rdfs:subClassOf reasoning</h3>
+<p>Let’s say we want to see what kind of attacks happen to merchant ships (e.g. bulk carriers, tankers). What we can do to accomplish this is use RDFS subClassOf reasoning over the actor type to check whether the victim ship type is a kind of merchant vessel.</p>
+<pre>q &lt;- paste(sparql_prefix,
+  "SELECT *
+   WHERE {
+     ?event sem:eventType ?event_type .
+     ?event sem:hasActor ?actor .
+     ?actor sem:actorType ?actor_type .
+     ?actor_type rdfs:subClassOf poseidon:atype_merchant_vessel .
+   }")
+res &lt;- SPARQL(endpoint,q,ns=prefix,extra=paste(options,"entailment=rdfs"))$results
+
+mv_et_table &lt;- table(res$event_type)
+
+mv_et_table</pre>
+<pre># output:
+#      lop:etype_anchored     lop:etype_attempted       lop:etype_boarded    lop:etype_fired_upon
+#                       2                     474                     997                     383
+#      lop:etype_hijacked        lop:etype_moored lop:etype_not_specified        lop:etype_robbed
+#                     164                       3                       2                       6
+#    lop:etype_suspicious      lop:etype_underway
+#                      25                      26</pre>
+<p>&nbsp;</p>
+<h3>Using a statistical test to compare distributions</h3>
+<p>If we compare this to the number of events of other vessel types, we can do a chi-square test to see if this distribution is significantly different to the attacks on merchant vessels.</p>
+<pre>q &lt;- paste(sparql_prefix,
+  "SELECT *
+   WHERE {
+     ?event sem:eventType ?event_type .
+     ?event sem:hasActor ?actor .
+     ?actor sem:actorType ?actor_type .
+   }")
+res &lt;- SPARQL(endpoint,q,ns=prefix,extra=options)$results
+
+all_et_table &lt;- table(res$event_type)</pre>
+<p>Now we deduct the number of events on merchant vessels from the number of events on all vessels to get the number of attacks on non-merchant vessels. Now we can do a chi-square test to test the equivalence of <tt>mv_et_table</tt> and <tt>rest_et_table</tt>.</p>
+<pre>rest_et_table &lt;- all_et_table - mv_et_table
+
+rest_et_table</pre>
+<pre># output:
+#      lop:etype_anchored     lop:etype_attempted       lop:etype_boarded    lop:etype_fired_upon
+#                       0                      43                     166                      44
+#      lop:etype_hijacked        lop:etype_moored lop:etype_not_specified        lop:etype_robbed
+#                      77                       0                       2                       0
+#    lop:etype_suspicious      lop:etype_underway
+#                       7                       3</pre>
+<pre>chisq.test(mv_et_table,rest_et_table)</pre>
+<pre># output:
+#
+# Pearson's Chi-squared test
+#
+# data:  as.vector(rest) and as.vector(mv)
+# X-squared = 63.3333, df = 56, p-value = 0.2336</pre>
+<p>You can see that the probability of the difference between the two distributions is due to chance is 0.2336. At a confidence level of 0.05 this means we should conclude they are equal.</p>
+<h3>Wrap-up</h3>
+<p>In this tutorial we showed how to do simple visualizations of data in the Linked Open Piracy data set using the SPARQL Package for R. We also showed how to compute the Pearson correlation between two multinomial distributions (between two sets of counts of URIs) and how to do a statistical test, the chi-square test to determine whether or not the difference between two such distributions can be attributed to chance or not.</p>
+<p>&nbsp;</p>
+												<span class="edit-link"><a class="post-edit-link" href="http://linkedscience.org/wp-admin/post.php?post=731&action=edit" title="Edit Page">Edit</a></span>					</div><!-- .entry-content -->
+				</div><!-- #post-## -->
+
+				
+			<div id="comments">
+
+
+
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://linkedscience.org/tools/sparql-package-for-r/linked-open-piracy-tutorial/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://linkedscience.org/wp-comments-post.php" method="post" id="commentform">
+																			<p class="logged-in-as">Logged in as <a href="http://linkedscience.org/wp-admin/profile.php">willem.van.hage</a>. <a href="http://linkedscience.org/wp-login.php?action=logout&redirect_to=http%3A%2F%2Flinkedscience.org%2Ftools%2Fsparql-package-for-r%2Flinked-open-piracy-tutorial%2F&_wpnonce=d74f66e1ff" title="Log out of this account">Log out?</a></p>																			<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment">
+							<input type="hidden" name="comment_post_ID" value="731" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+						</p>
+						<input type="hidden" id="_wp_unfiltered_html_comment" name="_wp_unfiltered_html_comment" value="65766aba3f">					</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" action="http://linkedscience.org/">
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s">
+	<input type="submit" id="searchsubmit" value="Search">
+	</div>
+	</form></li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+				<li><a href="http://linkedscience.org/2012/09/11/linked-data-for-escience-services-life-project-2-positions-in-geoinformatics-at-post-docphd-student-level/" title="Linked Data for eScience Services (LIFE) project: 2 Positions in Geoinformatics at Post-Doc/PhD Student Level">Linked Data for eScience Services (LIFE) project: 2 Positions in Geoinformatics at Post-Doc/PhD Student Level</a></li>
+				<li><a href="http://linkedscience.org/2012/08/24/ten-papers-accepted-for-the-linked-science-2012/" title="Ten Papers Accepted for the Linked Science 2012">Ten Papers Accepted for the Linked Science 2012</a></li>
+				<li><a href="http://linkedscience.org/2012/06/18/tutorial-on-linked-science-at-ekaw2012/" title="Tutorial on Linked Science at EKAW2012">Tutorial on Linked Science at EKAW2012</a></li>
+				<li><a href="http://linkedscience.org/2012/05/29/demo-and-poster-today-eswc2012/" title="Demo and Poster today @ESWC2012">Demo and Poster today @ESWC2012</a></li>
+				<li><a href="http://linkedscience.org/2012/05/17/613/" title="2nd International Workshop on Linked Science 2012—Tackling Big Data will be arranged in Boston, USA">2nd International Workshop on Linked Science 2012—Tackling Big Data will be arranged in Boston, USA</a></li>
+				</ul>
+		</li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href="http://linkedscience.org/2012/09/" title="September 2012">September 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/08/" title="August 2012">August 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/06/" title="June 2012">June 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/05/" title="May 2012">May 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/04/" title="April 2012">April 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/03/" title="March 2012">March 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/02/" title="February 2012">February 2012</a></li>
+	<li><a href="http://linkedscience.org/2011/12/" title="December 2011">December 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/10/" title="October 2011">October 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/09/" title="September 2011">September 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/08/" title="August 2011">August 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/05/" title="May 2011">May 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/04/" title="April 2011">April 2011</a></li>
+		</ul>
+</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://linkedscience.org/category/announcement/" title="View all posts filed under Announcement">Announcement</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://linkedscience.org/category/award/" title="View all posts filed under Award">Award</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://linkedscience.org/category/brazilian-amazon-rainforest/" title="View all posts filed under Brazilian Amazon Rainforest">Brazilian Amazon Rainforest</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="http://linkedscience.org/category/call-for-papers/" title="View all posts filed under Call for Papers">Call for Papers</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="http://linkedscience.org/category/challenge/" title="View all posts filed under Challenge">Challenge</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://linkedscience.org/category/contest/" title="View all posts filed under Contest">Contest</a>
+</li>
+	<li class="cat-item cat-item-81"><a href="http://linkedscience.org/category/demo/" title="View all posts filed under Demo">Demo</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://linkedscience.org/category/gis/" title="View all posts filed under GIS">GIS</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://linkedscience.org/category/giscience/" title="View all posts filed under GIScience">GIScience</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://linkedscience.org/category/large-geospatial-applications/" title="View all posts filed under Large Geospatial Applications">Large Geospatial Applications</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://linkedscience.org/category/linked-science/" title="View all posts filed under Linked Science">Linked Science</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://linkedscience.org/category/linked-spatiotemporal-data/" title="View all posts filed under Linked Spatiotemporal Data">Linked Spatiotemporal Data</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://linkedscience.org/category/maps/" title="View all posts filed under Maps">Maps</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://linkedscience.org/category/multidisciplinary-research/" title="View all posts filed under Multidisciplinary Research">Multidisciplinary Research</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="http://linkedscience.org/category/poster/" title="View all posts filed under Poster">Poster</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://linkedscience.org/category/r/" title="View all posts filed under R">R</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://linkedscience.org/category/sparql/" title="View all posts filed under SPARQL">SPARQL</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://linkedscience.org/category/spatiotemporal-data-handling/" title="View all posts filed under Spatiotemporal Data Handling">Spatiotemporal Data Handling</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://linkedscience.org/category/spatiotemporal-information/" title="View all posts filed under Spatiotemporal Information">Spatiotemporal Information</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://linkedscience.org/category/statistical-computing/" title="View all posts filed under Statistical Computing">Statistical Computing</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://linkedscience.org/category/tutorial/" title="View all posts filed under Tutorial">Tutorial</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://linkedscience.org/category/workshop/" title="View all posts filed under Workshop">Workshop</a>
+</li>
+		</ul>
+</li><li id="tag_cloud-3" class="widget-container widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href="http://linkedscience.org/tag/analysis/" class="tag-link-39" title="1 topic" style="font-size: 8pt;">Analysis</a>
+<a href="http://linkedscience.org/tag/big-data/" class="tag-link-33" title="5 topics" style="font-size: 15.636363636364pt;">Big Data</a>
+<a href="http://linkedscience.org/tag/big-data-analytics/" class="tag-link-47" title="2 topics" style="font-size: 10.863636363636pt;">Big Data Analytics</a>
+<a href="http://linkedscience.org/tag/big-data-conference/" class="tag-link-46" title="2 topics" style="font-size: 10.863636363636pt;">Big Data Conference</a>
+<a href="http://linkedscience.org/tag/boston/" class="tag-link-74" title="2 topics" style="font-size: 10.863636363636pt;">Boston</a>
+<a href="http://linkedscience.org/tag/brazilian-amazon-rainforest/" class="tag-link-18" title="1 topic" style="font-size: 8pt;">Brazilian Amazon Rainforest</a>
+<a href="http://linkedscience.org/tag/buildings/" class="tag-link-45" title="1 topic" style="font-size: 8pt;">Buildings</a>
+<a href="http://linkedscience.org/tag/community/" class="tag-link-10" title="1 topic" style="font-size: 8pt;">community</a>
+<a href="http://linkedscience.org/tag/data-challenge/" class="tag-link-37" title="1 topic" style="font-size: 8pt;">Data Challenge</a>
+<a href="http://linkedscience.org/tag/data-mining/" class="tag-link-35" title="1 topic" style="font-size: 8pt;">Data Mining</a>
+<a href="http://linkedscience.org/tag/eswc2012/" class="tag-link-68" title="2 topics" style="font-size: 10.863636363636pt;">ESWC2012</a>
+<a href="http://linkedscience.org/tag/executable-paper/" class="tag-link-11" title="1 topic" style="font-size: 8pt;">executable paper</a>
+<a href="http://linkedscience.org/tag/geoprocessing/" class="tag-link-26" title="1 topic" style="font-size: 8pt;">Geoprocessing</a>
+<a href="http://linkedscience.org/tag/gibda2012/" class="tag-link-38" title="2 topics" style="font-size: 10.863636363636pt;">GIBDA2012</a>
+<a href="http://linkedscience.org/tag/giscience/" class="tag-link-34" title="3 topics" style="font-size: 12.772727272727pt;">GIScience</a>
+<a href="http://linkedscience.org/tag/google-earth/" class="tag-link-43" title="1 topic" style="font-size: 8pt;">Google Earth</a>
+<a href="http://linkedscience.org/tag/ifgi/" class="tag-link-7" title="1 topic" style="font-size: 8pt;">ifgi</a>
+<a href="http://linkedscience.org/tag/iswc2012/" class="tag-link-72" title="2 topics" style="font-size: 10.863636363636pt;">ISWC2012</a>
+<a href="http://linkedscience.org/tag/linked-data/" class="tag-link-4" title="10 topics" style="font-size: 19.772727272727pt;">Linked Data</a>
+<a href="http://linkedscience.org/tag/linked-open-science/" class="tag-link-8" title="2 topics" style="font-size: 10.863636363636pt;">linked open science</a>
+<a href="http://linkedscience.org/tag/linked-science/" class="tag-link-3" title="14 topics" style="font-size: 22pt;">Linked Science</a>
+<a href="http://linkedscience.org/tag/linked-spatiotemporal-data/" class="tag-link-19" title="1 topic" style="font-size: 8pt;">Linked Spatiotemporal Data</a>
+<a href="http://linkedscience.org/tag/lisc2011/" class="tag-link-16" title="4 topics" style="font-size: 14.363636363636pt;">LISC2011</a>
+<a href="http://linkedscience.org/tag/lisc2012/" class="tag-link-73" title="2 topics" style="font-size: 10.863636363636pt;">LISC2012</a>
+<a href="http://linkedscience.org/tag/lodum/" class="tag-link-42" title="3 topics" style="font-size: 12.772727272727pt;">LODUM</a>
+<a href="http://linkedscience.org/tag/map/" class="tag-link-30" title="1 topic" style="font-size: 8pt;">map</a>
+<a href="http://linkedscience.org/tag/maps/" class="tag-link-28" title="2 topics" style="font-size: 10.863636363636pt;">Maps</a>
+<a href="http://linkedscience.org/tag/ontology/" class="tag-link-14" title="3 topics" style="font-size: 12.772727272727pt;">Ontology</a>
+<a href="http://linkedscience.org/tag/open-science/" class="tag-link-9" title="3 topics" style="font-size: 12.772727272727pt;">open science</a>
+<a href="http://linkedscience.org/tag/open-source/" class="tag-link-12" title="1 topic" style="font-size: 8pt;">open source</a>
+<a href="http://linkedscience.org/tag/productivity/" class="tag-link-44" title="1 topic" style="font-size: 8pt;">Productivity</a>
+<a href="http://linkedscience.org/tag/r/" class="tag-link-5" title="3 topics" style="font-size: 12.772727272727pt;">R</a>
+<a href="http://linkedscience.org/tag/schema/" class="tag-link-27" title="3 topics" style="font-size: 12.772727272727pt;">Schema</a>
+<a href="http://linkedscience.org/tag/sparql/" class="tag-link-6" title="4 topics" style="font-size: 14.363636363636pt;">SPARQL</a>
+<a href="http://linkedscience.org/tag/spatial-data-visualization/" class="tag-link-32" title="1 topic" style="font-size: 8pt;">spatial data visualization</a>
+<a href="http://linkedscience.org/tag/spatiotemporal-data/" class="tag-link-25" title="1 topic" style="font-size: 8pt;">Spatiotemporal Data</a>
+<a href="http://linkedscience.org/tag/spatiotemporal-information/" class="tag-link-22" title="1 topic" style="font-size: 8pt;">Spatiotemporal Information</a>
+<a href="http://linkedscience.org/tag/time-series/" class="tag-link-31" title="1 topic" style="font-size: 8pt;">time series</a>
+<a href="http://linkedscience.org/tag/triangle-of-sustainability/" class="tag-link-57" title="2 topics" style="font-size: 10.863636363636pt;">Triangle of Sustainability</a>
+<a href="http://linkedscience.org/tag/tutorial/" class="tag-link-17" title="2 topics" style="font-size: 10.863636363636pt;">Tutorial</a>
+<a href="http://linkedscience.org/tag/universities/" class="tag-link-41" title="1 topic" style="font-size: 8pt;">Universities</a>
+<a href="http://linkedscience.org/tag/usa/" class="tag-link-75" title="2 topics" style="font-size: 10.863636363636pt;">USA</a>
+<a href="http://linkedscience.org/tag/vgi/" class="tag-link-36" title="1 topic" style="font-size: 8pt;">VGI</a>
+<a href="http://linkedscience.org/tag/visualization/" class="tag-link-40" title="1 topic" style="font-size: 8pt;">Visualization</a>
+<a href="http://linkedscience.org/tag/vocabulary/" class="tag-link-13" title="3 topics" style="font-size: 12.772727272727pt;">Vocabulary</a></div>
+</li><li id="wp_twitter_goodies_profile_widgets" class="widget-container widget_wp_twitter_goodies_profile"><h3 class="widget-title">Following @LinkedScience</h3><script src="./lop_tutorial_files/widget.js"></script><script>new TWTR.Widget({  version: 2,  type: 'profile',  rpp: 30,  interval: 5000,  width: 200,  height: 600,  theme: {    shell: {      background: '#1F0C0C',      color: '#FFFFFF'    },    tweets: {      background: '#F7FFFB',      color: '#3B3B3B',      links: '#316329'    }  },  features: {    scrollbar: false,    loop: true,    live: true,    hashtags: true,    timestamp: true,    avatars: false,    behavior: 'default'  }}).render().setUser('LinkedScience').start();</script><div class="twtr-widget twtr-widget-profile" id="twtr-widget-1"><div class="twtr-doc" style="width: 200px;">            <div class="twtr-hd"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-profile-img-anchor"><img alt="profile" class="twtr-profile-img" src="./lop_tutorial_files/linkedsciencedororg_normal.png"></a>                      <h3>Tomi Kauppinen</h3>                      <h4><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience">LinkedScience</a></h4>             </div>            <div class="twtr-bd">              <div class="twtr-timeline" style="height: 600px;">                <div class="twtr-tweets">                  <div class="twtr-reference-tweet"></div><div id="tweet-id-2" class="twtr-tweet" style="opacity: 1; height: 94px; -webkit-transition: opacity 0.5s ease-out; "><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./lop_tutorial_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> RT <a class="tweet-url username" data-screen-name="openculture" href="http://twitter.com/openculture" target="_blank">@openculture</a>: Richard Feynman Explains Where Trees Actually Come From and How Fire Works. <a href="http://t.co/g0RksLdA" target="_blank" urlentities="[object Object]" rel="nofollow">cultr.me/QrT8ru</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Thu Sep 27 20:18:26 +0000 2012" href="https://twitter.com/LinkedScience/status/251415523672334336">7 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=251415523672334336">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=251415523672334336">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=251415523672334336">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-1" class="twtr-tweet"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./lop_tutorial_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> The Brazilian Amazon data is back online after changes in our <a href="http://twitter.com/search?q=%23LinkedData" title="#LinkedData" class="tweet-url hashtag" target="_blank">#LinkedData</a> platform! <a href="http://t.co/MqxFjuqv" target="_blank" urlentities="[object Object]" rel="nofollow">linkedscience.org/data/linked-br…</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Thu Sep 13 09:29:38 +0000 2012" href="https://twitter.com/LinkedScience/status/246178815481638912">22 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=246178815481638912">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=246178815481638912">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=246178815481638912">favorite</a>             </em>           </p>         </div>       </div></div>                  <!-- tweets show here -->                </div>              </div>            </div>            <div class="twtr-ft">              <div><a target="_blank" href="https://twitter.com/"><img alt="" src="./lop_tutorial_files/widget-bird.png"></a>                <span><a target="_blank" class="twtr-join-conv" style="color:#FFFFFF" href="https://twitter.com/LinkedScience">Join the conversation</a></span>              </div>            </div>          </div></div></li><li id="meta-2" class="widget-container widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+			<li><a href="http://linkedscience.org/wp-admin/">Site Admin</a></li>			<li><a href="http://linkedscience.org/wp-login.php?action=logout&_wpnonce=d74f66e1ff">Log out</a></li>
+			<li><a href="http://linkedscience.org/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://linkedscience.org/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://linkedscience.org/" title="LinkedScience.org" rel="home">
+					LinkedScience.org				</a>
+			</div><!-- #site-info -->
+
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<script type="text/javascript" src="./lop_tutorial_files/admin-bar.js"></script>
+		
+
+		
+
+
+
+
+<div id="wpadminbar" class="nojq " role="navigation">
+			<div class="quicklinks">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://linkedscience.org/wp-admin/about.php" title="About WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation" class=""><a class="ab-item" tabindex="10" href="http://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://linkedscience.org/wp-admin/">LinkedScience.org</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/">Dashboard</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-comments" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/edit-comments.php" title="1,958 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-1958">1,958</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://linkedscience.org/wp-admin/post-new.php" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-link" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/link-add.php">Link</a>		</li>
+		<li id="wp-admin-bar-new-page" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/post-new.php?post_type=page">Page</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-edit" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/post.php?post=731&action=edit">Edit Page</a>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class=" admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://linkedscience.org/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" tabindex="10" type="text" value="" maxlength="150"><input type="submit" class="adminbar-button" value="Search"></form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://linkedscience.org/wp-admin/profile.php" title="My Account">Howdy, willem.van.hage<img alt="" src="./lop_tutorial_files/0f9db61c38642fa9f6d6bb0e2583dc28" class="avatar avatar-16 photo" height="16" width="16"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class=" ab-submenu">
+		<li id="wp-admin-bar-user-info" class=""><a class="ab-item" tabindex="-1" href="http://linkedscience.org/wp-admin/profile.php"><img alt="" src="./lop_tutorial_files/0f9db61c38642fa9f6d6bb0e2583dc28(1)" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">willem.van.hage</span><span class="username">willem-van-hage</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-login.php?action=logout&_wpnonce=d74f66e1ff">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+		</div></body></html>

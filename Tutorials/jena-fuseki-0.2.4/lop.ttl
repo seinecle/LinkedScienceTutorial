@@ -1,0 +1,42 @@
+@prefix fuseki:  <http://jena.apache.org/fuseki#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix :        <#> .
+
+## ---------------------------------------------------------------
+## Updatable in-memory dataset.
+
+<#service1> rdf:type fuseki:Service ;
+        fuseki:name                       "ds" ;       # http://host:port/ds
+        fuseki:serviceQuery               "query" ;    # SPARQL query service
+        fuseki:serviceQuery               "sparql" ;   # SPARQL query service
+        fuseki:serviceUpdate              "update" ;   # SPARQL query service
+        fuseki:serviceUpload              "upload" ;   # Non-SPARQL upload service
+        fuseki:serviceReadWriteGraphStore "data" ;     # SPARQL Graph store protocol (read and write)
+        fuseki:serviceReadGraphStore      "get" ;      # SPARQL Graph store protocol (read only)
+        fuseki:dataset                   <#lop> ;
+        .
+
+<#lop> rdfs:label "Linked Open Piracy" ;
+        rdf:type ja:RDFDataset ;
+        ja:defaultGraph <#lopRDFS> .
+
+<#lopRDFS> rdfs:label "lop-rdfs" ;
+        a ja:InfModel ;
+        ja:baseModel <#lopRDF> ; 
+        ja:reasoner 
+            [ ja:reasonerURL <http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner> ] .
+
+<#lopRDF> rdfs:label "lop-rdf" ;
+        a ja:MemoryModel ;
+        ja:content [ ja:externalContent <file:LOP_data/piracy_eez.rdf> ] ;
+        ja:content [ ja:externalContent <file:LOP_data/piracy_imb.rdf> ] ;
+        ja:content [ ja:externalContent <file:LOP_data/piracy_nga.rdf> ] ;
+        ja:content [ ja:externalContent <file:LOP_data/piracy_nga_imb.rdf> ] ;
+        ja:content [ ja:externalContent <file:LOP_data/sem.rdf> ] ;
+        ja:content [ ja:externalContent <file:LOP_data/types_and_mappings.rdf> ] ;
+        ja:content [ ja:externalContent <file:LOP_data/geonames.rdf> ] ;
+        ja:content [ ja:externalContent <file:LOP_data/wordnet.rdf> ] .
+

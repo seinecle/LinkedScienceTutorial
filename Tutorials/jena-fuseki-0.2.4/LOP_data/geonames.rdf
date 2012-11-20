@@ -1,0 +1,1271 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY geo 'http://www.geonames.org/ontology#'>
+    <!ENTITY ns1 'http://www.w3.org/2003/01/geo/wgs84_pos#'>
+    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+
+<rdf:RDF
+    xmlns:geo="&geo;"
+    xmlns:ns1="&ns1;"
+    xmlns:owl="&owl;"
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+>
+<geo:Feature rdf:about="http://sws.geonames.org/1643084/"
+    geo:countryCode="ID"
+    geo:name="Indonesia"
+    geo:population="242968342"
+    ns1:lat="-5"
+    ns1:long="120">
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Dutch_East_Indies"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Indonesia"/>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1643084/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1643084/republic-of-indonesia.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1643084/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Indonesia</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1643084/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1733045/"
+    geo:countryCode="MY"
+    geo:name="Malaysia"
+    geo:population="28274729"
+    ns1:lat="2.5"
+    ns1:long="112.5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1733045/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1733045/malaysia.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1733045/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1733045/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Malaysia"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1605651/"
+    geo:countryCode="TH"
+    geo:name="Thailand"
+    geo:population="67089500"
+    ns1:lat="15"
+    ns1:long="100">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1605651/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1605651/kingdom-of-thailand.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1605651/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Thailand</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1605651/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Thailand"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1880251/"
+    geo:countryCode="SG"
+    geo:name="Singapore"
+    geo:population="4701069"
+    ns1:lat="1.36667"
+    ns1:long="103.8">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1880251/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1880251/republic-of-singapore.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1880251/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Singapore</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1880251/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2086420/"
+    geo:countryCode="PG"
+    geo:name="Solomon Islands"
+    ns1:lat="-8"
+    ns1:long="159">
+  <geo:featureClass rdf:resource="&geo;T"/>
+  <geo:featureCode rdf:resource="&geo;T.ISLS"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2086420/solomon-islands.html"/>
+  <geo:nearbyFeatures rdf:resource="http://sws.geonames.org/2086420/nearby.rdf"/>
+  <geo:parentCountry rdf:resource="http://sws.geonames.org/2088628/"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/2088628/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2086420/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1562822/"
+    geo:countryCode="VN"
+    geo:name="Vietnam"
+    geo:population="89571130"
+    ns1:lat="16.16667"
+    ns1:long="107.83333">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1562822/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1562822/socialist-republic-of-vietnam.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1562822/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Vietnam</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1562822/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Vietnam"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1694008/"
+    geo:countryCode="PH"
+    geo:name="Philippines"
+    geo:population="99900177"
+    ns1:lat="13"
+    ns1:long="122">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1694008/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1694008/republic-of-the-philippines.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1694008/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Philippines</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1694008/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Philippines"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1821005/"
+    geo:name="Spratly Islands"
+    ns1:lat="10"
+    ns1:long="114">
+  <geo:featureClass rdf:resource="&geo;T"/>
+  <geo:featureCode rdf:resource="&geo;T.ISLS"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1821005/spratly-islands.html"/>
+  <geo:nearbyFeatures rdf:resource="http://sws.geonames.org/1821005/nearby.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6295630/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1821005/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/69543/"
+    geo:countryCode="YE"
+    geo:name="Yemen"
+    geo:population="23495361"
+    ns1:lat="15.5"
+    ns1:long="47.5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/69543/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/69543/republic-of-yemen.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/69543/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/69543/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Yemen"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/338010/"
+    geo:countryCode="ER"
+    geo:name="Eritrea"
+    geo:population="5792984"
+    ns1:lat="15"
+    ns1:long="39">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/338010/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/338010/state-of-eritrea.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/338010/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Eritrea</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/338010/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Eritrea"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/223816/"
+    geo:countryCode="DJ"
+    geo:name="Djibouti"
+    geo:population="740528"
+    ns1:lat="11.5"
+    ns1:long="42.5">
+  <geo:shortName xml:lang="en">Djibouti</geo:shortName>
+  <geo:shortName xml:lang="fr">Djibouti</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/223816/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/223816/republic-of-djibouti.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/223816/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/223816/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Djibouti"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/51537/"
+    geo:countryCode="SO"
+    geo:name="Somalia"
+    geo:population="10112453"
+    ns1:lat="6"
+    ns1:long="48">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/51537/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/51537/somalia.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/51537/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/51537/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Somalia"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/149590/"
+    geo:countryCode="TZ"
+    geo:name="Tanzania"
+    geo:population="41892895"
+    ns1:lat="-6"
+    ns1:long="35">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/149590/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/149590/united-republic-of-tanzania.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/149590/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/149590/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Tanzania"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/241170/"
+    geo:countryCode="SC"
+    geo:name="Seychelles"
+    geo:population="88340"
+    ns1:lat="-4.58333"
+    ns1:long="55.66667">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/241170/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/241170/republic-of-seychelles.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/241170/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/241170/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Seychelles"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/192950/"
+    geo:countryCode="KE"
+    geo:name="Kenya"
+    geo:population="40046566"
+    ns1:lat="1"
+    ns1:long="38">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/192950/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/192950/republic-of-kenya.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/192950/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/192950/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Kenya"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1036973/"
+    geo:countryCode="MZ"
+    geo:name="Mozambique"
+    geo:population="22061451"
+    ns1:lat="-18.25"
+    ns1:long="35">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1036973/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1036973/republic-of-mozambique.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1036973/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Mozambique</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1036973/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Mozambique"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1062947/"
+    geo:countryCode="MG"
+    geo:name="Madagascar"
+    geo:population="21281844"
+    ns1:lat="-20"
+    ns1:long="47">
+  <geo:shortName xml:lang="en">Madagascar</geo:shortName>
+  <geo:shortName xml:lang="fr">Madagascar</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1062947/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1062947/republic-of-madagascar.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1062947/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1062947/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Madagascar"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1024033/"
+    geo:countryCode="TF"
+    geo:name="Glorieuses Islands"
+    ns1:lat="-11.5"
+    ns1:long="47.33333">
+  <geo:featureClass rdf:resource="&geo;T"/>
+  <geo:featureCode rdf:resource="&geo;T.ISLS"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1024033/iles-glorieuses.html"/>
+  <geo:nearbyFeatures rdf:resource="http://sws.geonames.org/1024033/nearby.rdf"/>
+  <geo:parentADM1 rdf:resource="http://sws.geonames.org/6690916/"/>
+  <geo:parentCountry rdf:resource="http://sws.geonames.org/1546748/"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6690916/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1024033/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Glorioso_Islands"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/921930/"
+    geo:countryCode="KM"
+    geo:name="Comoro Islands"
+    ns1:lat="-12.16667"
+    ns1:long="44.25">
+  <geo:featureClass rdf:resource="&geo;T"/>
+  <geo:featureCode rdf:resource="&geo;T.ISLS"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/921930/comoro-islands.html"/>
+  <geo:nearbyFeatures rdf:resource="http://sws.geonames.org/921930/nearby.rdf"/>
+  <geo:parentCountry rdf:resource="http://sws.geonames.org/921929/"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/921929/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/921930/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1210997/"
+    geo:countryCode="BD"
+    geo:name="Bangladesh"
+    geo:population="156118464"
+    ns1:lat="24"
+    ns1:long="90">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1210997/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1210997/people-s-republic-of-bangladesh.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1210997/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1210997/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Bangladesh"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1269750/"
+    geo:countryCode="IN"
+    geo:name="India"
+    geo:population="1173108018"
+    ns1:lat="20"
+    ns1:long="77">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1269750/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1269750/republic-of-india.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1269750/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1269750/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/India"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/286963/"
+    geo:countryCode="OM"
+    geo:name="Oman"
+    geo:population="2967717"
+    ns1:lat="21"
+    ns1:long="57">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/286963/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/286963/sultanate-of-oman.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/286963/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Oman</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/286963/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Oman"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1227603/"
+    geo:countryCode="LK"
+    geo:name="Sri Lanka"
+    geo:population="21513990"
+    ns1:lat="7"
+    ns1:long="81">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1227603/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1227603/democratic-socialist-republic-of-sri-lanka.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1227603/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1227603/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Sri_Lanka"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1282028/"
+    geo:countryCode="MV"
+    geo:name="Maldives"
+    geo:population="395650"
+    ns1:lat="3.2"
+    ns1:long="73">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1282028/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1282028/republic-of-maldives.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1282028/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Maldives</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1282028/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Maldives"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1327865/"
+    geo:countryCode="MM"
+    geo:name="Myanmar [Burma]"
+    geo:population="53414374"
+    ns1:lat="22"
+    ns1:long="98">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1327865/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1327865/union-of-burma.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1327865/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="fr">Myanmar</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1327865/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Burma"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/934292/"
+    geo:countryCode="MU"
+    geo:name="Mauritius"
+    geo:population="1294104"
+    ns1:lat="-20.3"
+    ns1:long="57.58333">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/934292/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/934292/republic-of-mauritius.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/934292/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="pt">Maurício</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/934292/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Mauritius"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1168579/"
+    geo:countryCode="PK"
+    geo:name="Pakistan"
+    geo:population="184404791"
+    ns1:lat="30"
+    ns1:long="70">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1168579/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1168579/islamic-republic-of-pakistan.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1168579/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Pakistan</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1168579/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Pakistan"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2328926/"
+    geo:countryCode="NG"
+    geo:name="Nigeria"
+    geo:population="154000000"
+    ns1:lat="10"
+    ns1:long="8">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2328926/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2328926/federal-republic-of-nigeria.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2328926/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2328926/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Nigeria"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2420477/"
+    geo:countryCode="GN"
+    geo:name="Guinea"
+    geo:population="10324025"
+    ns1:lat="11"
+    ns1:long="-10">
+  <geo:shortName xml:lang="en">Guinea</geo:shortName>
+  <geo:shortName xml:lang="fr">Guinée</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2420477/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2420477/republic-of-guinea.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2420477/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2420477/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Guinea"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2300660/"
+    geo:countryCode="GH"
+    geo:name="Ghana"
+    geo:population="24339838"
+    ns1:lat="8.1"
+    ns1:long="-1.2">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2300660/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2300660/republic-of-ghana.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2300660/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2300660/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Ghana"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2233387/"
+    geo:countryCode="CM"
+    geo:name="Cameroon"
+    geo:population="19294149"
+    ns1:lat="6"
+    ns1:long="12">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2233387/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2233387/republic-of-cameroon.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2233387/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Cameroon</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2233387/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Cameroon"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2287781/"
+    geo:countryCode="CI"
+    geo:name="Ivory Coast"
+    geo:population="21058798"
+    ns1:lat="8"
+    ns1:long="-5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2287781/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2287781/republic-of-cote-d-ivoire.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2287781/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="fr">Côte d'Ivoire</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2287781/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/C%C3%B4te_d'Ivoire"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3351879/"
+    geo:countryCode="AO"
+    geo:name="Angola"
+    geo:population="13068161"
+    ns1:lat="-12.5"
+    ns1:long="18.5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3351879/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3351879/republic-of-angola.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3351879/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Angola</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3351879/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Angola"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2403846/"
+    geo:countryCode="SL"
+    geo:name="Sierra Leone"
+    geo:population="5245695"
+    ns1:lat="8.5"
+    ns1:long="-11.5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2403846/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2403846/republic-of-sierra-leone.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2403846/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2403846/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Sierra_Leone"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2260494/"
+    geo:countryCode="CG"
+    geo:name="Republic of the Congo"
+    geo:population="3039126"
+    ns1:lat="-1"
+    ns1:long="15">
+  <geo:shortName xml:lang="fr">Congo</geo:shortName>
+  <geo:shortName xml:lang="it">Congo</geo:shortName>
+  <geo:shortName xml:lang="no">Kongo-Brazzaville</geo:shortName>
+  <geo:shortName xml:lang="pt">Congo</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2260494/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2260494/republic-of-the-congo.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2260494/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2260494/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Republic_of_the_Congo"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2363686/"
+    geo:countryCode="TG"
+    geo:name="Togo"
+    geo:population="6587239"
+    ns1:lat="8"
+    ns1:long="1.16667">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2363686/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2363686/togolese-republic.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2363686/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Togo</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2363686/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Togo"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2542007/"
+    geo:countryCode="MA"
+    geo:name="Morocco"
+    geo:population="31627428"
+    ns1:lat="32"
+    ns1:long="-5">
+  <geo:shortName xml:lang="en">Morocco</geo:shortName>
+  <geo:shortName xml:lang="es">Marruecos</geo:shortName>
+  <geo:shortName xml:lang="fr">Maroc</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2542007/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2542007/kingdom-of-morocco.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2542007/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2542007/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Morocco"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2378080/"
+    geo:countryCode="MR"
+    geo:name="Mauritania"
+    geo:population="3205060"
+    ns1:lat="20"
+    ns1:long="-12">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2378080/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2378080/islamic-republic-of-mauritania.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2378080/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Mauritania</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2378080/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Mauritania"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2395170/"
+    geo:countryCode="BJ"
+    geo:name="Benin"
+    geo:population="9056010"
+    ns1:lat="9.5"
+    ns1:long="2.25">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2395170/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2395170/republic-of-benin.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2395170/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Benin</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2395170/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Benin"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2372248/"
+    geo:countryCode="GW"
+    geo:name="Guinea-Bissau"
+    geo:population="1565126"
+    ns1:lat="12"
+    ns1:long="-15">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2372248/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2372248/republic-of-guinea-bissau.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2372248/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Guinea-Bissau</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2372248/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Guinea-Bissau"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2309096/"
+    geo:countryCode="GQ"
+    geo:name="Equatorial Guinea"
+    geo:population="1014999"
+    ns1:lat="1.7"
+    ns1:long="10.5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2309096/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2309096/republic-of-equatorial-guinea.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2309096/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="es">Guinea Ecuatorial</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2309096/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Equatorial_Guinea"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2275384/"
+    geo:countryCode="LR"
+    geo:name="Liberia"
+    geo:population="3685076"
+    ns1:lat="6.5"
+    ns1:long="-9.5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2275384/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2275384/republic-of-liberia.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2275384/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2275384/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Liberia"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3932488/"
+    geo:countryCode="PE"
+    geo:name="Peru"
+    geo:population="29907003"
+    ns1:lat="-10"
+    ns1:long="-76">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3932488/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3932488/republic-of-peru.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3932488/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255150/"/>
+  <geo:shortName xml:lang="en">Peru</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3932488/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Peru"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3469034/"
+    geo:countryCode="BR"
+    geo:name="Brazil"
+    geo:population="201103330"
+    ns1:lat="-10"
+    ns1:long="-55">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3469034/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3469034/federative-republic-of-brazil.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3469034/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255150/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3469034/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Brazil"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3658394/"
+    geo:countryCode="EC"
+    geo:name="Ecuador"
+    geo:population="14790608"
+    ns1:lat="-2"
+    ns1:long="-77.5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3658394/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3658394/republic-of-ecuador.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3658394/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255150/"/>
+  <geo:shortName xml:lang="en">Ecuador</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3658394/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3625428/"
+    geo:countryCode="VE"
+    geo:name="Venezuela"
+    geo:population="27223228"
+    ns1:lat="8"
+    ns1:long="-66">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3625428/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3625428/bolivarian-republic-of-venezuela.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3625428/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255150/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3625428/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Venezuela"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3723988/"
+    geo:countryCode="HT"
+    geo:name="Haiti"
+    geo:population="9648924"
+    ns1:lat="19"
+    ns1:long="-72.41667">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3723988/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3723988/republic-of-haiti.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3723988/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255149/"/>
+  <geo:shortName xml:lang="en">Haiti</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3723988/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Haiti"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3489940/"
+    geo:countryCode="JM"
+    geo:name="Jamaica"
+    geo:population="2847232"
+    ns1:lat="18.25"
+    ns1:long="-77.5">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3489940/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3489940/jamaica.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3489940/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255149/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3489940/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3686110/"
+    geo:countryCode="CO"
+    geo:name="Colombia"
+    geo:population="44205293"
+    ns1:lat="4"
+    ns1:long="-72">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3686110/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3686110/republic-of-colombia.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3686110/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255150/"/>
+  <geo:shortName xml:lang="en">Colombia</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3686110/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Colombia"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3378535/"
+    geo:countryCode="GY"
+    geo:name="Guyana"
+    geo:population="748486"
+    ns1:lat="5"
+    ns1:long="-59">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3378535/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3378535/co-operative-republic-of-guyana.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3378535/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255150/"/>
+  <geo:shortName xml:lang="fr">Guyana</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3378535/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Guyana"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3624060/"
+    geo:countryCode="CR"
+    geo:name="Costa Rica"
+    geo:population="4516220"
+    ns1:lat="10"
+    ns1:long="-84">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3624060/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3624060/republic-of-costa-rica.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3624060/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255149/"/>
+  <geo:shortName xml:lang="en">Costa Rica</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3624060/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3508796/"
+    geo:countryCode="DO"
+    geo:name="Dominican Republic"
+    geo:population="9823821"
+    ns1:lat="19"
+    ns1:long="-70.66667">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3508796/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3508796/dominican-republic.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3508796/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255149/"/>
+  <geo:shortName xml:lang="es">República Dominicana</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3508796/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Dominican_Republic"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3580718/"
+    geo:countryCode="KY"
+    geo:name="Cayman Islands"
+    geo:population="44270"
+    ns1:lat="19.5"
+    ns1:long="-80.66667">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3580718/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLD"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3580718/cayman-islands.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3580718/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255149/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3580718/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/130758/"
+    geo:countryCode="IR"
+    geo:name="Iran"
+    geo:population="76923300"
+    ns1:lat="32"
+    ns1:long="53">
+  <geo:shortName xml:lang="es">Irán</geo:shortName>
+  <geo:shortName xml:lang="fr">Iran</geo:shortName>
+  <geo:shortName xml:lang="pt">Irã</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/130758/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/130758/islamic-republic-of-iran.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/130758/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/130758/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Iran"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/99237/"
+    geo:countryCode="IQ"
+    geo:name="Iraq"
+    geo:population="29671605"
+    ns1:lat="33"
+    ns1:long="44">
+  <geo:shortName xml:lang="en">Iraq</geo:shortName>
+  <geo:shortName xml:lang="es">Irak</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/99237/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/99237/republic-of-iraq.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/99237/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/99237/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Iraq"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/357994/"
+    geo:countryCode="EG"
+    geo:name="Egypt"
+    geo:population="80471869"
+    ns1:lat="27"
+    ns1:long="30">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/357994/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/357994/arab-republic-of-egypt.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/357994/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <geo:shortName xml:lang="en">Egypt</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/357994/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Egypt"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/285570/"
+    geo:countryCode="KW"
+    geo:name="Kuwait"
+    geo:population="2789132"
+    ns1:lat="29.5"
+    ns1:long="47.75">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/285570/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/285570/state-of-kuwait.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/285570/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <geo:shortName xml:lang="en">Kuwait</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/285570/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Kuwait"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/366755/"
+    geo:countryCode="SD"
+    geo:name="Sudan"
+    geo:population="35000000"
+    ns1:lat="16"
+    ns1:long="30">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/366755/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/366755/republic-of-the-sudan.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/366755/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/366755/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Sudan"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/102358/"
+    geo:countryCode="SA"
+    geo:name="Saudi Arabia"
+    geo:population="25731776"
+    ns1:lat="25"
+    ns1:long="45">
+  <geo:shortName xml:lang="en">Saudi Arabia</geo:shortName>
+  <geo:shortName xml:lang="es">Arabia Saudí</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/102358/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/102358/kingdom-of-saudi-arabia.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/102358/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/102358/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Saudi_Arabia"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3996063/"
+    geo:countryCode="MX"
+    geo:name="Mexico"
+    geo:population="112468855"
+    ns1:lat="23"
+    ns1:long="-102">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3996063/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3996063/mexico.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3996063/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255149/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3996063/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Mexico"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1814991/"
+    geo:countryCode="CN"
+    geo:name="China"
+    geo:population="1330044000"
+    ns1:lat="35"
+    ns1:long="105">
+  <geo:shortName xml:lang="ca">Xina</geo:shortName>
+  <geo:shortName xml:lang="de">China</geo:shortName>
+  <geo:shortName xml:lang="en">China</geo:shortName>
+  <geo:shortName xml:lang="es">China</geo:shortName>
+  <geo:shortName xml:lang="fr">Chine</geo:shortName>
+  <geo:shortName xml:lang="it">Cina</geo:shortName>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/China"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/People's_Republic_of_China"/>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1814991/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1814991/people-s-republic-of-china.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1814991/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1814991/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1668284/"
+    geo:countryCode="TW"
+    geo:name="Taiwan"
+    geo:population="22894384"
+    ns1:lat="24"
+    ns1:long="121">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1668284/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1668284/taiwan.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1668284/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255147/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1668284/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Taiwan"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/921811/"
+    geo:countryCode="YT"
+    geo:name="Mayotte"
+    ns1:lat="-12.83333"
+    ns1:long="45.16667">
+  <geo:featureClass rdf:resource="&geo;T"/>
+  <geo:featureCode rdf:resource="&geo;T.ISL"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/921811/mayotte.html"/>
+  <geo:nearbyFeatures rdf:resource="http://sws.geonames.org/921811/nearby.rdf"/>
+  <geo:parentCountry rdf:resource="http://sws.geonames.org/1024031/"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/1024031/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/921811/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2635167/"
+    geo:countryCode="GB"
+    geo:name="United Kingdom"
+    geo:population="62348447"
+    ns1:lat="54.75844"
+    ns1:long="-2.69531">
+  <geo:shortName xml:lang="ca">Regne Unit</geo:shortName>
+  <geo:shortName xml:lang="cy">Y Deyrnas Unedig</geo:shortName>
+  <geo:shortName xml:lang="es">Reino Unido</geo:shortName>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2635167/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2635167/united-kingdom-of-great-britain-and-northern-ireland.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2635167/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255148/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2635167/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/United_Kingdom"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/3017382/"
+    geo:countryCode="FR"
+    geo:name="France"
+    geo:population="64768389"
+    ns1:lat="46"
+    ns1:long="2">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/3017382/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/3017382/republic-of-france.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/3017382/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255148/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3017382/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/France"/>
+  <owl:sameAs rdf:resource="http://rdf.insee.fr/geo/PAYS_FR"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2088628/"
+    geo:countryCode="PG"
+    geo:name="Papua New Guinea"
+    geo:population="6064515"
+    ns1:lat="-6"
+    ns1:long="147">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/2088628/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2088628/independent-state-of-papua-new-guinea.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/2088628/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255151/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2088628/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Papua_New_Guinea"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/6690916/"
+    geo:countryCode="TF"
+    geo:name="Îles Éparses de l'océan Indien"
+    ns1:lat="-17.04333"
+    ns1:long="42.7448">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/6690916/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.ADM1"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/6690916/iles-eparses-de-l-ocean-indien.html"/>
+  <geo:parentCountry rdf:resource="http://sws.geonames.org/1546748/"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/1546748/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6690916/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/921929/"
+    geo:countryCode="KM"
+    geo:name="Comoros"
+    geo:population="773407"
+    ns1:lat="-12.23333"
+    ns1:long="44.44553">
+  <geo:shortName xml:lang="en">Comoros</geo:shortName>
+  <geo:shortName xml:lang="fr">Comores</geo:shortName>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Comoro_Islands"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Comoros"/>
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/921929/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLI"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/921929/union-of-the-comoros.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/921929/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/921929/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/6255150/"
+    geo:name="South America"
+    geo:population="357000000"
+    ns1:lat="-14.60485"
+    ns1:long="-57.65625">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/6255150/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;L"/>
+  <geo:featureCode rdf:resource="&geo;L.CONT"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/6255150/south-america.html"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6295630/"/>
+  <geo:shortName xml:lang="es">Sudamérica</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6255150/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/6255149/"
+    geo:name="North America"
+    ns1:lat="46.07323"
+    ns1:long="-100.54688">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/6255149/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;L"/>
+  <geo:featureCode rdf:resource="&geo;L.CONT"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/6255149/north-america.html"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6295630/"/>
+  <geo:shortName xml:lang="es">Norteamérica</geo:shortName>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6255149/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/6255147/"
+    geo:name="Asia"
+    geo:population="3812366000"
+    ns1:lat="29.84064"
+    ns1:long="89.29688">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/6255147/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;L"/>
+  <geo:featureCode rdf:resource="&geo;L.CONT"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/6255147/asia.html"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6295630/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6255147/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1024031/"
+    geo:countryCode="YT"
+    geo:name="Mayotte"
+    geo:population="159042"
+    ns1:lat="-12.83333"
+    ns1:long="45.16667">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1024031/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLD"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1024031/mayotte.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1024031/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255146/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1024031/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/6255148/"
+    geo:name="Europe"
+    ns1:lat="48.69096"
+    ns1:long="9.14062">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/6255148/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;L"/>
+  <geo:featureCode rdf:resource="&geo;L.CONT"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/6255148/europe.html"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6295630/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6255148/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/6255151/"
+    geo:name="Oceania"
+    ns1:lat="-18.31281"
+    ns1:long="138.51562">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/6255151/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;L"/>
+  <geo:featureCode rdf:resource="&geo;L.CONT"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/6255151/oceania.html"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6295630/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6255151/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/1546748/"
+    geo:countryCode="TF"
+    geo:name="French Southern Territories"
+    geo:population="140"
+    ns1:lat="-43"
+    ns1:long="67">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/1546748/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;A"/>
+  <geo:featureCode rdf:resource="&geo;A.PCLIX"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/1546748/territory-of-the-french-southern-and-antarctic-lands.html"/>
+  <geo:neighbouringFeatures rdf:resource="http://sws.geonames.org/1546748/neighbours.rdf"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6255152/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/1546748/about.rdf"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/French_Southern_and_Antarctic_Lands"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/6255146/"
+    geo:name="Africa"
+    ns1:lat="7.1881"
+    ns1:long="21.09375">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/6255146/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;L"/>
+  <geo:featureCode rdf:resource="&geo;L.CONT"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/6255146/africa.html"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6295630/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6255146/about.rdf"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/6255152/"
+    geo:name="Antarctica"
+    ns1:lat="-78.15856"
+    ns1:long="16.40626">
+  <geo:childrenFeatures rdf:resource="http://sws.geonames.org/6255152/contains.rdf"/>
+  <geo:featureClass rdf:resource="&geo;L"/>
+  <geo:featureCode rdf:resource="&geo;L.CONT"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/6255152/antarctica.html"/>
+  <geo:parentFeature rdf:resource="http://sws.geonames.org/6295630/"/>
+  <rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6255152/about.rdf"/>
+</geo:Feature>
+
+</rdf:RDF>

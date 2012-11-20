@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms 'http://purl.org/dc/terms/'>
+    <!ENTITY foaf 'http://xmlns.com/foaf/0.1/'>
+    <!ENTITY opmv 'http://purl.org/net/opmv/ns#'>
+    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+    <!ENTITY poseidon 'http://semanticweb.cs.vu.nl/poseidon/ns/instances/'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+]>
+
+<rdf:RDF
+    xmlns:dcterms="&dcterms;"
+    xmlns:foaf="&foaf;"
+    xmlns:opmv="&opmv;"
+    xmlns:owl="&owl;"
+    xmlns:poseidon="&poseidon;"
+    xmlns:rdf="&rdf;"
+>
+<dcterms:Agent rdf:about="http://www.few.vu.nl/~wrvhage/foaf.rdf#i"
+    foaf:name="Willem Robert van Hage">
+  <rdf:type rdf:resource="&opmv;Agent"/>
+  <foaf:homepage rdf:resource="http://www.few.vu.nl/~wrvhage"/>
+</dcterms:Agent>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_1">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_094"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_2">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_093"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_3">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_088"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_4">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_084"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_5">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_084"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_6">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_081"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_7">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_079"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_8">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_076"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_9">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_075"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_10">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_073"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_11">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_072"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_12">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_071"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_13">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_085"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_14">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_068"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_15">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_067"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_16">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_066"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_18">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_063"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_19">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_062"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_20">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_061"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_21">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_059"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_22">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_060"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_23">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_065"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_26">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_053"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_27">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_052"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_28">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_090"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_29">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_086"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_31">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_056"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_35">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_082"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_37">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_089"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_40">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_083"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&poseidon;event_mss_2010_42">
+  <owl:sameAs rdf:resource="&poseidon;event_2010_070"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="">
+  <dcterms:creator rdf:resource="http://www.few.vu.nl/~wrvhage/foaf.rdf#i"/>
+  <opmv:wasGeneratedAt rdf:resource="&poseidon;time%5F2011-10-05t18:04:49Z"/>
+  <opmv:wasGeneratedBy>
+    <opmv:Process>
+      <opmv:wasPerformedBy rdf:resource="http://eculture.cs.vu.nl/git/poseidon/?p=code.git;a=blob_plain;f=piracy/map_nga_imb.pl;hb=HEAD"/>
+    </opmv:Process>
+  </opmv:wasGeneratedBy>
+</rdf:Description>
+
+<opmv:Agent rdf:about="http://eculture.cs.vu.nl/git/poseidon/?p=code.git;a=blob_plain;f=piracy/map_nga_imb.pl;hb=HEAD"/>
+
+</rdf:RDF>

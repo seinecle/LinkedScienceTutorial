@@ -1,0 +1,1377 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+    <!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+    <!ENTITY wn20schema 'http://www.w3.org/2006/03/wn/wn20/schema/'>
+    <!ENTITY wn30 'http://purl.org/vocabularies/princeton/wn30/'>
+    <!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+
+<rdf:RDF
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+    xmlns:skos="&skos;"
+    xmlns:wn20schema="&wn20schema;"
+    xmlns:wn30="&wn30;"
+    xmlns:xsd="&xsd;"
+>
+<rdf:Description rdf:about="&wn30;synset-French_leave-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-Had_crime-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-Tazir_crime-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-abomination-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-abstraction-noun-6">
+  <rdfs:label xml:lang="en-us">abstraction</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-entity-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100002137</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-acquiring-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-act-noun-2">
+  <rdfs:label xml:lang="en-us">act</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100030358</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-acting-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-action-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-activity-noun-1">
+  <rdfs:label xml:lang="en-us">activity</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100407535</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-aid-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-amphibious_operation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-antiaircraft_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-armed_robbery-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-robbery-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-artillery_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-assumption-noun-7">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-attack-noun-1">
+  <rdfs:label xml:lang="en-us">attack</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100972621</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-attack-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-attempt-noun-1">
+  <rdfs:label xml:lang="en-us">attempt</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100786195</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-attribute-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-abstraction-noun-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-banzai_attack-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-barrage-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-barratry-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-batting-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-behavior-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-behavior-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-best-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-bid-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-biopiracy-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-blitz-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-boarding-noun-1">
+  <rdfs:label xml:lang="en-us">boarding</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100058337</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-bombing-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-breach_of_trust_with_fraudulent_intent-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-breaking_away-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-bribery-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-felony-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-broadside-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-brutalization-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-burglary-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-felony-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-burst-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-buzz-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-calibration-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-call_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-campaign-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-caper-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-robbery-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-capital_offense-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-capture-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-felony-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-causing-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-ceremony-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-ceremony-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-champerty-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-charge-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-cognition-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-psychological_feature-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-combined_operation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-communication-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-communication-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-abstraction-noun-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-concealment-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-concentrated_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-continuance-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-contribution-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-control-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-counterattack-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-counterfire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-counterpreparation_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-cover-noun-7">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-covert_operation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-crack-noun-9">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-creation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-crime-noun-1">
+  <rdfs:label xml:lang="en-us">crime</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100766234</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-crime-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-crossfire-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-cup_of_tea-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-cybercrime-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-dacoity-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-robbery-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-dekko-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-delivery-noun-7">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-demand-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-departure-noun-1">
+  <rdfs:label xml:lang="en-us">departure</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100042757</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-depravity-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-dereliction-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-derivation-noun-8">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-destruction_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-direct_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-disappearance-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-discovery-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-dishonesty-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-dismantling-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-dispatch-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-disposal-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-distributed_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-distribution-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-diversion-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-diversion-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-domesticity-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-education-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-egress-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-embezzlement-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-energizing-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-enjoyment-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-equalization-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-essay-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-event-noun-1">
+  <rdfs:label xml:lang="en-us">event</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-psychological_feature-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100029378</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-evil-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-evil_eye-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-exhumation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-exit-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-extortion-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-felony-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-falsification-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-farewell-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-felony-noun-1">
+  <rdfs:label xml:lang="en-us">felony</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100768701</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-fire-noun-2">
+  <rdfs:label xml:lang="en-us">fire</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100986938</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-follow-up-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-foray-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-forfeit-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-forgery-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-fraud-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-friendly_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-fun-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-fusillade-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-game-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-glance-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-grand_larceny-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-grazing_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-ground_attack-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-group-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-abstraction-noun-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-group_action-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-grouping-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-happening-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-harassing_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-heist-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-robbery-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-highjacking-noun-1">
+  <rdfs:label xml:lang="en-us">highjacking</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-robbery-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100783199</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-highway_robbery-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-robbery-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-hijack-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-hindrance-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-hire-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-hostile_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-implementation-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-inactivity-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-indirect_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-infliction-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-information_gathering-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-injury-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-injury-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-injustice-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-inside_job-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-interdiction_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-judgment-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-lamentation-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-landfall-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-sighting-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-larceny-noun-1">
+  <rdfs:label xml:lang="en-us">larceny</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-felony-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100780889</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-last-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-laughter-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-leadership-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-leaning-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-legitimation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-liberation-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-lipreading-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-sensing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-listening-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-sensing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-liveliness-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-look-noun-2">
+  <rdfs:label xml:lang="en-us">look</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-sensing-noun-2"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100877127</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-lookout-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-maintenance-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-makeup-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-malfeasance-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-malpractice-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-malpractice-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-malversation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-maneuver-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-market-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-mayhem-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-measure-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-abstraction-noun-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-measurement-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-might-have-been-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-migration-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-miracle-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-misbehavior-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-misdemeanor-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-misfeasance-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-mission-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-mitzvah-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-monitoring-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-observation-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-motivation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-psychological_feature-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-motivation-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-mug_s_game-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-music-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-mystification-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-naval_campaign-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-negotiation-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-neutralization_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-nonaccomplishment-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-nonevent-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-observation-noun-2">
+  <rdfs:label xml:lang="en-us">observation</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100879759</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-observed_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-occupation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-occupation-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-offense-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-operation-noun-11">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-operation-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-operation-noun-5">
+  <rdfs:label xml:lang="en-us">operation</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100955060</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-organization-noun-6">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-otherworld-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-abstraction-noun-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-peacekeeping-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-peek-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-penetration-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-perpetration-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-perturbation-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-perversion-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-petit_larceny-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-physical_entity-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-entity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-pilferage-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-piracy-noun-1">
+  <rdfs:label xml:lang="en-us">piracy</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-highjacking-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100783527</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-placement-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-pleasure-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-politics-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-power_play-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-practice-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-precession-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-preparation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-preparation_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-procedure-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-proclamation-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-production-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-propulsion-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-protection-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-provision-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-psychological_feature-noun-1">
+  <rdfs:label xml:lang="en-us">psychological feature</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-abstraction-noun-6"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100023100</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-psychological_operation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-puncture-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-racketeering-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-felony-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-radar_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-recovery-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-registration_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-rejection-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-relation-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-abstraction-noun-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-release-noun-9">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-representation-noun-10">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-residency-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-robbery-noun-1">
+  <rdfs:label xml:lang="en-us">robbery</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100781685</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-role-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-rolling-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-robbery-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-running_away-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-rustling-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-sailing-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-scheduled_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-scrutiny-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-search-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-searching_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-seeking-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-sensing-noun-2">
+  <rdfs:label xml:lang="en-us">sensing</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-sensory_activity-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100876874</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-sensory_activity-noun-1">
+  <rdfs:label xml:lang="en-us">sensory activity</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100876737</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-service-noun-11">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-set-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-abstraction-noun-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-shoplifting-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-shot-noun-15">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-shot-noun-16">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-sighting-noun-1">
+  <rdfs:label xml:lang="en-us">sighting</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-observation-noun-2"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100880269</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-sightseeing-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-sin-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-sin-noun-6">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-skimming-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-larceny-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-smell-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-sensing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-social_event-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-solo-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-space_walk-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-speech_act-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-squint-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-stare-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-stargazing-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-observation-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-statutory_offense-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-stay-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-stop-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-strafe-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-strike-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-striving-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-struggle-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-support-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-support-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-operation-noun-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-support-noun-8">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-supporting_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-suppressive_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-surprise_attack-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attack-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-takeoff-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-takeover_attempt-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-taste-noun-7">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-sensing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-terrorization-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-test-noun-4">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-test-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-thing-noun-8">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-entity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-thuggery-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-timekeeping-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-tort-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-touch-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-training-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-transgression-noun-1">
+  <rdfs:label xml:lang="en-us">transgression</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100745005</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-treason-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-trespass-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-turn-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-unobserved_fire-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-use-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-variation-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-verbalization-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-vice-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-vice_crime-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-victimless_crime-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-view-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-look-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-villainy-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-transgression-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-violation-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-wrongdoing-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-war_crime-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-crime-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-waste-noun-2">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-waste-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-wear-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-act-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-withdrawal-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-departure-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-work-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-works-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-worship-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-worst-noun-3">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30;synset-writing-noun-5">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-wrongdoing-noun-2">
+  <rdfs:label xml:lang="en-us">wrongdoing</rdfs:label>
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-activity-noun-1"/>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100732746</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="&wn30;synset-zap-noun-1">
+  <wn20schema:hyponymOf rdf:resource="&wn30;synset-event-noun-1"/>
+</rdf:Description>
+
+<wn20schema:NounSynset rdf:about="&wn30;synset-entity-noun-1">
+  <rdfs:label xml:lang="en-us">entity</rdfs:label>
+  <wn20schema:synsetId rdf:datatype="&xsd;integer">100001740</wn20schema:synsetId>
+</wn20schema:NounSynset>
+
+<rdf:Description rdf:about="http://semanticweb.cs.vu.nl/poseidon/ns/instances/etype_piracy">
+  <skos:closeMatch rdf:resource="&wn30;synset-piracy-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticweb.cs.vu.nl/poseidon/ns/instances/etype_fired_upon">
+  <skos:closeMatch rdf:resource="&wn30;synset-fire-noun-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticweb.cs.vu.nl/poseidon/ns/instances/etype_kidnapped">
+  <skos:closeMatch rdf:resource="&wn30;synset-boarding-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticweb.cs.vu.nl/poseidon/ns/instances/etype_robbed">
+  <skos:closeMatch rdf:resource="&wn30;synset-robbery-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticweb.cs.vu.nl/poseidon/ns/instances/etype_hijacked">
+  <skos:closeMatch rdf:resource="&wn30;synset-highjacking-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticweb.cs.vu.nl/poseidon/ns/instances/etype_attempted">
+  <skos:relatedMatch rdf:resource="&wn30;synset-attempt-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticweb.cs.vu.nl/poseidon/ns/instances/etype_boarded">
+  <skos:closeMatch rdf:resource="&wn30;synset-boarding-noun-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semanticweb.cs.vu.nl/poseidon/ns/instances/etype_suspicious">
+  <skos:closeMatch rdf:resource="&wn30;synset-sighting-noun-1"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/ -->
+<html dir="ltr" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>SPARQL Package for R / Gephi – Movie star graph visualization Tutorial | LinkedScience.org</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="./dbpedia_movie_tutorial_files/style.css">
+<link rel="pingback" href="http://linkedscience.org/xmlrpc.php">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » Feed" href="http://linkedscience.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » Comments Feed" href="http://linkedscience.org/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » SPARQL Package for R / Gephi – Movie star graph visualization Tutorial Comments Feed" href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/feed/">
+<link rel="stylesheet" id="admin-bar-css" href="./dbpedia_movie_tutorial_files/admin-bar.css" type="text/css" media="all">
+<script type="text/javascript" async="" src="./dbpedia_movie_tutorial_files/ga.js"></script><script type="text/javascript" src="./dbpedia_movie_tutorial_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://linkedscience.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://linkedscience.org/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="LODR4LS" href="http://linkedscience.org/events/lodr4ls/">
+<meta name="generator" content="WordPress 3.3">
+<link rel="canonical" href="./dbpedia_movie_tutorial_files/dbpedia_movie_tutorial.html">
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 28px !important; }
+	* html body { margin-top: 28px !important; }
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8367411-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link href="./dbpedia_movie_tutorial_files/widget.css" rel="stylesheet" type="text/css"><style type="text/css">#twtr-widget-1 .twtr-avatar { display: none; } #twtr-widget-1 .twtr-tweet-text { margin-left: 0; }</style><style type="text/css">#twtr-widget-1 .twtr-doc,                      #twtr-widget-1 .twtr-hd a,                      #twtr-widget-1 h3,                      #twtr-widget-1 h4 {            background-color: #1F0C0C !important;            color: #FFFFFF !important;          }          #twtr-widget-1 .twtr-tweet a {            color: #316329 !important;          }          #twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a,           #twtr-widget-1 .twtr-bd p {            color: #3B3B3B !important;          }          #twtr-widget-1 .twtr-new-results,           #twtr-widget-1 .twtr-results-inner,           #twtr-widget-1 .twtr-timeline {            background: #F7FFFB !important;          }</style></head>
+
+<body class="page page-id-854 page-child parent-pageid-149 page-template-default logged-in admin-bar">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://linkedscience.org/" title="LinkedScience.org" rel="home">LinkedScience.org</a>
+					</span>
+				</div>
+				<div id="site-description">interconnecting scientific assets!</div>
+
+										<img src="./dbpedia_movie_tutorial_files/linkedscience.png" width="940" height="198" alt="">
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li><a href="http://linkedscience.org/" title="Home">Home</a></li><li class="page_item page-item-87"><a href="http://linkedscience.org/events/">Events</a><ul class="children"><li class="page_item page-item-386"><a href="http://linkedscience.org/events/gibda2012/">GIBDA2012</a></li><li class="page_item page-item-69"><a href="http://linkedscience.org/events/lisc2011/">LISC2011</a></li><li class="page_item page-item-585"><a href="http://linkedscience.org/events/lisc2012/">LISC2012</a></li><li class="page_item page-item-802"><a href="http://linkedscience.org/events/lodr4ls/">LODR4LS</a></li><li class="page_item page-item-101"><a href="http://linkedscience.org/events/lssolo11/">LS@SOLO11</a></li><li class="page_item page-item-690"><a href="http://linkedscience.org/events/tolsci2012/">TOLSCI2012</a></li></ul></li><li class="page_item page-item-99"><a href="http://linkedscience.org/publications/">Publications</a></li><li class="page_item page-item-164 current_page_ancestor"><a href="http://linkedscience.org/tools/">Tools</a><ul class="children"><li class="page_item page-item-149 current_page_ancestor current_page_parent"><a href="http://linkedscience.org/tools/sparql-package-for-r/">SPARQL Package for R</a><ul class="children"><li class="page_item page-item-854 current_page_item"><a href="./dbpedia_movie_tutorial_files/dbpedia_movie_tutorial.html">SPARQL Package for R / Gephi – Movie star graph visualization Tutorial</a></li><li class="page_item page-item-731"><a href="http://linkedscience.org/tools/sparql-package-for-r/linked-open-piracy-tutorial/">SPARQL Package for R – Linked Open Piracy Tutorial</a></li><li class="page_item page-item-278"><a href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-part-i-using-the-sparql-package-in-r-to-handle-spatial-data/">Tutorial part I – Using the SPARQL Package in R to handle Spatial Linked Data</a></li><li class="page_item page-item-151"><a href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-on-sparql-package-for-r/">Tutorial part I – Using the SPARQL Package in R to handle Spatial Linked Data</a></li><li class="page_item page-item-220"><a href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-part-ii-calculating-deforestation-per-state/">Tutorial part II – Calculating Deforestation per State</a></li></ul></li></ul></li><li class="page_item page-item-109"><a href="http://linkedscience.org/vocabularies/">Vocabularies</a></li><li class="page_item page-item-263"><a href="http://linkedscience.org/data/">Data</a><ul class="children"><li class="page_item page-item-265"><a href="http://linkedscience.org/data/linked-brazilian-amazon-rainforest/">Linked Brazilian Amazon Rainforest</a></li><li class="page_item page-item-347"><a href="http://linkedscience.org/data/linked-haiti/">Linked Haiti</a></li><li class="page_item page-item-476"><a href="http://linkedscience.org/data/spatiallinkedscience/">spatial@linkedscience</a></li></ul></li><li class="page_item page-item-574"><a href="http://linkedscience.org/projects/">Projects</a><ul class="children"><li class="page_item page-item-576"><a href="http://linkedscience.org/projects/triangle-of-sustainability/">Triangle of Sustainability</a></li></ul></li><li class="page_item page-item-682"><a href="http://linkedscience.org/tutorials/">Tutorials</a></li><li class="page_item page-item-44"><a href="http://linkedscience.org/spatial/">Spatial</a></li><li class="page_item page-item-211"><a href="http://linkedscience.org/about/">About</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="post-854" class="post-854 page type-page status-publish hentry">
+											<h1 class="entry-title">SPARQL Package for R / Gephi – Movie star graph visualization Tutorial</h1>
+					
+					<div class="entry-content">
+						<p>By <a href="http://www.few.vu.nl/~wrvhage">Willem Robert van Hage</a>.</p>
+<p>This tutorial shows how to do a visual analysis with the <a href="http://gephi.org/">Gephi</a> graph visualization tool, and basic social network analysis with R of the data in the DBpedia repository about Hollywood movies. It makes use of the SPARQL Package for R and the igraph library. For other tutorials of how to use the SPARQL Package, check out the <a href="http://linkedscience.org/tools/sparql-package-for-r/linked-open-piracy-tutorial/">Linked Open Piracy tutorial</a> or the <a title="deforestation tutorial" href="http://linkedscience.org/2011/12/20/tutorial-on-sparql-package-for-r/">deforestation tutorial</a>.</p>
+<p>The SPARQL Package&nbsp;allows you to directly import results of SPARQL SELECT queries into the statistical environment of R as a data frame. That means you can directly perform statistical analysis on data sets on the web. For example, you can use the following R code to get data from the&nbsp;<a href="http://live.dbpedia.org/sparql">DBpedia Live</a>&nbsp;SPARQL end point described below.<br>
+The complete R script and Gephi instructions can be downloaded here: <a href="http://linkedscience.org/wp-content/uploads/2012/10/dbpedia_movie_tutorial.zip">dbpedia_movie_tutorial.zip</a>.</p>
+<h3>Accessing the data</h3>
+<p>At first, make sure that you have recent versions of the two R packages&nbsp;<a title="SPARQL package on CRAN" href="http://cran.r-project.org/web/packages/SPARQL/index.html">SPARQL</a>, <a title="igraph package on CRAN" href="http://cran.r-project.org/web/packages/igraph/index.html">igraph</a>, <a title="network package on CRAN" href="http://cran.r-project.org/web/packages/network/index.html">network</a>, and <a title="ergm package on CRAN" href="http://cran.r-project.org/web/packages/ergm/index.html">ergm</a>&nbsp;installed.<br>
+You can accomplish this by running the following command:</p>
+<pre>install.packages(c('SPARQL','igraph','network','ergm'),dependencies=TRUE)</pre>
+<p>Now load the packages by calling:</p>
+<pre>library(SPARQL)
+library(igraph)
+library(network)
+library(ergm)</pre>
+<p>Define the endpoint that will provide you with the triples by</p>
+<pre>endpoint &lt;- "http://live.dbpedia.org/sparql"</pre>
+<p>State that there are no further options to send to the SPARQL server. These options are sent as HTTP parameters and differ per end point. For example, Jena Fuseki can take the option “output=xml” to dictate that it should return XML, SWI-Prolog Cliopatria can take “entailment=rdfs” or “entailment=none” to state which kind of reasoning to apply.</p>
+<pre>options &lt;- NULL</pre>
+<p>For a local Jena Fuseki installation hosting the same data in the LOP graph you can use the following options (uncommented, i.e., without the leading #):</p>
+<pre># endpoint &lt;- "http://localhost:3030/movie/sparql"
+# options &lt;- "output=xml"</pre>
+<p>To shorten the URIs of the data that we get back, use some namespace declarations like this</p>
+<pre>prefix &lt;- c("db","http://dbpedia.org/resource/")</pre>
+<pre>sparql_prefix &lt;- "PREFIX dbp: &lt;http://dbpedia.org/property/&gt;
+                  PREFIX dc: &lt;http://purl.org/dc/terms/&gt;
+                  PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+                  PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+"</pre>
+<p>Let’s write a query that gets all actors, the movies they star in, and the director and release date of those movies. Also, we only want American movies, names in english, and dates that are correct XML Schema dates (ISO dates). If you use the <tt>SPARQL</tt> function to fire the query, you will get back an R data frame that contains the results. Every variable in the SPARQL query will correspond to a column in a result table data frame.</p>
+<pre>q &lt;- paste(sparql_prefix,
+  'SELECT ?actor ?movie ?director ?movie_date
+   WHERE {
+     ?m dc:subject &lt;http://dbpedia.org/resource/Category:American_films&gt; .
+     ?m rdfs:label ?movie .
+     FILTER(LANG(?movie) = "en")
+     ?m dbp:released ?movie_date .
+     FILTER(DATATYPE(?movie_date) = xsd:date)
+     ?m dbp:starring ?a .
+     ?a rdfs:label ?actor .
+     FILTER(LANG(?actor) = "en")
+     ?m dbp:director ?d .
+     ?d rdfs:label ?director .
+     FILTER(LANG(?director) = "en")
+   }')
+
+res &lt;- SPARQL(endpoint,q,ns=prefix,extra=options)$results
+
+res</pre>
+<pre># output:
+#                   actor                  movie          director movie_date
+# 1 "Harland Williams"@en "Big Money Hustlas"@en "John Cafiero"@en  993506400
+# 2   "Jamie Spaniolo"@en "Big Money Hustlas"@en "John Cafiero"@en  993506400
+# 3     "Paul Methric"@en "Big Money Hustlas"@en "John Cafiero"@en  993506400
+# 4    "Joseph Utsler"@en "Big Money Hustlas"@en "John Cafiero"@en  993506400
+# 5   "Rudy Ray Moore"@en "Big Money Hustlas"@en "John Cafiero"@en  993506400
+# ...</pre>
+<p>The <tt>movie_date</tt> column contains some strange numbers. These are strange internal POSIX time representations. We can convert them to readable and usable times like this:</p>
+<pre>res$movie_date &lt;- as.Date(as.POSIXct(res$movie_date,origin="1970-01-01"))</pre>
+<pre># output:
+#                   actor                  movie          director movie_date
+# 1 "Harland Williams"@en "Big Money Hustlas"@en "John Cafiero"@en 2001-06-25
+# 2   "Jamie Spaniolo"@en "Big Money Hustlas"@en "John Cafiero"@en 2001-06-25
+# 3     "Paul Methric"@en "Big Money Hustlas"@en "John Cafiero"@en 2001-06-25
+# 4    "Joseph Utsler"@en "Big Money Hustlas"@en "John Cafiero"@en 2001-06-25
+# 5   "Rudy Ray Moore"@en "Big Money Hustlas"@en "John Cafiero"@en 2001-06-25
+# ...</pre>
+<p>That looks better!</p>
+<h3>Representing Actor-movie relations</h3>
+<p>Now that we have some data we can try and visualize it. Let’s try and visualize which actors star in which movies.<br>
+We will start by tallying which actors appear in which movies. This can be accomplished with the <tt>table</tt> function applied to the actor and movie columns of the result table. We want a matrix from actors to movies, containing a one when an actor stars in a movie, and a zero when he or she does not. This can be accomplished with the <tt>ifelse</tt> function, which is very similar to the <tt>IF</tt> function in Excel, and the conversion function <tt>as.matrix</tt>, which coverts the tally table to matrix.</p>
+<pre>actor_movie_matrix &lt;- as.matrix(ifelse(table(res$actor,res$movie) &gt; 0, 1, 0))</pre>
+<pre>actor_movie_matrix[5:8,6:8]  # just a little sample of the matrix
+# output:
+#                        "21 (2008 film)"@en "28 Days (film)"@en "5 Fingers"@en ...
+#   "Aaron Yoo"@en                         1                   0              0 ...
+#   "Abigail Breslin"@en                   0                   0              0 ...
+#   "Abraham Sofaer"@en                    0                   0              0 ...
+#   "Adam Goldberg"@en                     0                   0              0 ...
+#   ...</pre>
+<p>So apparently Aaron Yoo appears in the movie “21″ and Abigail Breslin does not.<br>
+We can convert the actor-movie matrix to an igraph incidence matrix with the following command:</p>
+<pre>a_m &lt;- graph.incidence(actor_movie_matrix)
+a_m</pre>
+<pre># output:
+#
+# IGRAPH UN-B 3256 3571 --
+# + attr: type (v/x), name (v/c)</pre>
+<p>This shows that we now have an undirected graph (UN), which is bipartite (B) or 2-mode, containing in total 3256 nodes and 3571 edges. The two modes of this bipartite graph are the set of actor nodes and the set of movie nodes. Nodes are called vertices in igraph. We can also see that there are currently two attributes in the graph, type and name. These are vertex attributes (v) and not edge attributes (e).</p>
+<p>Now let’s add the directors as a vertex attribute. First we’ll have to associate the movies to their directors. To accomplish this we follow the same procedure we used to associate actors to movies. We want things to be nice and simple again, so we remove all duplicate directors. This can be done by asking for the edge list of the graph and then removing movie-director pairs of movies that were already listed before.</p>
+<pre>movie_director_matrix &lt;- as.matrix(ifelse(table(res$movie,res$director) &gt; 0, 1, 0))
+el &lt;- get.edgelist(graph.incidence(movie_director_matrix))
+movie_directors &lt;- el[!duplicated(el[,1]),]</pre>
+<pre>movie_directors[1:10]
+# output:
+#
+# [1] "\"(Untitled) (film)\"@en"
+# [2] "\"10th &amp; Wolf\"@en"
+# [3] "\"2 Days in the Valley\"@en"
+# [4] "\"200 Motels\"@en"
+# [5] "\"2010 (film)\"@en"
+# ...</pre>
+<p>If we ask for a list of all vertices of <tt>a_m</tt> by calling the vertex selector <tt>V</tt> like this: <tt>V(a_m)</tt>, then we will first get all actor vertices, and then all the movie vertices.<br>
+You can assign vertex attributes by selecting the appropriate vertices with the vertex selector and then assigning a vector of values to the appropriate attribute name. The values will zip in place. Here is an example of how we give all nodes a unique number.</p>
+<pre>V(a_m)$number &lt;- seq(1,length(V(a_m)))</pre>
+<pre>a_m</pre>
+<pre># output:
+#
+# IGRAPH UN-B 3256 3571 --
+# + attr: type (v/x), name (v/c), number (v/n)</pre>
+<p>We have a new vertex attribute.</p>
+<pre>V(a_m)$number</pre>
+<pre># output:
+# [1] 1
+# [2] 2
+# [3] 3
+# ...</pre>
+<p>Nodes are now numbered. Let’s remove the attribute again.</p>
+<pre>a_m &lt;- remove.vertex.attribute(a_m,'number')</pre>
+<p>Now we want to assign the directors to the appropriate movies. We can do that by zipping it into the graph at the right spot. The movies will appear after the actors (because they are the second mode of the 2-mode graph), so if we know how many actors we have then we know at which vertex number the movies will be. Let’s count the number of actors and movies by inspecting the size of the incidence matrices. You can calculate the same thing by using the function <tt>unique</tt> on the result table columns. Let’s use that method to calculate how many directors there are.</p>
+<pre>n_actors &lt;- dim(actor_movie_matrix)[1]
+n_movies &lt;- dim(actor_movie_matrix)[2]
+n_directors &lt;- length(unique(res$director))</pre>
+<p>Now we will give all actors a “kind” attribute with value “actor”, all movies a “kind” attribute with value “movie”, and a “director” attribute with the appropriate director.<br>
+The command <tt>cbind</tt> makes a two-column matrix with the movies in the first column and the directors in the second column.</p>
+<pre>md &lt;- cbind(res$movie,res$director)
+movie_directors &lt;- md[!duplicated(md[,1]),]
+
+V(a_m)[1:n_actors]$kind &lt;- "actor"
+V(a_m)[n_actors+1:n_movies]$kind &lt;- "movie"
+V(a_m)[n_actors+1:n_movies]$director &lt;- movie_directors[,2]</pre>
+<p>We do the same for movie dates. When we visualize the graph, we would like to be able to view the date of the movie as a label of the movie. Gephi wants all label attributes to be strings, so we apply the <tt>as.character</tt> conversion function to all movie dates. We store the numeric date (for sorting or correlation later) too.</p>
+<pre>md &lt;- cbind(res$movie,res$date)
+movie_dates &lt;- md[!duplicated(md[,1]),]
+
+V(a_m)[n_actors+1:n_movies]$date_label &lt;- sapply(movie_dates,as.character)
+V(a_m)[n_actors+1:n_movies]$date_epoch &lt;- movie_dates</pre>
+<p>Gephi has problems rendering non-ASCII characters like “é”, so let’s throw them out to make the visualization work without too much fuss.</p>
+<pre>V(a_m)$name &lt;- iconv(V(a_m)$name,to='ASCII',sub="")
+V(a_m)$director &lt;- iconv(V(a_m)$director,to='ASCII',sub="")</pre>
+<p>Gephi recognizes some attributes automatically, like the vertex attribute “Label” and the edge attribute “Weight”. Let’s use the “name” attribute as label, by making a copy.</p>
+<pre>V(a_m)$Label &lt;- V(a_m)$name</pre>
+<p>Now it’s time to store the graph so that we can open it in Gephi. We will store it in GraphML, an XML schema for graphs.</p>
+<pre>write.graph(a_m,'starring_dbpedia_american.graphml',format="graphml")</pre>
+<h3>Visualizing Actor-movie relations</h3>
+<p>Now it’s time to open Gephi. I will not go into much detail on this, because Gephi has an easy Graphical User Interface, and putting screenshots in this tutorial would make it very long. Try to follow these instructions to make a nice graph:</p>
+<h4><a name="gephi_inst"></a>Gephi instructions</h4>
+<ol>
+<li>File &gt; Open “starring_dbpedia_american.graphml”</li>
+<li>Statistics &gt; PageRank Run</li>
+<li>Partition Reload</li>
+<li>Partition select kind</li>
+<li>Partition Apply</li>
+<li>Ranking &gt; Nodes select PageRank</li>
+<li>Ranking &gt; Nodes set Min size 10, Max size 100</li>
+<li>Ranking Apply</li>
+<li>Layout &gt; Yifan Hu Run. You need to scroll down in the section box. Run x4+, maybe increase initial step size to 100</li>
+<li>Layout &gt;ForceAtlas 2 select Prevent Overlap</li>
+<li>Layout &gt;ForceAtlas 2 Run (stop with the same button once it stabalizes)</li>
+<li>At the bottom of the Graph screen:</li>
+<li>Turn on Node Labels with the black “T”</li>
+<li>Set Node Label scaling to “Node size” with the black “A”</li>
+<li>Slide Node Label slider to lower label size</li>
+<li>Click the clipboard next to the Node Label slider, pick only “date”</li>
+</ol>
+<p>You will now have a nice graph of actors and movies, colored by the kind of node (actor/movie). You can see that the biggest influence on the clusters is the release date of the movies, and that DBpedia contains a lot of information about modern movies and some classics, but not much in the 1960s and 1970s.</p>
+<p><a href="./dbpedia_movie_tutorial_files/Screen-Shot-2012-09-28-at-20.24.58.png"><img class="alignnone size-full wp-image-873" title="Screen Shot 2012-09-28 at 20.24.58" alt="" src="./dbpedia_movie_tutorial_files/Screen-Shot-2012-09-28-at-20.24.58.png" width="700"></a></p>
+<h3>Representing actor-director relations</h3>
+<p>In this part of the tutorial we follow the same procedure again, but we will do some Linear Algebra to change the data for our needs.<br>
+Let’s try to show the place of the movie directors in the graph. For this we first make a movie-director incidence matrix. We already have an actor-matrix graph, which allows us to traverse from actors to movies. So if we have a movie-director graph we will be able to go from actors to movies to directors.</p>
+<pre>movie_director_matrix &lt;- as.matrix(ifelse(table(res$movie,res$director) &gt; 0, 1, 0))</pre>
+<p>Now let’s use matrix multiplication to calculate the actor-director matrix. Then we create the graph and assign some attributes as we did before.</p>
+<pre>actor_director_matrix &lt;- actor_movie_matrix %*% movie_director_matrix
+a_d &lt;- graph.incidence(actor_director_matrix,directed=FALSE,weighted=TRUE)
+
+V(a_d)[1:n_actors]$kind &lt;- "actor"
+V(a_d)[n_actors+1:n_directors]$kind &lt;- "director"
+
+V(a_d)$name &lt;- iconv(V(a_d)$name,to='ASCII',sub="")
+V(a_d)$Label &lt;- V(a_d)$name</pre>
+<p>By using the <tt>weighted=TRUE</tt> parameter we tell R to use the values in the matrix as edge weights. Let’s tell Gephi to use these weights, but let’s scale them from 0 to 1. We’ll use the edge selector <tt>E</tt> to get the edges.</p>
+<pre>E(a_d)</pre>
+<pre># output:
+# Edge sequence:
+#
+# [1] "Jim Sheridan"@en       -- "50 Cent"@en
+# [2] "Don Coscarelli"@en     -- "A. Michael Baldwin"@en
+# [3] "E. Elias Merhige"@en   -- "Aaron Eckhart"@en
+# [4] "Scott Hicks"@en        -- "Aaron Eckhart"@en
+# [5] "Kenny Ortega"@en       -- "Aaron Lohr"@en
+# ...</pre>
+<pre>E(a_d)$Weight &lt;- E(a_d)$weight / max(E(a_d)$weight)</pre>
+<p>Now we store the graph for use in Gephi.</p>
+<pre>write.graph(a_d,'actor_director_dbpedia_american.graphml',format="graphml")</pre>
+<p>That went a lot quicker than the first time, didn’t it?</p>
+<h3>Visualizing actor-director relations</h3>
+<p>Now let’s visualize the graph. We basically follow the same procedure as <a href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/#gephi_inst">before</a>. At the end we will try a different coloring, to make the communities stand out.</p>
+<h4>Gephi instructions</h4>
+<ol>
+<li>File &gt; Open “actor_director_dbpedia_american.graphml”</li>
+<li><a href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/#gephi_inst">Follow the same procedure as last time to produce the layout.</a></li>
+<li>Statistics &gt; Modularity Run</li>
+<li>Partition select Modularity Class</li>
+<li>Partition Apply</li>
+</ol>
+<p>You can see that some directors reuse the same cast over and over again, like Francis Ford Coppola and Woody Allen. Some actors work with many directors, while others only work with a few.</p>
+<p><a href="./dbpedia_movie_tutorial_files/Screen-Shot-2012-09-28-at-20.27.12.png"><img class="alignnone size-full wp-image-874" title="Screen Shot 2012-09-28 at 20.27.12" alt="" src="./dbpedia_movie_tutorial_files/Screen-Shot-2012-09-28-at-20.27.12.png" width="700"></a></p>
+<p>&nbsp;</p>
+<h3>Representing actor-actor costar relations</h3>
+<p>This has been interesting so far, but it has all been about visualization. Let’s try out some basic social network statistics. For this we take the classical 6 degrees of Kevin Bacon perspective on Hollywood. So the first step is to construct a adjacency graph of the costarring relation. We can accomplish this by taking the actor-movie matrix we constructed before, transposing it to a movie-actor matrix and then multiplying it with itself. This way we can traverse from actors to movies and then from movies to actors again, producing actor-actor relations.</p>
+<pre>costar_matrix &lt;- actor_movie_matrix %*% t(actor_movie_matrix)</pre>
+<p>We are not interested in reflexive links, because it is obvious that everybody costars with themselves. So let’s remove the numbers on the diagonal of the actor-actor matrix.</p>
+<pre>diag(costar_matrix) &lt;- 0</pre>
+<p>We now have to use a different graph construction function, because we’re dealing with an adjacency (or transition) matrix, which is a 1-mode graph, as opposed to an incidence matrix, which is a 2-mode (bipartite) graph.</p>
+<pre>a_a &lt;- graph.adjacency(costar_matrix,weighted=TRUE,mode="undirected")</pre>
+<p>Now let’s compute some SNA properties, like betweenness, edge betweenness and eigenvector centrality (Google PageRank is a kind of eigenvector centrality), and assign them to the nodes with aptly named attributes.</p>
+<pre>V(a_a)$betweenness &lt;- betweenness(a_a, directed=FALSE, normalized=TRUE)
+E(a_a)$betweenness &lt;- edge.betweenness(a_a, directed=FALSE)
+V(a_a)$centrality &lt;- evcent(a_a, weights=V(a_a)$weight)$vector</pre>
+<p>We can use these attributes for coloring and sizing in Gephi later. Let’s first look at Kevin Bacon. Where is Kevin Bacon?<br>
+To say it like a computer: His node is the node of which the node name is equal to Kevin Bacon.</p>
+<pre>kevin_bacon &lt;- V(a_a)[V(a_a)$name == '"Kevin Bacon"@en']</pre>
+<p>Now let’s calculate the length of the shortest path from each node to Kevin Bacon, and store that length in an attribute.</p>
+<pre>kevin_bacon_degree &lt;- shortest.paths(a_a,v=kevin_bacon,to=V(a_a))
+V(a_a)$kevin_bacon_degree &lt;- kevin_bacon_degree</pre>
+<p>We can now check if the statement that everybody that stars in a movie is 6 degrees of costarring or less away from Kevin Bacon.<br>
+To do this we make a histogram of the degrees and add up the percentages per bucket for the buckets representing degree 1 to 6.</p>
+<pre>kevin_bacon_hist &lt;- hist(V(a_a)$kevin_bacon_degree,xlab="degrees of Kevin Bacon",main="Six degrees of Kevin Bacon")</pre>
+<p><img alt="Kevin Bacon degree histogram" src="./dbpedia_movie_tutorial_files/kevin_bacon.png" width="700"></p>
+<pre>sum(kevin_bacon_hist$intensities[1:6])</pre>
+<pre># output:
+# [1] 0.9536082</pre>
+<p>Close enough. 95% of the actors in this dataset are within 6 degrees of Kevin Bacon. However, our dataset is incomplete. Movies without a nice date were excluded, so were movies without directors, and movies or stars without a label that was explicitly marked as english. So the actual percentage is different.<br>
+<b>DBpedia Live is a very fickle data set. Every day these results may vary. One movie page that gets removed from Wikipedia can completely change the Kevin Bacon degree distribution.</b></p>
+<p>Let’s see if the social network is a scale-free network. This is the case only if the degree distribution follows a power law with alpha between 2 and 3. Let’s calculate the distribution and fit a power law function to it.</p>
+<pre>dd &lt;- degree.distribution(a_a, cumulative=TRUE)
+plot(dd,log="xy",xlab="degree",ylab="cumulative frequency",main="Co-star degree distribution in Hollywood")</pre>
+<p><img alt="Degree distribution" src="./dbpedia_movie_tutorial_files/degree_plot.png"></p>
+<pre>d &lt;- degree(a_a)
+power.law.fit(d, xmin=1) # alpha include all the actors
+power.law.fit(d, xmin=10) # alpha not including the top 10 most popular actors</pre>
+<pre># output:
+# Coefficients:
+#    alpha
+# 1.423684
+# Warning message:
+# In power.law.fit(d, xmin = 1) : too small values eliminated from vector
+#
+# Coefficients:
+#    alpha
+# 3.363203
+# Warning message:
+# In power.law.fit(d, xmin = 10) : too small values eliminated from vector</pre>
+<p>The distribution is not that of a scale-free network. If we include all the actors then the alpha is too low. If we throw out the least popular people then the alpha is suddenly too high. The difference between the popular and non-popular actors is too large for it to be a scale-free network.</p>
+<p>Now, let’s store it and stare at the graph in Gephi.</p>
+<h3>Visualizing Kevin Bacon</h3>
+<p>Before, we did coloring of communities in Gephi by calling using the Modularity statistics tool. Let’s calculate modularity in R this time.<br>
+There are many community detectors in the igraph package (walktrap, spinglass, etc.) We use Leading Eigenvector communities. We store the number of the community each vertex belong to in the vertex attribute “lec_community”. Then we can use this attribute in Gephi to color the nodes.</p>
+<pre>V(a_a)$lec_community &lt;- as.character(leading.eigenvector.community(a_a)$membership)</pre>
+<p>Now let’s store the graph in GraphML.</p>
+<pre>E(a_a)$Weight &lt;- E(a_a)$weight
+V(a_a)$name &lt;- iconv(V(a_a)$name,to='ASCII',sub="")
+V(a_a)$Label &lt;- V(a_a)$name
+
+write.graph(a_a,'costarring_dbpedia_american.graphml',format="graphml")</pre>
+<p>To visualize the network we follow almost the same procedure as <a href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/#gephi_inst">before</a>, but we color the graph by LEC community by picking the attribute “lec_community” in the Partition pane. Also, we are going to experiment a bit with filters. In Gephi you can make sequences of node and edge filters by hooking them together in a drag-and-drop pane called “Filters”. Let’s throw out everybody who’s not in the Giant Component of the graph. For our undirected graph that is the largest connected component. This will throw out everybody with an undefined Kevin Bacon degree, because Kevin Bacon is in the Giant Component. If you want to apply more filters you can drag them into the subfilter slot of the Giant Component filter.</p>
+<h4>Gephi instructions</h4>
+<ol>
+<li>File &gt; Open “costarring_dbpedia_american.graphml”</li>
+<li>Drag Filters &gt; Library &gt; Topology &gt; Giant Component into the Queries</li>
+<li>Push Filter</li>
+<li>Partition Reload</li>
+<li>Partition select lec_community</li>
+<li>Partition Apply</li>
+<li>Continue as <a href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/#gephi_inst">before</a>.</li>
+</ol>
+<p><a href="./dbpedia_movie_tutorial_files/Screen-Shot-2012-09-29-at-08.57.55.png"><img class="alignnone size-full wp-image-875" title="Screen Shot 2012-09-29 at 08.57.55" alt="" src="./dbpedia_movie_tutorial_files/Screen-Shot-2012-09-29-at-08.57.55.png" width="700"></a></p>
+<h4>Gephi instructions</h4>
+<ol>
+<li>Ranking &gt; Nodes select kevin_bacon_degree</li>
+<li>Slide the white color triangle to about 1/3 from the left.<br>
+This increases the amount of white in the gradient.</li>
+<li>Ranking Apply</li>
+<li>Find Kevin Bacon!</li>
+</ol>
+<p><a href="./dbpedia_movie_tutorial_files/Screen-Shot-2012-09-29-at-08.59.44.png"><img class="alignnone size-full wp-image-876" title="Screen-Shot-2012-09-29-at-08.59.44" alt="" src="./dbpedia_movie_tutorial_files/Screen-Shot-2012-09-29-at-08.59.44.png" width="700"></a></p>
+<h3>Wrap-up</h3>
+<p>In this tutorial we showed how to do simple visualizations of social network data in the part of DBpedia about Hollywood movies using the SPARQL Package for R and Gephi. We also showed how to compute some simple graph statistics.<br>
+In the future this tutorial will be extended to show how you can convert graphs to network models that you can use in Exponential Random Graph Model analyses.</p>
+<p>&nbsp;</p>
+												<span class="edit-link"><a class="post-edit-link" href="http://linkedscience.org/wp-admin/post.php?post=854&action=edit" title="Edit Page">Edit</a></span>					</div><!-- .entry-content -->
+				</div><!-- #post-## -->
+
+				
+			<div id="comments">
+
+
+
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://linkedscience.org/wp-comments-post.php" method="post" id="commentform">
+																			<p class="logged-in-as">Logged in as <a href="http://linkedscience.org/wp-admin/profile.php">willem.van.hage</a>. <a href="http://linkedscience.org/wp-login.php?action=logout&redirect_to=http%3A%2F%2Flinkedscience.org%2Ftools%2Fsparql-package-for-r%2Fsparql-package-for-r-gephi-movie-star-graph-visualization-tutorial%2F&_wpnonce=d74f66e1ff" title="Log out of this account">Log out?</a></p>																			<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment">
+							<input type="hidden" name="comment_post_ID" value="854" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+						</p>
+						<input type="hidden" id="_wp_unfiltered_html_comment" name="_wp_unfiltered_html_comment" value="28f38d6a71">					</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" action="http://linkedscience.org/">
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s">
+	<input type="submit" id="searchsubmit" value="Search">
+	</div>
+	</form></li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+				<li><a href="http://linkedscience.org/2012/09/11/linked-data-for-escience-services-life-project-2-positions-in-geoinformatics-at-post-docphd-student-level/" title="Linked Data for eScience Services (LIFE) project: 2 Positions in Geoinformatics at Post-Doc/PhD Student Level">Linked Data for eScience Services (LIFE) project: 2 Positions in Geoinformatics at Post-Doc/PhD Student Level</a></li>
+				<li><a href="http://linkedscience.org/2012/08/24/ten-papers-accepted-for-the-linked-science-2012/" title="Ten Papers Accepted for the Linked Science 2012">Ten Papers Accepted for the Linked Science 2012</a></li>
+				<li><a href="http://linkedscience.org/2012/06/18/tutorial-on-linked-science-at-ekaw2012/" title="Tutorial on Linked Science at EKAW2012">Tutorial on Linked Science at EKAW2012</a></li>
+				<li><a href="http://linkedscience.org/2012/05/29/demo-and-poster-today-eswc2012/" title="Demo and Poster today @ESWC2012">Demo and Poster today @ESWC2012</a></li>
+				<li><a href="http://linkedscience.org/2012/05/17/613/" title="2nd International Workshop on Linked Science 2012—Tackling Big Data will be arranged in Boston, USA">2nd International Workshop on Linked Science 2012—Tackling Big Data will be arranged in Boston, USA</a></li>
+				</ul>
+		</li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href="http://linkedscience.org/2012/09/" title="September 2012">September 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/08/" title="August 2012">August 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/06/" title="June 2012">June 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/05/" title="May 2012">May 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/04/" title="April 2012">April 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/03/" title="March 2012">March 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/02/" title="February 2012">February 2012</a></li>
+	<li><a href="http://linkedscience.org/2011/12/" title="December 2011">December 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/10/" title="October 2011">October 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/09/" title="September 2011">September 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/08/" title="August 2011">August 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/05/" title="May 2011">May 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/04/" title="April 2011">April 2011</a></li>
+		</ul>
+</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://linkedscience.org/category/announcement/" title="View all posts filed under Announcement">Announcement</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://linkedscience.org/category/award/" title="View all posts filed under Award">Award</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://linkedscience.org/category/brazilian-amazon-rainforest/" title="View all posts filed under Brazilian Amazon Rainforest">Brazilian Amazon Rainforest</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="http://linkedscience.org/category/call-for-papers/" title="View all posts filed under Call for Papers">Call for Papers</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="http://linkedscience.org/category/challenge/" title="View all posts filed under Challenge">Challenge</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://linkedscience.org/category/contest/" title="View all posts filed under Contest">Contest</a>
+</li>
+	<li class="cat-item cat-item-81"><a href="http://linkedscience.org/category/demo/" title="View all posts filed under Demo">Demo</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://linkedscience.org/category/gis/" title="View all posts filed under GIS">GIS</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://linkedscience.org/category/giscience/" title="View all posts filed under GIScience">GIScience</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://linkedscience.org/category/large-geospatial-applications/" title="View all posts filed under Large Geospatial Applications">Large Geospatial Applications</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://linkedscience.org/category/linked-science/" title="View all posts filed under Linked Science">Linked Science</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://linkedscience.org/category/linked-spatiotemporal-data/" title="View all posts filed under Linked Spatiotemporal Data">Linked Spatiotemporal Data</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://linkedscience.org/category/maps/" title="View all posts filed under Maps">Maps</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://linkedscience.org/category/multidisciplinary-research/" title="View all posts filed under Multidisciplinary Research">Multidisciplinary Research</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="http://linkedscience.org/category/poster/" title="View all posts filed under Poster">Poster</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://linkedscience.org/category/r/" title="View all posts filed under R">R</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://linkedscience.org/category/sparql/" title="View all posts filed under SPARQL">SPARQL</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://linkedscience.org/category/spatiotemporal-data-handling/" title="View all posts filed under Spatiotemporal Data Handling">Spatiotemporal Data Handling</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://linkedscience.org/category/spatiotemporal-information/" title="View all posts filed under Spatiotemporal Information">Spatiotemporal Information</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://linkedscience.org/category/statistical-computing/" title="View all posts filed under Statistical Computing">Statistical Computing</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://linkedscience.org/category/tutorial/" title="View all posts filed under Tutorial">Tutorial</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://linkedscience.org/category/workshop/" title="View all posts filed under Workshop">Workshop</a>
+</li>
+		</ul>
+</li><li id="tag_cloud-3" class="widget-container widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href="http://linkedscience.org/tag/analysis/" class="tag-link-39" title="1 topic" style="font-size: 8pt;">Analysis</a>
+<a href="http://linkedscience.org/tag/big-data/" class="tag-link-33" title="5 topics" style="font-size: 15.636363636364pt;">Big Data</a>
+<a href="http://linkedscience.org/tag/big-data-analytics/" class="tag-link-47" title="2 topics" style="font-size: 10.863636363636pt;">Big Data Analytics</a>
+<a href="http://linkedscience.org/tag/big-data-conference/" class="tag-link-46" title="2 topics" style="font-size: 10.863636363636pt;">Big Data Conference</a>
+<a href="http://linkedscience.org/tag/boston/" class="tag-link-74" title="2 topics" style="font-size: 10.863636363636pt;">Boston</a>
+<a href="http://linkedscience.org/tag/brazilian-amazon-rainforest/" class="tag-link-18" title="1 topic" style="font-size: 8pt;">Brazilian Amazon Rainforest</a>
+<a href="http://linkedscience.org/tag/buildings/" class="tag-link-45" title="1 topic" style="font-size: 8pt;">Buildings</a>
+<a href="http://linkedscience.org/tag/community/" class="tag-link-10" title="1 topic" style="font-size: 8pt;">community</a>
+<a href="http://linkedscience.org/tag/data-challenge/" class="tag-link-37" title="1 topic" style="font-size: 8pt;">Data Challenge</a>
+<a href="http://linkedscience.org/tag/data-mining/" class="tag-link-35" title="1 topic" style="font-size: 8pt;">Data Mining</a>
+<a href="http://linkedscience.org/tag/eswc2012/" class="tag-link-68" title="2 topics" style="font-size: 10.863636363636pt;">ESWC2012</a>
+<a href="http://linkedscience.org/tag/executable-paper/" class="tag-link-11" title="1 topic" style="font-size: 8pt;">executable paper</a>
+<a href="http://linkedscience.org/tag/geoprocessing/" class="tag-link-26" title="1 topic" style="font-size: 8pt;">Geoprocessing</a>
+<a href="http://linkedscience.org/tag/gibda2012/" class="tag-link-38" title="2 topics" style="font-size: 10.863636363636pt;">GIBDA2012</a>
+<a href="http://linkedscience.org/tag/giscience/" class="tag-link-34" title="3 topics" style="font-size: 12.772727272727pt;">GIScience</a>
+<a href="http://linkedscience.org/tag/google-earth/" class="tag-link-43" title="1 topic" style="font-size: 8pt;">Google Earth</a>
+<a href="http://linkedscience.org/tag/ifgi/" class="tag-link-7" title="1 topic" style="font-size: 8pt;">ifgi</a>
+<a href="http://linkedscience.org/tag/iswc2012/" class="tag-link-72" title="2 topics" style="font-size: 10.863636363636pt;">ISWC2012</a>
+<a href="http://linkedscience.org/tag/linked-data/" class="tag-link-4" title="10 topics" style="font-size: 19.772727272727pt;">Linked Data</a>
+<a href="http://linkedscience.org/tag/linked-open-science/" class="tag-link-8" title="2 topics" style="font-size: 10.863636363636pt;">linked open science</a>
+<a href="http://linkedscience.org/tag/linked-science/" class="tag-link-3" title="14 topics" style="font-size: 22pt;">Linked Science</a>
+<a href="http://linkedscience.org/tag/linked-spatiotemporal-data/" class="tag-link-19" title="1 topic" style="font-size: 8pt;">Linked Spatiotemporal Data</a>
+<a href="http://linkedscience.org/tag/lisc2011/" class="tag-link-16" title="4 topics" style="font-size: 14.363636363636pt;">LISC2011</a>
+<a href="http://linkedscience.org/tag/lisc2012/" class="tag-link-73" title="2 topics" style="font-size: 10.863636363636pt;">LISC2012</a>
+<a href="http://linkedscience.org/tag/lodum/" class="tag-link-42" title="3 topics" style="font-size: 12.772727272727pt;">LODUM</a>
+<a href="http://linkedscience.org/tag/map/" class="tag-link-30" title="1 topic" style="font-size: 8pt;">map</a>
+<a href="http://linkedscience.org/tag/maps/" class="tag-link-28" title="2 topics" style="font-size: 10.863636363636pt;">Maps</a>
+<a href="http://linkedscience.org/tag/ontology/" class="tag-link-14" title="3 topics" style="font-size: 12.772727272727pt;">Ontology</a>
+<a href="http://linkedscience.org/tag/open-science/" class="tag-link-9" title="3 topics" style="font-size: 12.772727272727pt;">open science</a>
+<a href="http://linkedscience.org/tag/open-source/" class="tag-link-12" title="1 topic" style="font-size: 8pt;">open source</a>
+<a href="http://linkedscience.org/tag/productivity/" class="tag-link-44" title="1 topic" style="font-size: 8pt;">Productivity</a>
+<a href="http://linkedscience.org/tag/r/" class="tag-link-5" title="3 topics" style="font-size: 12.772727272727pt;">R</a>
+<a href="http://linkedscience.org/tag/schema/" class="tag-link-27" title="3 topics" style="font-size: 12.772727272727pt;">Schema</a>
+<a href="http://linkedscience.org/tag/sparql/" class="tag-link-6" title="4 topics" style="font-size: 14.363636363636pt;">SPARQL</a>
+<a href="http://linkedscience.org/tag/spatial-data-visualization/" class="tag-link-32" title="1 topic" style="font-size: 8pt;">spatial data visualization</a>
+<a href="http://linkedscience.org/tag/spatiotemporal-data/" class="tag-link-25" title="1 topic" style="font-size: 8pt;">Spatiotemporal Data</a>
+<a href="http://linkedscience.org/tag/spatiotemporal-information/" class="tag-link-22" title="1 topic" style="font-size: 8pt;">Spatiotemporal Information</a>
+<a href="http://linkedscience.org/tag/time-series/" class="tag-link-31" title="1 topic" style="font-size: 8pt;">time series</a>
+<a href="http://linkedscience.org/tag/triangle-of-sustainability/" class="tag-link-57" title="2 topics" style="font-size: 10.863636363636pt;">Triangle of Sustainability</a>
+<a href="http://linkedscience.org/tag/tutorial/" class="tag-link-17" title="2 topics" style="font-size: 10.863636363636pt;">Tutorial</a>
+<a href="http://linkedscience.org/tag/universities/" class="tag-link-41" title="1 topic" style="font-size: 8pt;">Universities</a>
+<a href="http://linkedscience.org/tag/usa/" class="tag-link-75" title="2 topics" style="font-size: 10.863636363636pt;">USA</a>
+<a href="http://linkedscience.org/tag/vgi/" class="tag-link-36" title="1 topic" style="font-size: 8pt;">VGI</a>
+<a href="http://linkedscience.org/tag/visualization/" class="tag-link-40" title="1 topic" style="font-size: 8pt;">Visualization</a>
+<a href="http://linkedscience.org/tag/vocabulary/" class="tag-link-13" title="3 topics" style="font-size: 12.772727272727pt;">Vocabulary</a></div>
+</li><li id="wp_twitter_goodies_profile_widgets" class="widget-container widget_wp_twitter_goodies_profile"><h3 class="widget-title">Following @LinkedScience</h3><script src="./dbpedia_movie_tutorial_files/widget.js"></script><script>new TWTR.Widget({  version: 2,  type: 'profile',  rpp: 30,  interval: 5000,  width: 200,  height: 600,  theme: {    shell: {      background: '#1F0C0C',      color: '#FFFFFF'    },    tweets: {      background: '#F7FFFB',      color: '#3B3B3B',      links: '#316329'    }  },  features: {    scrollbar: false,    loop: true,    live: true,    hashtags: true,    timestamp: true,    avatars: false,    behavior: 'default'  }}).render().setUser('LinkedScience').start();</script><div class="twtr-widget twtr-widget-profile" id="twtr-widget-1"><div class="twtr-doc" style="width: 200px;">            <div class="twtr-hd"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-profile-img-anchor"><img alt="profile" class="twtr-profile-img" src="./dbpedia_movie_tutorial_files/linkedsciencedororg_normal.png"></a>                      <h3>Tomi Kauppinen</h3>                      <h4><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience">LinkedScience</a></h4>             </div>            <div class="twtr-bd">              <div class="twtr-timeline" style="height: 600px;">                <div class="twtr-tweets">                  <div class="twtr-reference-tweet"></div><div id="tweet-id-4" class="twtr-tweet" style="opacity: 1; height: 108px; -webkit-transition: opacity 0.5s ease-out; "><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./dbpedia_movie_tutorial_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> RT <a class="tweet-url username" data-screen-name="Newmanlk" href="http://twitter.com/Newmanlk" target="_blank">@Newmanlk</a>: A <a href="http://twitter.com/search?q=%23storify" title="#storify" class="tweet-url hashtag" target="_blank">#storify</a> of the <a href="http://twitter.com/search?q=%23openscience" title="#openscience" class="tweet-url hashtag" target="_blank">#openscience</a> and <a href="http://twitter.com/search?q=%23openaccess" title="#openaccess" class="tweet-url hashtag" target="_blank">#openaccess</a> tweets at <a href="http://twitter.com/search?q=%23OKFest" title="#OKFest" class="tweet-url hashtag" target="_blank">#OKFest</a>: <a href="http://t.co/DMdBzhlG" target="_blank" urlentities="[object Object]" rel="nofollow">ow.ly/dYLCY</a> // cc <a class="tweet-url username" data-screen-name="petermurrayrust" href="http://twitter.com/petermurrayrust" target="_blank">@petermurrayrust</a> <a class="tweet-url username" data-screen-name="jenny_mollo" href="http://twitter.com/jenny_mollo" target="_blank">@jenny_mollo</a> ...             <em>            <a target="_blank" class="twtr-timestamp" time="Tue Sep 25 18:00:32 +0000 2012" href="https://twitter.com/LinkedScience/status/250656042206244864">9 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=250656042206244864">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=250656042206244864">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=250656042206244864">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-3" class="twtr-tweet" style="opacity: 1; height: 80px; -webkit-transition: opacity 0.5s ease-out; "><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./dbpedia_movie_tutorial_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> farthest-ever view of the <a href="http://twitter.com/search?q=%23universe" title="#universe" class="tweet-url hashtag" target="_blank">#universe</a> by <a class="tweet-url username" data-screen-name="NASA" href="http://twitter.com/NASA" target="_blank">@NASA</a>  <a href="http://t.co/TDnF0w0p" target="_blank" urlentities="[object Object]" rel="nofollow">nasa.gov/mission_pages/…</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Wed Sep 26 19:17:12 +0000 2012" href="https://twitter.com/LinkedScience/status/251037725074022400">8 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=251037725074022400">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=251037725074022400">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=251037725074022400">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-2" class="twtr-tweet" style="opacity: 1; height: 94px; -webkit-transition: opacity 0.5s ease-out; "><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./dbpedia_movie_tutorial_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> RT <a class="tweet-url username" data-screen-name="openculture" href="http://twitter.com/openculture" target="_blank">@openculture</a>: Richard Feynman Explains Where Trees Actually Come From and How Fire Works. <a href="http://t.co/g0RksLdA" target="_blank" urlentities="[object Object]" rel="nofollow">cultr.me/QrT8ru</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Thu Sep 27 20:18:26 +0000 2012" href="https://twitter.com/LinkedScience/status/251415523672334336">7 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=251415523672334336">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=251415523672334336">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=251415523672334336">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-1" class="twtr-tweet"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./dbpedia_movie_tutorial_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> The Brazilian Amazon data is back online after changes in our <a href="http://twitter.com/search?q=%23LinkedData" title="#LinkedData" class="tweet-url hashtag" target="_blank">#LinkedData</a> platform! <a href="http://t.co/MqxFjuqv" target="_blank" urlentities="[object Object]" rel="nofollow">linkedscience.org/data/linked-br…</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Thu Sep 13 09:29:38 +0000 2012" href="https://twitter.com/LinkedScience/status/246178815481638912">22 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=246178815481638912">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=246178815481638912">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=246178815481638912">favorite</a>             </em>           </p>         </div>       </div></div>                  <!-- tweets show here -->                </div>              </div>            </div>            <div class="twtr-ft">              <div><a target="_blank" href="https://twitter.com/"><img alt="" src="./dbpedia_movie_tutorial_files/widget-bird.png"></a>                <span><a target="_blank" class="twtr-join-conv" style="color:#FFFFFF" href="https://twitter.com/LinkedScience">Join the conversation</a></span>              </div>            </div>          </div></div></li><li id="meta-2" class="widget-container widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+			<li><a href="http://linkedscience.org/wp-admin/">Site Admin</a></li>			<li><a href="http://linkedscience.org/wp-login.php?action=logout&_wpnonce=d74f66e1ff">Log out</a></li>
+			<li><a href="http://linkedscience.org/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://linkedscience.org/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://linkedscience.org/" title="LinkedScience.org" rel="home">
+					LinkedScience.org				</a>
+			</div><!-- #site-info -->
+
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<script type="text/javascript" src="./dbpedia_movie_tutorial_files/admin-bar.js"></script>
+		
+
+		
+
+
+
+
+<div id="wpadminbar" class="nojq " role="navigation">
+			<div class="quicklinks">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://linkedscience.org/wp-admin/about.php" title="About WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation" class=""><a class="ab-item" tabindex="10" href="http://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://linkedscience.org/wp-admin/">LinkedScience.org</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/">Dashboard</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-comments" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/edit-comments.php" title="1,958 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-1958">1,958</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://linkedscience.org/wp-admin/post-new.php" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-link" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/link-add.php">Link</a>		</li>
+		<li id="wp-admin-bar-new-page" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/post-new.php?post_type=page">Page</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-edit" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/post.php?post=854&action=edit">Edit Page</a>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class=" admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://linkedscience.org/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" tabindex="10" type="text" value="" maxlength="150"><input type="submit" class="adminbar-button" value="Search"></form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://linkedscience.org/wp-admin/profile.php" title="My Account">Howdy, willem.van.hage<img alt="" src="./dbpedia_movie_tutorial_files/0f9db61c38642fa9f6d6bb0e2583dc28" class="avatar avatar-16 photo" height="16" width="16"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class=" ab-submenu">
+		<li id="wp-admin-bar-user-info" class=""><a class="ab-item" tabindex="-1" href="http://linkedscience.org/wp-admin/profile.php"><img alt="" src="./dbpedia_movie_tutorial_files/0f9db61c38642fa9f6d6bb0e2583dc28(1)" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">willem.van.hage</span><span class="username">willem-van-hage</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout" class=""><a class="ab-item" tabindex="10" href="http://linkedscience.org/wp-login.php?action=logout&_wpnonce=d74f66e1ff">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+		</div></body></html>

@@ -1,0 +1,1018 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ais 'http://semanticweb.cs.vu.nl/poseidon/ns/ais/'>
+    <!ENTITY dcterms 'http://purl.org/dc/terms/'>
+    <!ENTITY foaf 'http://xmlns.com/foaf/0.1/'>
+    <!ENTITY geo 'http://www.geonames.org/ontology#'>
+    <!ENTITY opmv 'http://purl.org/net/opmv/ns#'>
+    <!ENTITY poseidon 'http://semanticweb.cs.vu.nl/poseidon/ns/instances/'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+    <!ENTITY sem 'http://semanticweb.cs.vu.nl/2009/11/sem/'>
+    <!ENTITY time 'http://www.w3.org/2006/time#'>
+    <!ENTITY wgs84 'http://www.w3.org/2003/01/geo/wgs84_pos#'>
+    <!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+
+<rdf:RDF
+    xmlns:ais="&ais;"
+    xmlns:dcterms="&dcterms;"
+    xmlns:foaf="&foaf;"
+    xmlns:geo="&geo;"
+    xmlns:opmv="&opmv;"
+    xmlns:poseidon="&poseidon;"
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+    xmlns:sem="&sem;"
+    xmlns:time="&time;"
+    xmlns:wgs84="&wgs84;"
+    xmlns:xsd="&xsd;"
+>
+<geo:Feature rdf:about="http://sws.geonames.org/241131/"
+    geo:countryCode="SC"
+    geo:name="Victoria"
+    geo:population="22881"
+    rdfs:isDefinedBy="http://sws.geonames.org/241131/about.rdf"
+    wgs84:lat="-4.61667"
+    wgs84:long="55.45">
+  <geo:alternateName xml:lang="am">ቪክቶሪያ፥ ሲሸልስ</geo:alternateName>
+  <geo:alternateName xml:lang="ca">Victòria</geo:alternateName>
+  <geo:alternateName xml:lang="cs">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="da">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="de">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="el">Βικτόρια</geo:alternateName>
+  <geo:alternateName xml:lang="en">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="es">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="fi">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="fr">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="id">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="it">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="ja">ヴィクトリア</geo:alternateName>
+  <geo:alternateName xml:lang="ko">빅토리아</geo:alternateName>
+  <geo:alternateName xml:lang="lt">Viktorija</geo:alternateName>
+  <geo:alternateName xml:lang="nl">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="no">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="pl">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="pt">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="ru">Виктория</geo:alternateName>
+  <geo:alternateName xml:lang="sk">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="sv">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="sw">Victoria</geo:alternateName>
+  <geo:alternateName xml:lang="ur">وکٹوریا</geo:alternateName>
+  <geo:alternateName xml:lang="vo">Victoria</geo:alternateName>
+  <geo:featureClass rdf:resource="&geo;P"/>
+  <geo:featureCode rdf:resource="&geo;P.PPLC"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/241131/victoria.html"/>
+  <geo:nearbyFeatures rdf:resource="http://sws.geonames.org/241131/nearby.rdf"/>
+  <geo:parentCountry rdf:resource="http://sws.geonames.org/241170/"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/241130/"
+    geo:countryCode="SC"
+    geo:name="Victoria Harbour"
+    rdfs:isDefinedBy="http://sws.geonames.org/241130/about.rdf"
+    wgs84:lat="-4.61667"
+    wgs84:long="55.48333">
+  <geo:featureClass rdf:resource="&geo;H"/>
+  <geo:featureCode rdf:resource="&geo;H.HBR"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/241130/victoria-harbour.html"/>
+  <geo:nearbyFeatures rdf:resource="http://sws.geonames.org/241130/nearby.rdf"/>
+  <geo:parentCountry rdf:resource="http://sws.geonames.org/241170/"/>
+</geo:Feature>
+
+<geo:Feature rdf:about="http://sws.geonames.org/2235124/"
+    geo:countryCode="CM"
+    geo:name="Bakassi Peninsula"
+    rdfs:isDefinedBy="http://sws.geonames.org/2235124/about.rdf"
+    wgs84:lat="4.5663"
+    wgs84:long="8.5948">
+  <geo:featureClass rdf:resource="&geo;T"/>
+  <geo:featureCode rdf:resource="&geo;T.PEN"/>
+  <geo:locationMap rdf:resource="http://www.geonames.org/2235124/bakassi-peninsula.html"/>
+  <geo:nearbyFeatures rdf:resource="http://sws.geonames.org/2235124/nearby.rdf"/>
+  <geo:parentCountry rdf:resource="http://sws.geonames.org/2233387/"/>
+</geo:Feature>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_1"
+    sem:hasTimeStamp="2010-04-11">
+  <sem:eventType rdf:resource="&poseidon;etype_suspicious"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_1"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_1"/>
+  <rdfs:comment>
+Three speed boats were detected on radar at a distance of about 3NM. Two
+ skiffs with speeds of 20 knots commenced chasing the ship. The ship 
+alarm was raised, speed was increased, and evasive maneuvers were 
+conducted. The skiffs closed to 1.6NM and aborted the pursuit (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_1">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_1">
+  <rdfs:label>02:26.9N - 059:59.8E, 
+approximately 500NM northeast of Port Victoria, Seychelles.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">2.4358333333333335</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">59.98555555555556</wgs84:long>
+</sem:Place>
+
+<time:Instant rdf:about="&poseidon;time%5F2011-10-05t18:02:53Z">
+  <time:inXSDDateTime rdf:datatype="&xsd;dateTime">2011-10-05T18:02:53Z</time:inXSDDateTime>
+</time:Instant>
+
+<opmv:Artifact rdf:about="MSS.html">
+  <dcterms:contributor rdf:resource="http://www.nga.mil"/>
+  <dcterms:creator rdf:resource="http://www.maritimesecuritysolutions.com/"/>
+  <opmv:wasUsedAt rdf:resource="&poseidon;time%5F2011-10-05t18:02:53Z"/>
+</opmv:Artifact>
+
+<opmv:Artifact rdf:about="">
+  <dcterms:creator rdf:resource="http://www.few.vu.nl/~wrvhage/foaf.rdf#i"/>
+  <opmv:wasDerivedFrom rdf:resource="MSS.html"/>
+  <opmv:wasGeneratedAt rdf:resource="&poseidon;time%5F2011-10-05t18:02:53Z"/>
+  <opmv:wasGeneratedBy>
+    <opmv:Process
+        rdfs:label="mss.pl">
+      <opmv:used rdf:resource="MSS.html"/>
+      <opmv:wasControlledBy rdf:resource="http://www.few.vu.nl/~wrvhage/foaf.rdf#i"/>
+      <opmv:wasPerformedAt rdf:resource="&poseidon;time%5F2011-10-05t18:02:53Z"/>
+      <opmv:wasPerformedBy rdf:resource="http://eculture.cs.vu.nl/git/poseidon/?p=code.git;a=blob_plain;f=piracy/mss.pl;hb=HEAD"/>
+    </opmv:Process>
+  </opmv:wasGeneratedBy>
+</opmv:Artifact>
+
+<dcterms:Agent rdf:about="http://www.nga.mil"
+    foaf:name="National Geospatial-Intelligence Agency"/>
+
+<dcterms:Agent rdf:about="http://www.maritimesecuritysolutions.com/"
+    foaf:name="Maritime Security Solutions"/>
+
+<dcterms:Agent rdf:about="http://www.few.vu.nl/~wrvhage/foaf.rdf#i"
+    foaf:name="Willem Robert van Hage">
+  <rdf:type rdf:resource="&opmv;Agent"/>
+  <foaf:homepage rdf:resource="http://www.few.vu.nl/~wrvhage"/>
+</dcterms:Agent>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_2"
+    sem:hasTimeStamp="2010-04-11">
+  <sem:eventType rdf:resource="&poseidon;etype_hijacked"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_2"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_2"/>
+  <rdfs:comment>Pirates boarded and hijacked the
+ vessel and have sailed it to an undisclosed location off Somalia (IMB, 
+AP).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_2"
+    ais:name="RAK AFRIKANA">
+  <sem:actorType rdf:resource="&poseidon;atype_general_cargo"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_2">
+  <rdfs:label>04:45S - 051:00E, approximately 565NM 
+southeast of Kismayo, Somalia.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">-4.75</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">51</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_3"
+    sem:hasTimeStamp="2010-04-09">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_3"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_3"/>
+  <rdfs:comment>Armed men in skiffs chased and 
+fired upon the vessel using machine guns and RPGs. The vessel increased 
+speed and conducted evasive maneuvers (IMB, LM: Xinhua).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_3"
+    ais:name="NADA">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_3">
+  <rdfs:label>13:38N - 056:08E, approximately 115NM 
+northeast of Socotra Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">13.633333333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">56.13333333333333</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_4"
+    sem:hasTimeStamp="2010-04-08">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_4"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_4"/>
+  <rdfs:comment>Armed men in skiffs chased and opened fire on the 
+vessel. The vessel increased speed, conducted evasive maneuvers and 
+avoided the attack (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_4">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_4">
+  <rdfs:label>13:43N - 056:41E, approximately 150NM northeast of Socotra 
+Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">13.716666666666667</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">56.68333333333333</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_5"
+    sem:hasTimeStamp="2010-04-08">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_5"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_5"/>
+  <rdfs:comment>The captain initially reported a suspicious approach by
+ one skiff with three persons onboard at 0430. The skiff continued to 
+pursue and then opened fire on the vessel at 0622. Vessel increased 
+speed to 22 knots and activated fire hoses before the skiff finally 
+abandoned the attack (Mercury chat, IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_5">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_5">
+  <rdfs:label>13:34.5N - 057:26.7E, approximately 185NM northeast of Socotra 
+Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">13.568055555555555</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">57.43527777777778</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_6"
+    sem:hasTimeStamp="2010-04-07">
+  <sem:eventType rdf:resource="&poseidon;etype_hijacked"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_6"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_6"/>
+  <rdfs:comment>. Pirates boarded and hijacked the vessel with
+ its 25 crewmembers and have sailed it to an undisclosed location (IMB, 
+MSCHOA).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_6"
+    ais:name="YASIN C">
+  <sem:actorType rdf:resource="&poseidon;atype_bulk_carrier"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_6">
+  <rdfs:label>04:59S - 043:52E, approximately 260NM east 
+of Mombasa, Kenya</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">-4.983333333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">43.86666666666667</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_7"
+    sem:hasTimeStamp="2010-04-06">
+  <sem:eventType rdf:resource="&poseidon;etype_suspicious"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_7"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_7"/>
+  <rdfs:comment>Armed men 
+in skiffs began initial approaches to the vessel, but never got within 
+boarding range as the vessel master employed counter-piracy measures and
+ the skiffs aborted the chase (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_7">
+  <sem:actorType rdf:resource="&poseidon;atype_vehicle_carrier"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_7">
+  <rdfs:label>14:06.8N - 051:51.8E, 
+approximately 160NM southeast of Al Mukalla, Yemen.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">14.102222222222222</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">51.852222222222224</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_8"
+    sem:hasTimeStamp="2010-04-05">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_8"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_8"/>
+  <rdfs:comment>Armed men in skiffs chased and 
+fired upon the vessel, using automatic weapons and RPGs. The vessel 
+increased speed and conducted evasive maneuvers to escape (IMB, MSCHOA).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_8"
+    ais:name="HAMBURG BRIDGE">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_8">
+  <rdfs:label>13:38.2N - 055:38.2E, approximately 90NM 
+northeast of Socotra Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">13.633888888888889</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">55.63388888888889</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_9"
+    sem:hasTimeStamp="2010-04-05">
+  <sem:eventType rdf:resource="&poseidon;etype_boarded"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_9"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_9"/>
+  <rdfs:comment>Armed men in two skiffs boarded the vessel 
+underway. The crew locked themselves in a bulletproof safe room and 
+contacted authorities for assistance. The Dutch frigate TROMP arrived on
+ scene and dispatched a helicopter to board the vessel. The marines 
+rescued the crew and detained the attackers. No one was injured (IMB, 
+AP).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_9"
+    ais:name="TAIPAN">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_9">
+  <rdfs:label>12:23N - 060:21E, approximately 340NM east of
+ Socotra Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">12.383333333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">60.35</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_10"
+    sem:hasTimeStamp="2010-04-05">
+  <sem:eventType rdf:resource="&poseidon;etype_attempted"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_10"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_10"/>
+  <rdfs:comment>The master reported being 
+chased by three skiffs. A distress message was sent requesting help. Two
+ skiffs came close to the tanker and the men placed a ladder on the 
+vessel's side to board. Due to evasive maneuvers conducted by the crew, 
+the men failed to board the vessel. A warship arrived in the vicinity to
+ provide assistance. No injury to the crew was reported but the vessel 
+sustained RPG damage (IMB, LM: Virginian-Pilot).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_10"
+    ais:name="RISING SUN">
+  <sem:actorType rdf:resource="&poseidon;atype_chemical_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_10">
+  <rdfs:label>18:21N - 059:01E, approximately 
+110NM south of Masirah Island, Oman.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">18.35</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">59.016666666666666</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_11"
+    sem:hasTimeStamp="2010-04-04">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_11"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_11"/>
+  <rdfs:comment>. Men in a skiff armed with RPGs and automatic 
+weapons chased and fired upon the vessel. The vessel increased speed and
+ conducted evasive maneuvers to evade the attack (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_11">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_11">
+  <rdfs:label>09:24.3S - 044:30.2E, approximately 340NM southeast of Dar es 
+Salaam, Tanzania</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">-9.400833333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">44.50055555555556</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_12"
+    sem:hasTimeStamp="2010-04-04">
+  <sem:eventType rdf:resource="&poseidon;etype_hijacked"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_12"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_12"/>
+  <rdfs:comment>Pirates in skiffs boarded and hijacked the 
+vessel. The vessel and 24 crewmembers have been taken to an undisclosed 
+location off Somalia (IMB, AP).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_12"
+    ais:name="SAMHO DREAM">
+  <sem:actorType rdf:resource="&poseidon;atype_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_12">
+  <rdfs:label>08:21N - 065:00E, approximately 900NM east 
+of Eyl, Somalia.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">8.35</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">65</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_13"
+    sem:hasTimeStamp="2010-04-04">
+  <sem:eventType rdf:resource="&poseidon;etype_suspicious"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_13"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_13"/>
+  <rdfs:comment>Vessel reported being 
+chased by three white skiffs and one mother ship. The captain conducted 
+evasive maneuvers and reported no further incidents (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_13">
+  <sem:actorType rdf:resource="&poseidon;atype_chemical_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_13">
+  <rdfs:label>13:58.8N - 051:25E, approximately
+ 135NM southeast of Al Mukalla, Yemen.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">13.96888888888889</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">51.416666666666664</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_14"
+    sem:hasTimeStamp="2010-04-03">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_14"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_14"/>
+  <rdfs:comment>Men armed with RPGs and 
+automatic weapons chased and opened fire on the vessel. The vessel 
+enforced counter-piracy measures, conducted evasive maneuvers, and sent 
+out a distress call. The IMB PRC relayed the request to authorities. A 
+military aircraft arrived on location and circled the tanker, forcing 
+the attackers to abort the attempt (IMB, AFP).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_14"
+    ais:name="TORM RAGNHILD">
+  <sem:actorType rdf:resource="&poseidon;atype_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_14">
+  <rdfs:label>13:51.7N - 051:05.1E, approximately 120NM
+ southeast of Al Mukalla, Yemen.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">13.851944444444444</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">51.08361111111111</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_15"
+    sem:hasTimeStamp="2010-04-02">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_15"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_15"/>
+  <rdfs:comment>Two skiffs with armed men onboard chased 
+and opened fire with RPGs and automatic weapons. Vessel conducted 
+evasive maneuvers and successfully escaped (IMB, EUNAVFOR).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_15"
+    ais:name="WESTERMOOR">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_15">
+  <rdfs:label>11:06S - 046:07E, approximately 160NM 
+northeast of Comoros.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">-11.1</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">46.11666666666667</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_16"
+    sem:hasTimeStamp="2010-04-02">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_16"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_16"/>
+  <rdfs:comment>Two wooden boats with seven armed men 
+onboard chased and opened fire on the vessel. The master increased speed
+ to maximum and carried out evasive maneuvers. After 30 minutes of 
+pursuit, the two boats aborted the attack and moved away (IMB, 
+EUNAVFOR).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_16"
+    ais:name="ITAL GARLAND">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_16">
+  <rdfs:label>12:50.6N - 058:10E, approximately 210NM 
+east of Socotra Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">12.835</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">58.166666666666664</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_17"
+    sem:hasTimeStamp="2010-03-31">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_17"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_17"/>
+  <rdfs:comment>
+Three skiffs fired upon the warship. The NICHOLAS returned fire, sinking
+ one skiff and detaining three pirates (Reuters).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_17"
+    ais:name="USS NICHOLAS">
+  <sem:actorType rdf:resource="&poseidon;atype_frigate"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_17"
+    rdfs:label="approximately 150NM northwest of Port Victoria, Seychelles.">
+  <geo:nearby rdf:resource="http://sws.geonames.org/241131/"/>
+  <wgs84:lat rdf:datatype="&xsd;decimal">-2.849688343308057</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">53.68302379224375</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_18"
+    sem:hasTimeStamp="2010-03-31">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_18"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_18"/>
+  <rdfs:comment>The vessel reported 
+being chased and fired upon by two small fast boats while traveling at a
+ speed of 18 knots. Vessel conducted evasive maneuvers and managed to 
+prevent further pursuit (IMB, MSCHOA, Mercury chat).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_18"
+    ais:name="DELMAS NACALA">
+  <sem:actorType rdf:resource="&poseidon;atype_vessel"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_18">
+  <rdfs:label>01:28N - 065:09E, approximately 680NM 
+northeast of Port Victoria, Seychelles.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">1.4666666666666668</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">65.15</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_19"
+    sem:hasTimeStamp="2010-03-31">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_19"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_19"/>
+  <rdfs:comment>Vessel reported being fired upon while transiting at a 
+speed of 10 knots. One crewmember was reportedly shot in the leg during 
+the attack (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_19">
+  <sem:actorType rdf:resource="&poseidon;atype_fishing_vessel"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_19">
+  <rdfs:label>10:32N - 058:00E, approximately 235NM southeast of Socotra 
+Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">10.533333333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">58</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_20"
+    sem:hasTimeStamp="2010-03-31">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_20"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_20"/>
+  <rdfs:comment>Captain reported being fired upon 
+by two skiffs from the stern. Vessel was moving at approximately 14 
+knots when the attack occurred. The captain increased speed and was able
+ to separate from the skiffs. No casualties were reported (Mercury Chat,
+ Tradewinds).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_20"
+    ais:name="DL COSMOS">
+  <sem:actorType rdf:resource="&poseidon;atype_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_20">
+  <rdfs:label>05:24S - 040:05E, approximately 60NM 
+southeast of Mombasa, Kenya.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">-5.4</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">40.083333333333336</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_21"
+    sem:hasTimeStamp="2010-03-31">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_21"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_21"/>
+  <rdfs:comment>Armed men 
+opened fire on the vessel with automatic weapons and RPGs, resulting in 
+severe injuries for nine crewmembers. Kenyan Coast Guard responded to 
+the distress call to provide assistance (IMB, MSCHOA).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_21"
+    ais:name="CHOL SAN BONG CHONG NYON 
+HO">
+  <sem:actorType rdf:resource="&poseidon;atype_general_cargo"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_21">
+  <rdfs:label>02:15S - 041:31E, 
+approximately 150NM northeast of Mombasa, Kenya.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">-2.25</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">41.516666666666666</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_22"
+    sem:hasTimeStamp="2010-03-31">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_22"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_22"/>
+  <rdfs:comment>Vessel reported coming under fire by two skiffs. 
+Vessel conducted evasive maneuvers and evaded the attack. No injuries 
+were reported (UKMTO, MSCHOA).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_22"
+    ais:name="EVITA">
+  <sem:actorType rdf:resource="&poseidon;atype_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_22">
+  <rdfs:label>02:03N - 052:27E, approximately 425NM east of Mogadishu, 
+Somalia.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">2.05</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">52.45</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_23"
+    sem:hasTimeStamp="2010-03-31">
+  <sem:eventType rdf:resource="&poseidon;etype_suspicious"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_23"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_23"/>
+  <rdfs:comment>The vessel reported two 
+skiffs approaching the vessel. The captain raised the alarm and 
+conducted evasive maneuvers before the suspicious skiffs moved away 
+(Operator, IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_23">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_23">
+  <rdfs:label>14:25N - 064:40E, approximately 
+600NM northeast of Socotra Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">14.416666666666666</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">64.66666666666667</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_24"
+    sem:hasTimeStamp="2010-03-30">
+  <sem:eventType rdf:resource="&poseidon;etype_hijacked"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_24"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_24"/>
+  <rdfs:comment>Owners reported losing contact with the vessel 
+on 30 March after no longer receiving daily updates from the captain. 
+Vessel is assessed as hijacked and possibly being used as a mothership 
+to conduct pirate attacks. No further information to provide at this 
+time (IMB, Mercury chat).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_24">
+  <sem:actorType rdf:resource="&poseidon;atype_fishing_vessel"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_24">
+  <rdfs:label>10:08N - 056:06E, approximately 165NM southeast of 
+Socotra Island.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">10.133333333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">56.1</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_25"
+    sem:hasTimeStamp="2010-03-29">
+  <sem:eventType rdf:resource="&poseidon;etype_hijacked"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_25"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_25"/>
+  <rdfs:comment>Armed pirates boarded and hijacked 
+the vessel, taking hostage the 24 crewmembers onboard (IMB, Reuters).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_25"
+    ais:name="ICEBERG I">
+  <sem:actorType rdf:resource="&poseidon;atype_general_cargo"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_25"
+    rdfs:label="13:15N - 046:40E, approximately 
+10NM off the Yemeni coast.">
+  <wgs84:lat rdf:datatype="&xsd;decimal">13.25</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">46.666666666666664</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_26"
+    sem:hasTimeStamp="2010-03-28">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_26"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_26"/>
+  <rdfs:comment>Four men in a skiff armed with 
+machine guns chased and fired upon the vessel. The alarm was raised, 
+SSAS alert sent out and coalition forces were contacted. A warship 
+advised it would arrive at location within 40 minutes. The vessel 
+increased speed, adopted evasive maneuvers, and escaped the boarding 
+attempt (IMB, Intermanager.org).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_26"
+    ais:name="VALLE DI CASTIGLIA">
+  <sem:actorType rdf:resource="&poseidon;atype_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_26">
+  <rdfs:label>13:08N - 048:45E, approximately 80NM 
+southwest of Al Mukalla, Yemen.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">13.133333333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">48.75</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_27"
+    sem:hasTimeStamp="2010-03-28">
+  <sem:eventType rdf:resource="&poseidon;etype_fired_upon"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_27"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_27"/>
+  <rdfs:comment>Two skiffs with 2-3 armed men in each, 
+chased and fired upon the vessel with machine guns and RPGs. The armed 
+men continued the attack for over two hours before eventually moving 
+away. No injuries to the crew but the vessel sustained minor damage 
+(IMB, EUNAVFOR).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_27"
+    ais:name="SAVEH">
+  <sem:actorType rdf:resource="&poseidon;atype_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_27">
+  <rdfs:label>01:01.1S - 057:14.4E, approximately 245NM northeast of Port 
+Victoria, Seychelles.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">-1.0169444444444444</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">57.23444444444444</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_28"
+    sem:hasTimeStamp="2010-04-09">
+  <sem:eventType rdf:resource="&poseidon;etype_boarded"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_28"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_28"/>
+  <rdfs:comment>A robber was seen climbing the 
+anchor chain of the vessel. The alarm was raised and the crew mustered. 
+The crew used water to force the robber to jump back into the water and 
+escape. Authorities were informed and a patrol boat was dispatched 
+(IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_28">
+  <sem:actorType rdf:resource="&poseidon;atype_chemical_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_28"
+    rdfs:label="12:00S - 077:12W, Callao.">
+  <wgs84:lat rdf:datatype="&xsd;decimal">-12</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">-77.2</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_29"
+    sem:hasTimeStamp="2010-04-08">
+  <sem:eventType rdf:resource="&poseidon;etype_anchored"/>
+  <sem:eventType rdf:resource="&poseidon;etype_attempted"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_29"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_29"/>
+  <rdfs:comment>Four robbers in two boats attempted 
+to board the vessel at anchor. The robbers aborted the attempt after the
+ ship's alarm was sounded. Port authorities were informed (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_29">
+  <sem:actorType rdf:resource="&poseidon;atype_general_cargo"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_29"
+    rdfs:label="10:38N - 071:35W, inner 
+anchorage, Maracaibo port.">
+  <wgs84:lat rdf:datatype="&xsd;decimal">10.633333333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">-71.58333333333333</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_31"
+    sem:hasTimeStamp="2010-03-28">
+  <sem:eventType rdf:resource="&poseidon;etype_moored"/>
+  <sem:eventType rdf:resource="&poseidon;etype_robbed"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_31"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_31"/>
+  <rdfs:comment>Three robbers boarded the vessel from a small
+ wooden boat. The alarm was raised and the crew proceeded to the 
+forecastle to investigate. The robbers jumped overboard and escaped with
+ ship's stores (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_31">
+  <sem:actorType rdf:resource="&poseidon;atype_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_31"
+    rdfs:label="12:15.5S - 076:55.8W, 
+Conchan terminal.">
+  <wgs84:lat rdf:datatype="&xsd;decimal">-12.251388888888888</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">-76.91888888888889</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_35"
+    sem:hasTimeStamp="2010-04-07">
+  <sem:eventType rdf:resource="&poseidon;etype_moored"/>
+  <sem:eventType rdf:resource="&poseidon;etype_robbed"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_35"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_35"/>
+  <rdfs:comment>Shore watchman onboard spotted three
+ robbers armed with long knives on the poop deck. The robbers stole 
+ship's stores and jumped overboard and escaped. Attempts to contact 
+authorities were unsuccessful (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_35">
+  <sem:actorType rdf:resource="&poseidon;atype_container"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_35"
+    rdfs:label="22:14.3N - 91:49.6E, Chittagong port.">
+  <wgs84:lat rdf:datatype="&xsd;decimal">22.234166666666667</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">91.81833333333333</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_37"
+    sem:hasTimeStamp="2010-04-10">
+  <sem:eventType rdf:resource="&poseidon;etype_anchored"/>
+  <sem:eventType rdf:resource="&poseidon;etype_robbed"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_37"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_37"/>
+  <rdfs:comment>Robbers boarded the 
+vessel by breaking open the hawse pipe cover. They entered the 
+forecastle and stole ship's equipment by breaking the lock on the booby 
+hatch (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_37">
+  <sem:actorType rdf:resource="&poseidon;atype_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_37"
+    rdfs:label="01:28.6S - 116:48.9E, Lawi anchorage, Balikpapan.">
+  <wgs84:lat rdf:datatype="&xsd;decimal">-1.4683333333333335</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">116.8025</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_39"
+    sem:hasTimeStamp="2010-04-09">
+  <sem:eventType rdf:resource="&poseidon;etype_robbed"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_39"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_39"/>
+  <rdfs:comment>Seven men armed with guns and long knives 
+boarded the vessel and stole the ship's cash box and two mobile phones. 
+The alarm was raised and authorities were informed. No crewmembers were 
+injured. ReCAAP ISC Comment: The STAR YPSILON</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_39"
+    ais:name="STAR YPSILON">
+  <sem:actorType rdf:resource="&poseidon;atype_bulk_carrier"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_39">
+  <rdfs:label>03:19.1N - 105:28.9E, approximately 20NM northwest of Pulau 
+Jemaja, Indonesia.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">3.3169444444444443</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">105.46916666666667</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_40"
+    sem:hasTimeStamp="2010-04-07">
+  <sem:eventType rdf:resource="&poseidon;etype_robbed"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_40"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_40"/>
+  <rdfs:comment>While underway at approximately 12 knots, eight men 
+armed with knives boarded the vessel from a boat. They took the engineer
+ hostage and entered the accommodation area. Upon reaching the bridge, 
+they threatened the crew with knives and took the captain hostage. They 
+proceeded to raid the cabin of the captain and officers, taking cash and
+ valuables. After approximately 20 minutes, the robbers escaped in their
+ boat, which was alongside the poop deck. The men were casually dressed,
+ spoke English with a local accent and were aggressive throughout the 
+incident. No crewmembers were injured (ReCAAP).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_40"
+    ais:name="THERESA LIBRA">
+  <sem:actorType rdf:resource="&poseidon;atype_chemical_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_40">
+  <rdfs:label>02:44.2N - 105:16.3E, approximately 6NM west of Pulau Damar, 
+Indonesia.</rdfs:label>
+  <wgs84:lat rdf:datatype="&xsd;decimal">2.733888888888889</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">105.2675</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_41"
+    sem:hasTimeStamp="2010-04-03">
+  <sem:eventType rdf:resource="&poseidon;etype_moored"/>
+  <sem:eventType rdf:resource="&poseidon;etype_robbed"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_41"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_41"/>
+  <rdfs:comment>Three robbers armed with knives boarded the vessel
+ and took the 2nd officer as hostage. They stole ship's properties then 
+escaped. The hostage crewmember was injured and sent to shore for 
+medical treatment (IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_41">
+  <sem:actorType rdf:resource="&poseidon;atype_chemical_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_41"
+    rdfs:label="10:38N - 106:46E,
+ Hiep Phouc.">
+  <wgs84:lat rdf:datatype="&xsd;decimal">10.633333333333333</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">106.76666666666667</wgs84:long>
+</sem:Place>
+
+<sem:Event rdf:about="&poseidon;event_mss_2010_42"
+    sem:hasTimeStamp="2010-04-04">
+  <sem:eventType rdf:resource="&poseidon;etype_suspicious"/>
+  <sem:eventType rdf:resource="&poseidon;etype_underway"/>
+  <sem:hasActor rdf:resource="&poseidon;ship_victim_event_mss_2010_42"/>
+  <sem:hasPlace rdf:resource="&poseidon;place_event_mss_2010_42"/>
+  <rdfs:comment>Vessel reported being chased by skiffs for 30 minutes. 
+Evasive maneuvers were conducted and the vessel continued its transit 
+(IMB).</rdfs:comment>
+  <rdfs:seeAlso rdf:resource="MSS.html"/>
+</sem:Event>
+
+<sem:Actor rdf:about="&poseidon;ship_victim_event_mss_2010_42">
+  <sem:actorType rdf:resource="&poseidon;atype_chemical_tanker"/>
+</sem:Actor>
+
+<sem:Place rdf:about="&poseidon;place_event_mss_2010_42"
+    rdfs:label="04:10.3N - 120:41.3E, south of Tawi Tawi, Celebes 
+Sea.">
+  <wgs84:lat rdf:datatype="&xsd;decimal">4.1675</wgs84:lat>
+  <wgs84:long rdf:datatype="&xsd;decimal">120.68416666666667</wgs84:long>
+</sem:Place>
+
+</rdf:RDF>

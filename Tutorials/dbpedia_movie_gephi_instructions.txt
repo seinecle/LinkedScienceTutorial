@@ -1,0 +1,69 @@
+Open Gephi
+
+-- Actor-movie graph visualization
+File->Open "starring_dbpedia_american.graphml"
+Statistics->PageRank Run
+Partition Reload
+Partition select kind
+Partition Apply
+Ranking->Nodes select PageRank
+Ranking->Nodes set Min size 10, Max size 100
+Ranking Apply
+Layout->Yifan Hu Run
+  You need to scroll down in the section box
+  Run x4+, maybe increase initial step size to 100
+Layout->ForceAtlas 2 select Prevent Overlap
+Layout->ForceAtlas 2 Run (stop with the same button once it stabalizes)
+At the bottom of the Graph screen:
+Turn on Node Labels with the black "T"
+Set Node Label scaling to "Node size" with the black "A"
+Slide Node Label slider to lower label size
+Click the clipboard next to the Node Label slider, pick only "date"
+
+-- Actor-director graph visualization
+File->Open "actor_director_dbpedia_american.graphml"
+Statistics->PageRank Run
+Partition Reload
+Partition select kind
+Partition Apply
+Ranking->Nodes select PageRank
+Ranking->Nodes set Min size 10, Max size 100
+Ranking Apply
+Layout->Yifan Hu Run 
+  You need to scroll down in the section box
+  Run x4+, maybe increase initial step size to 100
+Layout->ForceAtlas 2 select Prevent Overlap
+Layout->ForceAtlas 2 Run (stop with the same button once it stabalizes)
+At the bottom of the Graph screen:
+Turn on Node Labels with the black "T"
+Set Node Label scaling to "Node size" with the black "A"
+Slide Node Label slider to lower label size
+Statistics->Modularity Run
+Partition select Modularity Class
+Partition Apply
+
+-- Costar graph visualization
+File->Open "costarring_dbpedia_american.graphml"
+Drag Filters->Library->Topology->Giant Component into the Queries
+Push Filter
+Partition Reload
+Partition select lec_community
+Partition Apply
+Ranking->Nodes select centrality
+Ranking->Nodes set Min size 10, Max size 100
+Ranking->Spline nr 3
+Close
+Ranking Apply
+Layout->Yifan Hu Run
+  You need to scroll down in the section box
+  Run x4+, maybe increase initial step size to 100
+Layout->ForceAtlas 2 select Prevent Overlap
+Layout->ForceAtlas 2 Run (stop with the same button once it stabalizes)
+At the bottom of the Graph screen:
+Set Node Label scaling to "Node size" with the black "A"
+Turn on Node Labels with the black "T"
+Slide Node Label slider to lower label size
+Ranking->Nodes select kevin_bacon_degree
+Slide the color triangles to adjust the contrast
+Ranking Apply
+
