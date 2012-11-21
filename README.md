@@ -16,7 +16,7 @@ SEE THE INSTRUCTIONS AT THE BOTTOM OF THIS README FILE
 
 # 2. Install R packages
 ### OS X, Linux, etc.:
-Start R.
+Start RStudio.
 
     install.packages(c('SPARQL','sp','spacetime','ggmap','mapproj','igraph','network','ergm','zoo','gsubfn','rjson'),dependencies=TRUE)
 
