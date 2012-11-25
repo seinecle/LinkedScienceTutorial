@@ -55,6 +55,6 @@ if [ "$cygwin" == "true" ]; then
     FUSEKI_HOME=`cygpath -w "$FUSEKI_HOME"`
 fi
 
-JVM_ARGS=${JVM_ARGS:--Xmx1200M}
+JVM_ARGS=${JVM_ARGS:--Xmx2400M}
 
 exec java  $JVM_ARGS -jar "$JAR" "$@"

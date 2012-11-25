@@ -99,13 +99,13 @@
 
 <#amazonRDF> rdfs:label "amazon-rdf" ;
         a ja:MemoryModel ;
-        ja:content [ ja:externalContent <file:Amazon_data/amazon_defor2002.rdf> ] ;
-        ja:content [ ja:externalContent <file:Amazon_data/amazon_defor2003.rdf> ] ;
-        ja:content [ ja:externalContent <file:Amazon_data/amazon_defor2004.rdf> ] ;
-        ja:content [ ja:externalContent <file:Amazon_data/amazon_defor2005.rdf> ] ;
-        ja:content [ ja:externalContent <file:Amazon_data/amazon_defor2006.rdf> ] ;
-        ja:content [ ja:externalContent <file:Amazon_data/amazon_defor2007.rdf> ] ;
-        ja:content [ ja:externalContent <file:Amazon_data/amazon_defor2008.rdf> ] ;
-        ja:content [ ja:externalContent <file:Amazon_data/amazon_data.rdf> ] .
+        ja:content [ ja:externalContent <file:Amazon_data/Small/amazon_defor2002.rdf> ] ;
+        ja:content [ ja:externalContent <file:Amazon_data/Small/amazon_defor2003.rdf> ] ;
+        ja:content [ ja:externalContent <file:Amazon_data/Small/amazon_defor2004.rdf> ] ;
+        ja:content [ ja:externalContent <file:Amazon_data/Small/amazon_defor2005.rdf> ] ;
+        ja:content [ ja:externalContent <file:Amazon_data/Small/amazon_defor2006.rdf> ] ;
+        ja:content [ ja:externalContent <file:Amazon_data/Small/amazon_defor2007.rdf> ] ;
+        ja:content [ ja:externalContent <file:Amazon_data/Small/amazon_defor2008.rdf> ] ;
+        ja:content [ ja:externalContent <file:Amazon_data/Small/amazon_data.rdf> ] .
 
 
