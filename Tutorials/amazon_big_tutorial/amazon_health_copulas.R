@@ -1,3 +1,6 @@
+# by Benedikt Gräler (ben.graeler@uni-muenster.de)
+# 
+install.packages("spcopula", repos="http://R-Forge.R-project.org")
 library(spcopula)
 
 ## fix perspCopula, from package copula
@@ -14,48 +17,41 @@ perspCopula <- function (x, fun, n = 51, theta = -30, phi = 30,
 ##
 
 colnames(subAmazon@data)
-rtAmazon <- rankTransform(as.matrix(subAmazon@data[subAmazon@data[,34]>0,c(32,33,34)]))
-str(rtAmazon)
-## population vs rel. defor.
-BiCopSelect(rtAmazon[,1],rtAmazon[,3],familyset=1) # Frank copula
 
-dependencePlot(smpl=rtAmazon[,c(1,3)])
-perspCopula(frankCopula(0.275), dCopula, 
+# droping the margins through the rank-order-transformation, 
+# for records with deforestation rate > 0
+rtAmazon <- rankTransform(as.matrix(subAmazon@data[subAmazon@data[,35]>0,c(32,35)]))
+str(rtAmazon)
+
+## population vs rel. defor.
+# copula estimation
+BiCopSelect(rtAmazon[,1],rtAmazon[,2]) # Frank copula
+
+# plot of sample
+plot(rtAmazon,asp=1)
+dependencePlot(smpl=rtAmazon)
+
+# density of dofferent copulas
+# Frank:
+perspCopula(frankCopula(0.30), dCopula, 
             ticktype="detail", zlim=c(0.6,1.4))
-perspCopula(normalCopula(0.033),dCopula,
+# Gaussian
+perspCopula(normalCopula(0.04),dCopula,
             ticktype="detail",zlim=c(0.6,1.4))
 
-sum(dCopula(rtAmazon[,c(1,3)], frankCopula(0.275), log=T)) # 1.90
-sum(dCopula(rtAmazon[,c(1,3)],normalCopula(0.033), log=T)) # 0.93
+# calculate log-likelihood
+sum(dCopula(rtAmazon, frankCopula(0.275), log=T)) # 2.31
+sum(dCopula(rtAmazon,normalCopula(0.033), log=T)) # 1.19
 
-asCopFit <- fitCopula(asCopula(param=c(1,-1)),rtAmazon[,c(1,3)],method="ml")@copula
-sum(log(dCopula(rtAmazon[,c(1,3)], asCopFit))) # 2.74
-cqsCopFit <- fitCopula(cqsCopula(param=c(1,-1)),rtAmazon[,c(1,3)],method="ml")@copula
-sum(log(dCopula(rtAmazon[,c(1,3)], cqsCopFit))) # 2.26
+# fit additional copulas
+asCopFit <- fitCopula(asCopula(param=c(1,-1)),rtAmazon,method="ml")@copula
+sum(log(dCopula(rtAmazon, asCopFit))) # 3.47
+cqsCopFit <- fitCopula(cqsCopula(param=c(1,-1)),rtAmazon,method="ml")@copula
+sum(log(dCopula(rtAmazon, cqsCopFit))) # 3.16
 
+# density plots
 perspCopula(asCopFit, dCopula,
             ticktype="detail", zlim=c(0.6,1.4))
 
 perspCopula(cqsCopFit, dCopula,
             ticktype="detail", zlim=c(0.6,1.4))
-
-## inf. dis. vs rel. defor.
-BiCopSelect(rtAmazon[,2],rtAmazon[,3]) # Frank copula
-
-perspCopula(frankCopula(0.534), dCopula, 
-            ticktype="detail", zlim=c(0.5,2))
-perspCopula(normalCopula(0.085),dCopula,
-            ticktype="detail",zlim=c(0.5,2))
-
-sum(dCopula(rtAmazon[,c(2,3)], frankCopula(0.534), log=T)) # 6.24
-sum(dCopula(rtAmazon[,c(2,3)],normalCopula(0.085), log=T)) # 4.76
-
-asCopFit <- fitCopula(asCopula(param=c(1,-1)),rtAmazon[,c(2,3)],method="ml")@copula
-sum(log(dCopula(rtAmazon[,c(2,3)], asCopFit))) # 10.18
-cqsCopFit <- fitCopula(cqsCopula(param=c(1,-1)),rtAmazon[,c(2,3)],method="ml")@copula
-sum(log(dCopula(rtAmazon[,c(2,3)], cqsCopFit))) # 6.24
-
-perspCopula(asCopFit, dCopula,
-            ticktype="detail", zlim=c(0,2))
-perspCopula(cqsCopFit, dCopula,
-            ticktype="detail", zlim=c(0,2))

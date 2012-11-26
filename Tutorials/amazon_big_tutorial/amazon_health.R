@@ -6,8 +6,8 @@ library(spacetime)
 library(lattice)
 
 # setting the endpoint
-# endpoint <- "http://spatial.linkedscience.org/sparql"
 endpoint <- "http://localhost:3030/amazon_big/sparql"
+# endpoint <- "http://spatial.linkedscience.org/sparql"
 
 # defining a first query as spatial setup
 q <- "PREFIX amazon: <http://spatial.linkedscience.org/context/amazon/>
@@ -97,35 +97,7 @@ stplot(amazon[,2:3])
 ## death and population data ##
 ###############################
 
-# tmpD <- paste("PREFIX amazon:  <http://spatial.linkedscience.org/context/amazon/>
-#                 PREFIX dbpedia: <http://www.dbpedia.org/resource/>
-#               PREFIX owl:     <http://www.w3.org/2002/07/owl#>
-#               
-#               SELECT ?deaths ?reason ?year where { \n",
-#                 aka, " amazon:hasObservation ?obs .
-#                 ?obs amazon:observationType dbpedia:Death .
-#               ?obs amazon:amountProduced ?deaths .
-#               ?obs amazon:isAbout ?reason .
-#               ?obs amazon:year ?year .}", sep="") 
-#   tmpDRes <- SPARQL(endpoint, tmpD, ns=c("dbpedia", "http://www.dbpedia.org/resource/"),
-#                     extra=list(output="csv"), format="csv")$result
-# tmpDRes <- cbind(rep(aka,nrow(tmpDRes)),tmpDRes)
-# deathData <- rbind(deathData, tmpDRes)
-# 
-# tmpP <- paste("PREFIX amazon:  <http://spatial.linkedscience.org/context/amazon/>
-#                 PREFIX dbpedia: <http://www.dbpedia.org/resource/>
-#               PREFIX owl:     <http://www.w3.org/2002/07/owl#>
-#               
-#               SELECT ?popul ?year where { \n",
-#                 aka, " amazon:hasObservation ?obs .
-#                 ?obs amazon:observationType dbpedia:Population .
-#               ?obs amazon:year ?year.
-#               ?obs amazon:population ?popul .}", sep="")
-#   tmpPRes <- SPARQL(endpoint, tmpP, extra=list(output="csv"), format="csv")$result
-# tmpPRes <- cbind(rep(aka,nrow(tmpPRes)),tmpPRes)
-# 
-# populData <- rbind(populData, tmpPRes)
-
+# retrieving additional data by municipality
 deathData <- NULL
 populData <- NULL
 for (aka in amazon@sp$aka) { # aka <- amazon@sp$aka[1]
@@ -138,7 +110,7 @@ for (aka in amazon@sp$aka) { # aka <- amazon@sp$aka[1]
                 ?obs amazon:observationType dbpedia:Death .
                 ?obs amazon:amountProduced ?deaths .
                 ?obs amazon:isAbout ?reason .
-                ?obs amazon:year ?year .",
+                ?obs amazon:year ?year . \n",
                 aka, " amazon:hasObservation ?obsPop .
                 ?obsPop amazon:observationType dbpedia:Population .
                 ?obsPop amazon:year ?year.
@@ -153,6 +125,7 @@ for (aka in amazon@sp$aka) { # aka <- amazon@sp$aka[1]
   tmpPRes <- cbind(rep(aka,5),tmpRes[(1:5)*30,c(4,3)])
   populData <- rbind(populData, tmpPRes)
 }
+
 colnames(deathData) <- c("aka","deaths","reason","year")
 colnames(populData) <- c("aka","popul","year")
 
@@ -178,11 +151,11 @@ for (reason in levels(deathData$reason)) { # reason <- levels(deathData$reason)[
 # droping the prefix
 colnames(amazon@data)[-1] <-  lapply(colnames(amazon@data)[-1], function(x) substr(x,9,nchar(x)))
 
-# population
+# adding the population data
 populLongTab <- NULL
 for(year in 2002:2008) { # year <- 2002
   sel <- populData$year == year # sum(sel) # should be 887
-  if(sum(sel)==0) 
+  if(sum(sel,na.rm=T)==0) 
     res <- rep(NA,length(amazon@sp))
   else
     res <- populData[sel,2]
@@ -199,7 +172,7 @@ colnames(subAmazon@data)
 
 # correlation of deforestation rate and deaths/population
 corLine <- cor(subAmazon@data[,1]/subAmazon@sp$area, cbind(subAmazon@data[,2:31]/subAmazon@data[,32],subAmazon@data[,32,drop=F]),
-               use="pairwise",method="kendall")
+               use="pairwise", method="kendall")
 
 barchart(corLine[,], origin=0,col="darkgrey",
          main="Kendall's tau for defor. rates and rel. deaths in Amazonian Municipalities for 2005, 2006 and 2007",
@@ -207,18 +180,20 @@ barchart(corLine[,], origin=0,col="darkgrey",
 
 colnames(corLine)[which.max(corLine[-31])] # 31: Population, 16: Infectious_disease
 
-# population
+# test correlation for population
 cor.test(subAmazon@data[,1]/subAmazon@sp$area, subAmazon@data[,32],
          method="kendall",use="pairwise.complete") # p< 0.01
 
-# Infectious_disease
+# test correlation for Infectious_disease
 cor.test(subAmazon@data[,1]/subAmazon@sp$area, subAmazon@data[,17]/subAmazon@data[,32],
          method="kendall",use="pairwise.complete") # p< 0.01
 
+# adding relative variables
 subAmazon@data[["rel_Infect_dis"]] <- subAmazon@data[["Infectious_disease"]]/subAmazon@data[,32]
 subAmazon@data[["Infect_dis_per_25"]] <- subAmazon@data[["Infectious_disease"]]/subAmazon@data[,32]*25
 subAmazon@data[["rel_defor"]] <- subAmazon@data[["defor"]]/subAmazon@sp$area
 
+# look at the scatter
 plot(cbind(subAmazon@data[,"rel_defor",drop=F],subAmazon@data[,"rel_Infect_dis"]))
 
 ##
