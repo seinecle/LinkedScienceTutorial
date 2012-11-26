@@ -18,7 +18,7 @@ SEE THE INSTRUCTIONS AT THE BOTTOM OF THIS README FILE
 ### OS X, Linux, etc.:
 Start RStudio.
 
-    install.packages(c('SPARQL','sp','spacetime','ggmap','mapproj','igraph','network','ergm','zoo','gsubfn','rjson'),dependencies=TRUE)
+    install.packages(c('SPARQL','sp','spacetime','ggmap','mapproj','igraph','network','ergm','zoo','gsubfn','rjson','lattice'),dependencies=TRUE)
 
 ### Windows:
 Start RStudio.
@@ -49,11 +49,11 @@ Start RStudio
 Go to the Tutorials section on linkedscience.org: http://linkedscience.org/tutorials/
 or: Open the HTML files in this directory in a web browser
 
-A *VERY* short introduction to R can be found in ./Tutorials/R_intro.R
+A *VERY* short introduction to R can be found in ./Tutorials/Basics/R_intro.R
 
-A slightly longer tutorial to R and RStudio can be found in ./Setup/Torfs+Brauer-Short-R-Intro.pdf
+A slightly longer tutorial to R and RStudio can be found in ./Tutorials/Basics/Torfs+Brauer-Short-R-Intro.pdf
 
-A *VERY* short introduction to SPARQL can be found in ./Tutorials/SPARQL_intro.txt
+A *VERY* short introduction to SPARQL can be found in ./Tutorials/Basics/SPARQL_intro.txt
 
 A slightly longer tutorial to SPARQL can be found at http://jena.apache.org/tutorials/sparql.html
 
@@ -82,6 +82,6 @@ A slightly longer tutorial to SPARQL can be found at http://jena.apache.org/tuto
     # Download a deb from http://rstudio.org/download/desktop and use "sudo dkpg -i PACKAGE" to install it
 
     # In R (or RStudio), install the required packages:
-    install.packages(c('SPARQL','sp','ggmap','mapproj','igraph','network','ergm','zoo','gsubfn','rjson'),dependencies=TRUE)
+    install.packages(c('SPARQL','sp','spacetime','ggmap','mapproj','igraph','network','ergm','zoo','gsubfn','rjson','lattice'),dependencies=TRUE)
 
 

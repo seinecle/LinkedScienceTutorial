@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)http://linkedscience.org/tools/sparql-package-for-r/tutorial-part-ii-calculating-deforestation-per-state/ -->
+<html dir="ltr" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Tutorial part II – Calculating Deforestation per State | LinkedScience.org</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="./amazon_tutorial_2_files/style.css">
+<link rel="pingback" href="http://linkedscience.org/xmlrpc.php">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » Feed" href="http://linkedscience.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » Comments Feed" href="http://linkedscience.org/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="LinkedScience.org » Tutorial part II – Calculating Deforestation per State Comments Feed" href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-part-ii-calculating-deforestation-per-state/feed/">
+<script type="text/javascript" async="" src="./amazon_tutorial_2_files/ga.js"></script><script type="text/javascript" src="./amazon_tutorial_2_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://linkedscience.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://linkedscience.org/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Linked Brazilian Amazon Rainforest" href="http://linkedscience.org/data/linked-brazilian-amazon-rainforest/">
+<link rel="next" title="Linked Haiti" href="http://linkedscience.org/data/linked-haiti/">
+<meta name="generator" content="WordPress 3.3">
+<link rel="canonical" href="./amazon_tutorial_2_files/amazon_tutorial_2.html">
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8367411-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link href="./amazon_tutorial_2_files/widget.css" rel="stylesheet" type="text/css"><style type="text/css">#twtr-widget-1 .twtr-avatar { display: none; } #twtr-widget-1 .twtr-tweet-text { margin-left: 0; }</style><style type="text/css">#twtr-widget-1 .twtr-doc,                      #twtr-widget-1 .twtr-hd a,                      #twtr-widget-1 h3,                      #twtr-widget-1 h4 {            background-color: #1F0C0C !important;            color: #FFFFFF !important;          }          #twtr-widget-1 .twtr-tweet a {            color: #316329 !important;          }          #twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a,           #twtr-widget-1 .twtr-bd p {            color: #3B3B3B !important;          }          #twtr-widget-1 .twtr-new-results,           #twtr-widget-1 .twtr-results-inner,           #twtr-widget-1 .twtr-timeline {            background: #F7FFFB !important;          }</style></head>
+
+<body class="page page-id-220 page-child parent-pageid-149 page-template-default">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://linkedscience.org/" title="LinkedScience.org" rel="home">LinkedScience.org</a>
+					</span>
+				</div>
+				<div id="site-description">interconnecting scientific assets!</div>
+
+										<img src="./amazon_tutorial_2_files/linkedscience.png" width="940" height="198" alt="">
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-part-ii-calculating-deforestation-per-state/#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li><a href="http://linkedscience.org/" title="Home">Home</a></li><li class="page_item page-item-87"><a href="http://linkedscience.org/events/">Events</a><ul class="children"><li class="page_item page-item-386"><a href="http://linkedscience.org/events/gibda2012/">GIBDA2012</a></li><li class="page_item page-item-69"><a href="http://linkedscience.org/events/lisc2011/">LISC2011</a></li><li class="page_item page-item-585"><a href="http://linkedscience.org/events/lisc2012/">LISC2012</a></li><li class="page_item page-item-802"><a href="http://linkedscience.org/events/lodr4ls/">LODR4LS</a></li><li class="page_item page-item-101"><a href="http://linkedscience.org/events/lssolo11/">LS@SOLO11</a></li><li class="page_item page-item-690"><a href="http://linkedscience.org/events/tolsci2012/">TOLSCI2012</a></li></ul></li><li class="page_item page-item-99"><a href="http://linkedscience.org/publications/">Publications</a></li><li class="page_item page-item-164 current_page_ancestor"><a href="http://linkedscience.org/tools/">Tools</a><ul class="children"><li class="page_item page-item-149 current_page_ancestor current_page_parent"><a href="http://linkedscience.org/tools/sparql-package-for-r/">SPARQL Package for R</a><ul class="children"><li class="page_item page-item-854"><a href="http://linkedscience.org/tools/sparql-package-for-r/sparql-package-for-r-gephi-movie-star-graph-visualization-tutorial/">SPARQL Package for R / Gephi – Movie star graph visualization Tutorial</a></li><li class="page_item page-item-731"><a href="http://linkedscience.org/tools/sparql-package-for-r/linked-open-piracy-tutorial/">SPARQL Package for R – Linked Open Piracy Tutorial</a></li><li class="page_item page-item-151"><a href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-on-sparql-package-for-r/">Tutorial part I – Using the SPARQL Package in R to handle Spatial Linked Data</a></li><li class="page_item page-item-220 current_page_item"><a href="./amazon_tutorial_2_files/amazon_tutorial_2.html">Tutorial part II – Calculating Deforestation per State</a></li></ul></li></ul></li><li class="page_item page-item-109"><a href="http://linkedscience.org/vocabularies/">Vocabularies</a></li><li class="page_item page-item-263"><a href="http://linkedscience.org/data/">Data</a><ul class="children"><li class="page_item page-item-265"><a href="http://linkedscience.org/data/linked-brazilian-amazon-rainforest/">Linked Brazilian Amazon Rainforest</a></li><li class="page_item page-item-347"><a href="http://linkedscience.org/data/linked-haiti/">Linked Haiti</a></li><li class="page_item page-item-476"><a href="http://linkedscience.org/data/spatiallinkedscience/">spatial@linkedscience</a></li></ul></li><li class="page_item page-item-574"><a href="http://linkedscience.org/projects/">Projects</a><ul class="children"><li class="page_item page-item-576"><a href="http://linkedscience.org/projects/triangle-of-sustainability/">Triangle of Sustainability</a></li></ul></li><li class="page_item page-item-682"><a href="http://linkedscience.org/tutorials/">Tutorials</a><ul class="children"><li class="page_item page-item-1184"><a href="http://linkedscience.org/tutorials/exploring-the-linked-brazilian-amazon-rainforest-data/">Exploring the Linked Brazilian Amazon Rainforest Data</a></li><li class="page_item page-item-1187"><a href="http://linkedscience.org/tutorials/linked-open-piracy-tutorial/">Linked Open Piracy Tutorial</a></li><li class="page_item page-item-1189"><a href="http://linkedscience.org/tutorials/movie-star-graph-visualization-tutorial/">Movie star graph visualization Tutorial</a></li><li class="page_item page-item-897"><a href="http://linkedscience.org/tutorials/tutorial-using-sparql-on-lodum-data/">Tutorial: Using SPARQL on LODUM Data</a></li></ul></li><li class="page_item page-item-44"><a href="http://linkedscience.org/spatial/">Spatial</a></li><li class="page_item page-item-1195"><a href="http://linkedscience.org/jobs/">Jobs</a><ul class="children"><li class="page_item page-item-1198"><a href="http://linkedscience.org/jobs/linked-data-for-escience-services-life-project-2-positions/">Linked Data for eScience Services (LIFE) project: 2 positions</a></li></ul></li><li class="page_item page-item-211"><a href="http://linkedscience.org/about/">About</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="post-220" class="post-220 page type-page status-publish hentry">
+											<h1 class="entry-title">Tutorial part II – Calculating Deforestation per State</h1>
+					
+					<div class="entry-content">
+						<p>by <em><a title="Benedikt Gräler" href="http://ifgi.uni-muenster.de/graeler">Benedikt Gräler</a></em></p>
+<p>This tutorial part II of using the SPARQL Package for R with the Brazilian Amazon Rainforest Data will illustrate the following:</p>
+<ol>
+<li>retrieval of the data including the pixel’s boundaries</li>
+<li>getting administrative boundaries from <a title="Global Administrative Areas" href="http://www.gadm.org/">GADM</a></li>
+<li>aggregation of deforestation measures by state</li>
+<li>plotting the findings</li>
+</ol>
+<p>The more advanced R users might want to immediately download the complete R-script:&nbsp;<a href="http://linkedscience.org/wp-content/uploads/2012/07/linkedAmazon_2.zip">linkedAmazon_2</a>. The zip-file contains two scripts, one for the SPARQL package before version 1.9 and a second one for the more recent version 1.9. The tutorial below uses the SPARQL package at version 1.9.</p>
+<h3>Data Retrieval</h3>
+<p>Load the libraries (<a title="SPARQL package on CRAN" href="http://cran.r-project.org/web/packages/SPARQL/index.html">SPARQL</a> and <a title="sp package on CRAN" href="http://cran.r-project.org/web/packages/sp/index.html">sp</a>)</p>
+<pre>library(SPARQL) # make sure to use version 1.9 or later
+library(sp)</pre>
+<p>The following few lines are identical with the first tutorial. In case you are using the same R workspace, you can skip them and continue with <em>Building the Spatialdataframe</em>.</p>
+<p>Set the endpoint providing the linked data:</p>
+<pre>endpoint &lt;- "http://spatial.linkedscience.org/sparql"</pre>
+<p>Due to the data size, it is recommended to query the triples piece-wise by initiating the data retrieval by</p>
+<pre>q &lt;- "SELECT ?cell ?row ?col ?polygon
+WHERE {
+&nbsp; ?cell a &lt;http://linkedscience.org/lsv/ns#Item&gt; ;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;http://spatial.linkedscience.org/context/amazon/Lin&gt; ?row ;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;http://spatial.linkedscience.org/context/amazon/Col&gt; ?col ;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;http://observedchange.com/tisc/ns#geometry&gt; ?polygon .
+}"
+res &lt;- SPARQL(url=endpoint, q)$results</pre>
+<p>and running a loop over all deforestation variables from 2002 to 2008:</p>
+<pre>for(var in c("DEFOR_2002", "DEFOR_2003", "DEFOR_2004", "DEFOR_2005",
+            &nbsp;"DEFOR_2006", "DEFOR_2007", "DEFOR_2008")) {
+&nbsp; tmp_q &lt;- paste("SELECT ?cell ?", var, "\n", "WHERE { \n ?cell a &lt;http://linkedscience.org/lsv/ns#Item&gt; ;\n &lt;http://spatial.linkedscience.org/context/amazon/",var,"&gt; ?",var," .\n }\n",sep="")
+&nbsp; cat(tmp_q) # plot the query to check its spelling
+&nbsp; res &lt;- merge(res, SPARQL(endpoint, tmp_q)$results, by="cell")
+}</pre>
+<h3>Building the Spatialdataframe</h3>
+<p>Checking the variable <em>polygon</em> of the result object <em>res</em> by</p>
+<pre>str(res$polygon)</pre>
+<p>shows that it is provided as a vector of strings describing a quadrangle by its closed poly-line. These strings have to be parsed and coerced to a SpatialPolygons-object from the sp package. This can be done by the following helper-function</p>
+<pre>createPolygons &lt;- function(alistElem) {
+&nbsp; Polygon( matrix( unlist( lapply( strsplit( strsplit(alistElem, ";")[[1]], ","), as.numeric ) ), ncol=2, byrow=T ) )
+}
+polys &lt;- lapply(res$polygon, createPolygons)</pre>
+<p>and a loop over all pixels (represented as rows in the data.frame <em>res</em> by now):</p>
+<pre>allPolys &lt;- NULL
+for ( i in 1:length(polys)) {
+&nbsp; allPolys &lt;- append(allPolys, list(Polygons(list(polys[[i]]), ID=i)))
+}
+
+spPoly &lt;- SpatialPolygons(allPolys, proj4string=CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"))</pre>
+<p>Similar as in the preceding <a title="Tutorial on SPARQL Package for R Part I" href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-on-sparql-package-for-r/">tutorial part I</a>, we put everything together in a SpatialPolygonsDataFrame by:</p>
+<pre>amazon &lt;- res
+amazon$row &lt;- -facToNum(res$row)
+amazon$col &lt;- facToNum(res$col)
+for(var in colnames(amazon)[-(1:4)]) {
+&nbsp; amazon[[var]] &lt;- facToNum(amazon[[var]])
+}
+amazonPoly &lt;- SpatialPolygonsDataFrame(spPoly, data=amazon)</pre>
+<p>For testing purposes, plot the deforestation in 2002 by calling:</p>
+<pre>spplot(amazonPoly, "DEFOR_2002", col.regions=bpy.colors(),
+       main="relative deforestation in 2002 by pixel")</pre>
+<p><a href="./amazon_tutorial_2_files/relative_defor_2002.jpeg"><img class="alignnone size-full wp-image-231" title="relative deforestation in 2002 by pixel" src="./amazon_tutorial_2_files/relative_defor_2002.jpeg" alt="" height="600" width="800"></a></p>
+<h3>Getting the administrative boundaries</h3>
+<p>The website <a title="Global Administrative Areas" href="http://www.gadm.org/">www.gadm.org</a> provides <em>Global Administrative Areas</em>. Fortunately, the boundaries are besides shape-files and Google’s kmz-files as well provided as RData-files containing a SpatialPolygonsDataFrame. We can load this data directly from R by calling:</p>
+<pre>load(url("http://www.gadm.org./data/rda/BRA_adm1.RData"))
+summary(gadm)</pre>
+<p>The summary of the object lists all variables’ basic characteristics, the bounding box and the proj4string.&nbsp; The administrative boundaries are as well as our data provided in latitude and longitude based on the WGS84 ellipsoid.</p>
+<p>As a first application, we add the state boundary layer on top of the preceding plot using a different colour scheme:</p>
+<pre>spplot(amazonPoly, "DEFOR_2002",
+       sp.layout = list("sp.polygons", gadm),
+       col.regions=rev(heat.colors(17))[-1],
+       main="realtive deforestation in 2002 by pixel")</pre>
+<p><a href="./amazon_tutorial_2_files/relative_defor_2002_boundaries1.jpeg"><img class="alignnone size-full wp-image-239" title="relative deforestation in 2002 with boundaries" src="./amazon_tutorial_2_files/relative_defor_2002_boundaries1.jpeg" alt="" height="600" width="800"></a></p>
+<h3>Aggregation of pixels to states</h3>
+<p>At first, we will use the approximate of identifying pixels by their centroid. The overlay of the centroids and the state boundaries will yield desired mapping:</p>
+<pre>getCentroids &lt;- function(spP) {
+&nbsp; t(sapply(spP@polygons, function(x) x@labpt))
+}
+
+amazonCentr &lt;- SpatialPointsDataFrame(coords=getCentroids(amazonPoly),
+                                     &nbsp;data=amazonPoly@data)
+proj4string(amazonCentr) &lt;- proj4string(amazonPoly) # setting the proj4string
+proj4string(gadm) &lt;- proj4string(amazonPoly) # setting the proj4string</pre>
+<p>We calculate three aggregates, the absolute deforestation, the relative deforestation and the number of pixels for each year and state:</p>
+<pre># estimating the absolute deforestation
+addDefor &lt;- function(x) {
+&nbsp; sum(x,na.rm=T)*25*25 # assuming cells of approx. 25kmx25km
+}
+
+# leave the meta data out (columns 1:4)
+aggAmazonAdd &lt;- aggregate.Spatial(amazonCentr[,-(1:4)], gadm, addDefor)
+aggAmazonRel &lt;- aggregate.Spatial(amazonCentr[,-(1:4)], gadm, mean, na.rm=T)
+
+aggAmazonAdd$name &lt;- gadm$HASC_1
+aggAmazonRel$name &lt;- gadm$HASC_1
+
+# correct for some miss-aligned centroids
+countCells &lt;- function(x) sum(!is.na(x))
+aggAmazonCount &lt;- aggregate.Spatial(amazonCentr[,-(1:4)], gadm, countCells)
+
+bool &lt;- as.logical(apply(aggAmazonCount@data[,1:7]&gt;50,1,prod))
+
+aggAmazonAdd &lt;- aggAmazonAdd[bool,]
+aggAmazonRel &lt;- aggAmazonRel[bool,]</pre>
+<p>The third aggregate was only used to drop all values in states that have been assigned with less than 50 pixels.</p>
+<h3>Plotting</h3>
+<p>To illustrate our findings, we will produce three different plots. At first, the absolute deforested area during 2002 per state:</p>
+<pre>spplot(aggAmazonAdd, "DEFOR_2002", col.regions=rev(heat.colors(21)),
+       ylim=amazonPoly@bbox[2,], at=(0:21)*500,
+       main="deforested area per state during 2002 [km]²",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sp.layout=list("sp.text", getCentroids(aggAmazonAdd), aggAmazonAdd$name))</pre>
+<p><a href="./amazon_tutorial_2_files/absolute_defor_2002_state.jpeg"><img class="alignnone size-full wp-image-243" title="absolute deforeatation during 2002 per state" src="./amazon_tutorial_2_files/absolute_defor_2002_state.jpeg" alt="" height="600" width="800"></a></p>
+<p>The relative deforested area during 2002 per state:</p>
+<pre>spplot(aggAmazonRel, "DEFOR_2002", col.regions=rev(heat.colors(20)),
+       ylim=amazonPoly@bbox[2,], at=(0:15)/1000,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; main="relative deforested area per state during 2002",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sp.layout=list("sp.text", getCentroids(aggAmazonRel), aggAmazonRel$name))</pre>
+<p><a href="./amazon_tutorial_2_files/relative_defor_2002_state.jpeg"><img class="alignnone size-full wp-image-244" title="relative deforestation per state during 2002" src="./amazon_tutorial_2_files/relative_defor_2002_state.jpeg" alt="" height="600" width="800"></a></p>
+<p>And finally a plot showing the development of the relative deforestation per year from 2002 to 2008 per state:</p>
+<pre># transposing the dataframe
+trdf &lt;- as.data.frame(t(aggAmazonRel@data[-8]))
+colnames(trdf) &lt;- as.character(aggAmazonRel@data$name)
+
+library(lattice)
+xyplot(BR.AC+BR.AP+BR.AM+BR.MA+BR.MT+BR.PA+BR.RO+BR.RR+BR.TO~2002:2008,
+      &nbsp;data=trdf, type="l", xlab="year", ylab="relative deforestation",
+      &nbsp;auto.key=list(space = "right", points = FALSE, lines = TRUE),
+      &nbsp;main="relative deforestation per state during different years")</pre>
+<p><a href="./amazon_tutorial_2_files/timeline_relative_defor.jpeg"><img class="alignnone size-full wp-image-245" title="timelines of relative deforestation" src="./amazon_tutorial_2_files/timeline_relative_defor.jpeg" alt="" height="600" width="800"></a></p>
+																	</div><!-- .entry-content -->
+				</div><!-- #post-## -->
+
+				
+			<div id="comments">
+
+
+
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://linkedscience.org/tools/sparql-package-for-r/tutorial-part-ii-calculating-deforestation-per-state/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://linkedscience.org/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30"></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment">
+							<input type="hidden" name="comment_post_ID" value="220" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+						</p>
+											</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" action="http://linkedscience.org/">
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s">
+	<input type="submit" id="searchsubmit" value="Search">
+	</div>
+	</form></li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+				<li><a href="http://linkedscience.org/2012/11/21/still-open-fully-funded-phd-student-position-in-linked-data-for-escience-services-life-project/" title="Still open: Fully funded PhD Student Position in Linked Data for eScience Services (LIFE) Project">Still open: Fully funded PhD Student Position in Linked Data for eScience Services (LIFE) Project</a></li>
+				<li><a href="http://linkedscience.org/2012/09/11/linked-data-for-escience-services-life-project-2-positions-in-geoinformatics-at-post-docphd-student-level/" title="Linked Data for eScience Services (LIFE) project: 2 Positions in Geoinformatics at Post-Doc/PhD Student Level">Linked Data for eScience Services (LIFE) project: 2 Positions in Geoinformatics at Post-Doc/PhD Student Level</a></li>
+				<li><a href="http://linkedscience.org/2012/08/24/ten-papers-accepted-for-the-linked-science-2012/" title="Nine Papers Accepted for the Linked Science 2012">Nine Papers Accepted for the Linked Science 2012</a></li>
+				<li><a href="http://linkedscience.org/2012/06/18/tutorial-on-linked-science-at-ekaw2012/" title="Tutorial on Linked Science at EKAW2012">Tutorial on Linked Science at EKAW2012</a></li>
+				<li><a href="http://linkedscience.org/2012/05/29/demo-and-poster-today-eswc2012/" title="Demo and Poster today @ESWC2012">Demo and Poster today @ESWC2012</a></li>
+				</ul>
+		</li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href="http://linkedscience.org/2012/11/" title="November 2012">November 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/09/" title="September 2012">September 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/08/" title="August 2012">August 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/06/" title="June 2012">June 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/05/" title="May 2012">May 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/04/" title="April 2012">April 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/03/" title="March 2012">March 2012</a></li>
+	<li><a href="http://linkedscience.org/2012/02/" title="February 2012">February 2012</a></li>
+	<li><a href="http://linkedscience.org/2011/12/" title="December 2011">December 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/10/" title="October 2011">October 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/09/" title="September 2011">September 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/08/" title="August 2011">August 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/05/" title="May 2011">May 2011</a></li>
+	<li><a href="http://linkedscience.org/2011/04/" title="April 2011">April 2011</a></li>
+		</ul>
+</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://linkedscience.org/category/announcement/" title="View all posts filed under Announcement">Announcement</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://linkedscience.org/category/award/" title="View all posts filed under Award">Award</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://linkedscience.org/category/brazilian-amazon-rainforest/" title="View all posts filed under Brazilian Amazon Rainforest">Brazilian Amazon Rainforest</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="http://linkedscience.org/category/call-for-papers/" title="View all posts filed under Call for Papers">Call for Papers</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="http://linkedscience.org/category/challenge/" title="View all posts filed under Challenge">Challenge</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://linkedscience.org/category/contest/" title="View all posts filed under Contest">Contest</a>
+</li>
+	<li class="cat-item cat-item-81"><a href="http://linkedscience.org/category/demo/" title="View all posts filed under Demo">Demo</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://linkedscience.org/category/gis/" title="View all posts filed under GIS">GIS</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://linkedscience.org/category/giscience/" title="View all posts filed under GIScience">GIScience</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://linkedscience.org/category/large-geospatial-applications/" title="View all posts filed under Large Geospatial Applications">Large Geospatial Applications</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://linkedscience.org/category/linked-science/" title="View all posts filed under Linked Science">Linked Science</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://linkedscience.org/category/linked-spatiotemporal-data/" title="View all posts filed under Linked Spatiotemporal Data">Linked Spatiotemporal Data</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://linkedscience.org/category/maps/" title="View all posts filed under Maps">Maps</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://linkedscience.org/category/multidisciplinary-research/" title="View all posts filed under Multidisciplinary Research">Multidisciplinary Research</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="http://linkedscience.org/category/poster/" title="View all posts filed under Poster">Poster</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://linkedscience.org/category/r/" title="View all posts filed under R">R</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://linkedscience.org/category/sparql/" title="View all posts filed under SPARQL">SPARQL</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://linkedscience.org/category/spatiotemporal-data-handling/" title="View all posts filed under Spatiotemporal Data Handling">Spatiotemporal Data Handling</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://linkedscience.org/category/spatiotemporal-information/" title="View all posts filed under Spatiotemporal Information">Spatiotemporal Information</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://linkedscience.org/category/statistical-computing/" title="View all posts filed under Statistical Computing">Statistical Computing</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://linkedscience.org/category/tutorial/" title="View all posts filed under Tutorial">Tutorial</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://linkedscience.org/category/workshop/" title="View all posts filed under Workshop">Workshop</a>
+</li>
+		</ul>
+</li><li id="tag_cloud-3" class="widget-container widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href="http://linkedscience.org/tag/analysis/" class="tag-link-39" title="1 topic" style="font-size: 8pt;">Analysis</a>
+<a href="http://linkedscience.org/tag/big-data/" class="tag-link-33" title="5 topics" style="font-size: 15.636363636364pt;">Big Data</a>
+<a href="http://linkedscience.org/tag/big-data-analytics/" class="tag-link-47" title="2 topics" style="font-size: 10.863636363636pt;">Big Data Analytics</a>
+<a href="http://linkedscience.org/tag/big-data-conference/" class="tag-link-46" title="2 topics" style="font-size: 10.863636363636pt;">Big Data Conference</a>
+<a href="http://linkedscience.org/tag/boston/" class="tag-link-74" title="2 topics" style="font-size: 10.863636363636pt;">Boston</a>
+<a href="http://linkedscience.org/tag/brazilian-amazon-rainforest/" class="tag-link-18" title="1 topic" style="font-size: 8pt;">Brazilian Amazon Rainforest</a>
+<a href="http://linkedscience.org/tag/buildings/" class="tag-link-45" title="1 topic" style="font-size: 8pt;">Buildings</a>
+<a href="http://linkedscience.org/tag/community/" class="tag-link-10" title="1 topic" style="font-size: 8pt;">community</a>
+<a href="http://linkedscience.org/tag/data-challenge/" class="tag-link-37" title="1 topic" style="font-size: 8pt;">Data Challenge</a>
+<a href="http://linkedscience.org/tag/data-mining/" class="tag-link-35" title="1 topic" style="font-size: 8pt;">Data Mining</a>
+<a href="http://linkedscience.org/tag/eswc2012/" class="tag-link-68" title="2 topics" style="font-size: 10.863636363636pt;">ESWC2012</a>
+<a href="http://linkedscience.org/tag/executable-paper/" class="tag-link-11" title="1 topic" style="font-size: 8pt;">executable paper</a>
+<a href="http://linkedscience.org/tag/geoprocessing/" class="tag-link-26" title="1 topic" style="font-size: 8pt;">Geoprocessing</a>
+<a href="http://linkedscience.org/tag/gibda2012/" class="tag-link-38" title="2 topics" style="font-size: 10.863636363636pt;">GIBDA2012</a>
+<a href="http://linkedscience.org/tag/giscience/" class="tag-link-34" title="3 topics" style="font-size: 12.772727272727pt;">GIScience</a>
+<a href="http://linkedscience.org/tag/google-earth/" class="tag-link-43" title="1 topic" style="font-size: 8pt;">Google Earth</a>
+<a href="http://linkedscience.org/tag/ifgi/" class="tag-link-7" title="1 topic" style="font-size: 8pt;">ifgi</a>
+<a href="http://linkedscience.org/tag/iswc2012/" class="tag-link-72" title="2 topics" style="font-size: 10.863636363636pt;">ISWC2012</a>
+<a href="http://linkedscience.org/tag/linked-data/" class="tag-link-4" title="10 topics" style="font-size: 19.772727272727pt;">Linked Data</a>
+<a href="http://linkedscience.org/tag/linked-open-science/" class="tag-link-8" title="2 topics" style="font-size: 10.863636363636pt;">linked open science</a>
+<a href="http://linkedscience.org/tag/linked-science/" class="tag-link-3" title="14 topics" style="font-size: 22pt;">Linked Science</a>
+<a href="http://linkedscience.org/tag/linked-spatiotemporal-data/" class="tag-link-19" title="1 topic" style="font-size: 8pt;">Linked Spatiotemporal Data</a>
+<a href="http://linkedscience.org/tag/lisc2011/" class="tag-link-16" title="4 topics" style="font-size: 14.363636363636pt;">LISC2011</a>
+<a href="http://linkedscience.org/tag/lisc2012/" class="tag-link-73" title="2 topics" style="font-size: 10.863636363636pt;">LISC2012</a>
+<a href="http://linkedscience.org/tag/lodum/" class="tag-link-42" title="3 topics" style="font-size: 12.772727272727pt;">LODUM</a>
+<a href="http://linkedscience.org/tag/map/" class="tag-link-30" title="1 topic" style="font-size: 8pt;">map</a>
+<a href="http://linkedscience.org/tag/maps/" class="tag-link-28" title="2 topics" style="font-size: 10.863636363636pt;">Maps</a>
+<a href="http://linkedscience.org/tag/ontology/" class="tag-link-14" title="3 topics" style="font-size: 12.772727272727pt;">Ontology</a>
+<a href="http://linkedscience.org/tag/open-science/" class="tag-link-9" title="3 topics" style="font-size: 12.772727272727pt;">open science</a>
+<a href="http://linkedscience.org/tag/open-source/" class="tag-link-12" title="1 topic" style="font-size: 8pt;">open source</a>
+<a href="http://linkedscience.org/tag/productivity/" class="tag-link-44" title="1 topic" style="font-size: 8pt;">Productivity</a>
+<a href="http://linkedscience.org/tag/r/" class="tag-link-5" title="3 topics" style="font-size: 12.772727272727pt;">R</a>
+<a href="http://linkedscience.org/tag/schema/" class="tag-link-27" title="3 topics" style="font-size: 12.772727272727pt;">Schema</a>
+<a href="http://linkedscience.org/tag/sparql/" class="tag-link-6" title="4 topics" style="font-size: 14.363636363636pt;">SPARQL</a>
+<a href="http://linkedscience.org/tag/spatial-data-visualization/" class="tag-link-32" title="1 topic" style="font-size: 8pt;">spatial data visualization</a>
+<a href="http://linkedscience.org/tag/spatiotemporal-data/" class="tag-link-25" title="1 topic" style="font-size: 8pt;">Spatiotemporal Data</a>
+<a href="http://linkedscience.org/tag/spatiotemporal-information/" class="tag-link-22" title="1 topic" style="font-size: 8pt;">Spatiotemporal Information</a>
+<a href="http://linkedscience.org/tag/time-series/" class="tag-link-31" title="1 topic" style="font-size: 8pt;">time series</a>
+<a href="http://linkedscience.org/tag/triangle-of-sustainability/" class="tag-link-57" title="2 topics" style="font-size: 10.863636363636pt;">Triangle of Sustainability</a>
+<a href="http://linkedscience.org/tag/tutorial/" class="tag-link-17" title="2 topics" style="font-size: 10.863636363636pt;">Tutorial</a>
+<a href="http://linkedscience.org/tag/universities/" class="tag-link-41" title="1 topic" style="font-size: 8pt;">Universities</a>
+<a href="http://linkedscience.org/tag/usa/" class="tag-link-75" title="2 topics" style="font-size: 10.863636363636pt;">USA</a>
+<a href="http://linkedscience.org/tag/vgi/" class="tag-link-36" title="1 topic" style="font-size: 8pt;">VGI</a>
+<a href="http://linkedscience.org/tag/visualization/" class="tag-link-40" title="1 topic" style="font-size: 8pt;">Visualization</a>
+<a href="http://linkedscience.org/tag/vocabulary/" class="tag-link-13" title="3 topics" style="font-size: 12.772727272727pt;">Vocabulary</a></div>
+</li><li id="wp_twitter_goodies_profile_widgets" class="widget-container widget_wp_twitter_goodies_profile"><h3 class="widget-title">Following @LinkedScience</h3><script src="./amazon_tutorial_2_files/widget.js"></script><script>new TWTR.Widget({  version: 2,  type: 'profile',  rpp: 30,  interval: 5000,  width: 200,  height: 600,  theme: {    shell: {      background: '#1F0C0C',      color: '#FFFFFF'    },    tweets: {      background: '#F7FFFB',      color: '#3B3B3B',      links: '#316329'    }  },  features: {    scrollbar: false,    loop: true,    live: true,    hashtags: true,    timestamp: true,    avatars: false,    behavior: 'default'  }}).render().setUser('LinkedScience').start();</script><div class="twtr-widget twtr-widget-profile" id="twtr-widget-1"><div class="twtr-doc" style="width: 200px;">            <div class="twtr-hd"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-profile-img-anchor"><img alt="profile" class="twtr-profile-img" src="./amazon_tutorial_2_files/linkedsciencedororg_normal.png"></a>                      <h3>Tomi Kauppinen</h3>                      <h4><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience">LinkedScience</a></h4>             </div>            <div class="twtr-bd">              <div class="twtr-timeline" style="height: 600px;">                <div class="twtr-tweets">                  <div class="twtr-reference-tweet"></div><div id="tweet-id-6" class="twtr-tweet" style="opacity: 1; height: 94px; -webkit-transition: opacity 0.5s ease-out;"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./amazon_tutorial_2_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> RT <a class="tweet-url username" data-screen-name="ClareJHooper" href="http://twitter.com/ClareJHooper" target="_blank">@ClareJHooper</a>: "Visualisation gives you answers to questions you never knew you had" --<a class="tweet-url username" data-screen-name="benbendc" href="http://twitter.com/benbendc" target="_blank">@benbendc</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Wed Nov 21 13:54:54 +0000 2012" href="https://twitter.com/LinkedScience/status/271250338026254336">4 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=271250338026254336">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=271250338026254336">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=271250338026254336">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-5" class="twtr-tweet" style="opacity: 1; height: 52px; -webkit-transition: opacity 0.5s ease-out;"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./amazon_tutorial_2_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> <a class="tweet-url username" data-screen-name="ClareJHooper" href="http://twitter.com/ClareJHooper" target="_blank">@ClareJHooper</a> <a class="tweet-url username" data-screen-name="benbendc" href="http://twitter.com/benbendc" target="_blank">@benbendc</a> exactly!             <em>            <a target="_blank" class="twtr-timestamp" time="Wed Nov 21 13:55:25 +0000 2012" href="https://twitter.com/LinkedScience/status/271250465952518145">4 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=271250465952518145">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=271250465952518145">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=271250465952518145">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-4" class="twtr-tweet" style="opacity: 1; height: 108px; -webkit-transition: opacity 0.5s ease-out;"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./amazon_tutorial_2_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> RT <a class="tweet-url username" data-screen-name="wrvhage" href="http://twitter.com/wrvhage" target="_blank">@wrvhage</a>: What would you do with a copy of the web in your pocket? Show us! Win the Norvig Web Data Science Award. <a href="http://t.co/oo8AMDnF" target="_blank" urlentities="[object Object]" rel="nofollow">norvigaward.github.com</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Sat Nov 24 20:06:07 +0000 2012" href="https://twitter.com/LinkedScience/status/272430920378773505">yesterday</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=272430920378773505">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=272430920378773505">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=272430920378773505">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-3" class="twtr-tweet" style="opacity: 1; height: 108px; -webkit-transition: opacity 0.5s ease-out;"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./amazon_tutorial_2_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> Vespucci 2013 first week will be about <a href="http://twitter.com/search?q=%23place" title="#place" class="tweet-url hashtag" target="_blank">#place</a>, <a href="http://twitter.com/search?q=%23health" title="#health" class="tweet-url hashtag" target="_blank">#health</a> and <a href="http://twitter.com/search?q=%23population" title="#population" class="tweet-url hashtag" target="_blank">#population</a>, here more: <a href="http://t.co/OTIfI7Nf" target="_blank" urlentities="[object Object]" rel="nofollow">vespucci.org/presentation</a> <a href="http://twitter.com/search?q=%23GIScience" title="#GIScience" class="tweet-url hashtag" target="_blank">#GIScience</a> <a href="http://twitter.com/search?q=%23GIS" title="#GIS" class="tweet-url hashtag" target="_blank">#GIS</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Sun Nov 25 08:30:53 +0000 2012" href="https://twitter.com/LinkedScience/status/272618347672256512">23 hours ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=272618347672256512">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=272618347672256512">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=272618347672256512">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-2" class="twtr-tweet" style="opacity: 1; height: 80px; -webkit-transition: opacity 0.5s ease-out;"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./amazon_tutorial_2_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> RT <a class="tweet-url username" data-screen-name="brembs" href="http://twitter.com/brembs" target="_blank">@brembs</a>: Now that's how scientific publishing should be: <a href="http://t.co/VFEJTjrw" target="_blank" urlentities="[object Object]" rel="nofollow">papers.ssrn.com/sol3/papers.cf…</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Sun Nov 25 18:25:50 +0000 2012" href="https://twitter.com/LinkedScience/status/272768071893143552">13 hours ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=272768071893143552">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=272768071893143552">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=272768071893143552">favorite</a>             </em>           </p>         </div>       </div></div><div id="tweet-id-1" class="twtr-tweet"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience"><img alt="LinkedScience profile" src="./amazon_tutorial_2_files/linkedsciencedororg_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="https://twitter.com/intent/user?screen_name=LinkedScience" class="twtr-user">LinkedScience</a> Nathan Wilson presenting about scientific names and descriptions for organisms at <a href="http://twitter.com/search?q=%23LISC2012" title="#LISC2012" class="tweet-url hashtag" target="_blank">#LISC2012</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Mon Nov 12 17:05:45 +0000 2012" href="https://twitter.com/LinkedScience/status/268036875665694720">13 days ago</a> ·            <a target="_blank" class="twtr-reply" href="https://twitter.com/intent/tweet?in_reply_to=268036875665694720">reply</a> ·             <a target="_blank" class="twtr-rt" href="https://twitter.com/intent/retweet?tweet_id=268036875665694720">retweet</a> ·             <a target="_blank" class="twtr-fav" href="https://twitter.com/intent/favorite?tweet_id=268036875665694720">favorite</a>             </em>           </p>         </div>       </div></div>                  <!-- tweets show here -->                </div>              </div>            </div>            <div class="twtr-ft">              <div><a target="_blank" href="https://twitter.com/"><img alt="" src="./amazon_tutorial_2_files/widget-bird.png"></a>                <span><a target="_blank" class="twtr-join-conv" style="color:#FFFFFF" href="https://twitter.com/LinkedScience">Join the conversation</a></span>              </div>            </div>          </div></div></li><li id="meta-2" class="widget-container widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="http://linkedscience.org/wp-login.php">Log in</a></li>
+			<li><a href="http://linkedscience.org/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://linkedscience.org/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://linkedscience.org/" title="LinkedScience.org" rel="home">
+					LinkedScience.org				</a>
+			</div><!-- #site-info -->
+
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+
+
+
+
+
+</body></html>
