@@ -43,6 +43,7 @@ d <- data.frame(letters=x,numbers=y)
 d$letters
 d$numbers
 d$letters[2:3]
+d[['letters']]
 
 # This is how to load a library
 library(SPARQL)
